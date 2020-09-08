@@ -1,23 +1,15 @@
 <!--pages/index/market.wxml-->
   <navigationBar text='临期清仓'></navigationBar>
   <view class="nav">
-    <view><image class="icon_wjcc" src="/images/icon_wjcc.png"></image></view>
+    <view><image class="icon_wjcc" src="/images/icon_linqi.png"></image></view>
     <!-- <view class="icon_text">晚间特价：9.9三件起</view> -->
   </view>
   <view class="marth_text">
-    <view><image class="icon_left" src="/images/icon_wjcc.png"></image></view>
+    <view><image class="icon_left" src="/images/icon_left.png"></image></view>
     <text>临期清仓 安心捡漏</text>
-    <view><image class="icon_right" src="/images/icon_wjcc.png"></image></view>
+    <view><image class="icon_right" src="/images/icon_right.png"></image></view>
   </view>
-  <!-- 时间倒计时 -->
-  <!-- <view class="marth_time">
-    <view class="text1">据下次折扣时间还有：</view>
-    <view class="market_times">
-      <view>00</view>
-      <view>00</view>
-      <view>00</view>
-    </view>
-  </view> -->
+
 <!-- 商品 -->
 <view>
   <view class="shop_one" wx:for='{{5}}'>
@@ -38,19 +30,21 @@
 </view>
 <!-- 会员 -->
 <view class="vip">
-  <view><image class="vip_icon" src="/images/icon_wjcc.png"></image></view>
-  <view class="vip_text">会员满减券 优惠多多</view>
+  <view><image class="vip_icon" src="/images/icon_vip.png"></image></view>
+  <!-- <view class="vip_text">会员满减券 优惠多多</view> -->
 </view>
 <!-- 优惠券 -->
  <view class="maret_group">
     <scroll-view class="scroll_market" scroll-x="true" style="width: 100%">
-      <view  class="market_yhj" wx:for="{{4}}">
-      <image class="market_icon" src="/images/icon_wjcc.png"></image>
-        <view class="money1">￥</view>
-        <view class="money2">10</view>
-        <view class="money3">优惠券</view>
-        <view class="money4">满199使用</view>
-        <view class="money5">充值500可领</view>
+      <view class="market_all">
+        <view  class="market_yhj" wx:for='{{4}}' wx:key='key'>
+          <image class="market_icon" src="/images/icon_youhui.png"></image>
+          <view class="money1">￥</view>
+          <view class="money2">10</view>
+          <view class="money3">优惠券</view>
+          <!-- <view class="money4">满199使用</view>
+          <view class="money5">充值500可领</view> -->
+        </view>
       </view>
     </scroll-view>
   </view>
