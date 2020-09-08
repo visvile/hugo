@@ -1,0 +1,102 @@
+<!--pages/my/index.wxml-->
+<view class="my_top">
+	<image src="{{image_icon}}my_top.png" class="img"></image>
+	<view class="content">
+		<view class="header">
+			<image src="{{image_icon}}head.jpg" class="h_img"></image>
+			<!-- 是否认证 -->
+			<view class="aut">已认证</view>
+		</view>
+		<view class="title">烧烤海鲜</view>
+		<view class="three_group">
+			<view class="group" bindtap="gowowallet">
+				<view class="t1">￥0.00</view>
+				<view class="t2">账户余额</view>
+			</view>
+			<view class="group" bindtap="gotocoupon">
+				<view class="t1">3</view>
+				<view class="t2">优惠券</view>
+			</view>
+			<view class="group" bindtap="gotoweikaifang">
+				<view class="t1">0</view>
+				<view class="t2">我的推广</view>
+			</view>
+		</view>
+	</view>
+</view>
+<view class="my_order order_after">
+	<view class="bt">我的订单</view>
+	<view class="order_group" bindtap="gotoother">
+		<view class="group">
+			<view class="t1">1</view>
+			<view class="t2">全部</view>
+		</view>
+		<view class="group">
+			<view class="t1">1</view>
+			<view class="t2">待付款</view>
+		</view>
+		<view class="group">
+			<view class="t1">1</view>
+			<view class="t2">待发货</view>
+		</view>
+		<view class="group">
+			<view class="t1">1</view>
+			<view class="t2">待收货</view>
+		</view>
+		<view class="group">
+			<view class="t1">1</view>
+			<view class="t2">退款/售后</view>
+		</view>
+	</view>
+</view>
+<image class="my_vip" src="{{image_icon}}vip.png"></image>
+<view class="order_num">
+  <view class="two">
+    <view class="t1">分拣完成待自取</view>
+    <view class="t2">订单编号:2020090813425601</view>
+  </view>
+  <image src="{{image_icon}}kele.jpg" class="img"></image>
+  <text class="text">再来一单</text>
+</view>
+<view class="my_order comm">
+	<view class="bt">常用应用</view>
+	<view class="comm_group">
+    <view class="group" bindtap="gotonews">
+      <image class="icon" src="{{image_icon}}my_icon1.png"></image>
+      <view class="icon_t">消息</view>
+    </view>
+    <view class="group" bindtap="gotospellgroup">
+      <image class="icon" src="{{image_icon}}my_icon2.png"></image>
+      <view class="icon_t">拼团</view>
+    </view>
+    <view class="group">
+      <image class="icon" src="{{image_icon}}my_icon3.png"></image>
+      <view class="icon_t">浏览记录</view>
+    </view>
+    <view class="group" bindtap="gotopurchase">
+      <image class="icon" src="{{image_icon}}my_icon4.png"></image>
+      <view class="icon_t">常购商品</view>
+    </view>
+  </view>
+</view>
+<view class="my_order comm">
+	<view class="bt">服务中心</view>
+	<view class="comm_group">
+    <view class="group">
+      <image class="icon" src="{{image_icon}}my_icon5.png"></image>
+      <view class="icon_t">新品需求</view>
+    </view>
+    <view class="group">
+      <image class="icon" src="{{image_icon}}my_icon6.png"></image>
+      <view class="icon_t">在线客服</view>
+    </view>
+    <view class="group">
+      <image class="icon" src="{{image_icon}}my_icon7.png"></image>
+      <view class="icon_t">申请发票</view>
+    </view>
+    <view class="group">
+      <image class="icon" src="{{image_icon}}my_icon8.png"></image>
+      <view class="icon_t">设置</view>
+    </view>
+  </view>
+</view>

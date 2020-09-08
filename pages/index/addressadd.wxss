@@ -1,0 +1,70 @@
+.add{
+  width: 710rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+.addtext{
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #f7f7f7;
+  display: flex;
+  margin-left: 20rpx;
+  align-items: center;
+}
+.addtext .text1{
+  font-size: 28rpx;
+  color: #333;
+  width: 250rpx;
+}
+.placeclass{
+  font-size: 24rpx;
+  color: #999;
+}
+.inputclass{
+  width: 360rpx;
+}
+.images{
+  height: 22rpx;
+  width: 22rpx;
+  position: absolute;
+  right: 40rpx;
+}
+.rigaogroup{
+  width: 250rpx;
+}
+.radio_group{
+  font-size: 24rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.radio_group radio .wx-radio-input{ 
+  height: 30rpx; 
+  width: 30rpx;
+  border-radius: 50%;
+  background: transparent;
+  box-sizing: border-box;
+  border: 2rpx solid #999;
+}
+.inputclass{
+  font-size: 28rpx;
+}
+.anniu{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  background-color: #fe0000;
+  box-sizing: border-box;
+}
+.anniu_button{
+  color: #fff;
+  font-size: 36rpx;
+  justify-content: center;
+  background-color: #fe0000;
+  height: 100rpx;
+  line-height: 100rpx;
+  box-sizing: border-box;
+  padding: 0;
+}

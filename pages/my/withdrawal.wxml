@@ -1,0 +1,21 @@
+<navigationBar text='提现'></navigationBar>
+<view class="rech_top">
+	<image src="{{image_icon}}my_small.png" class="image"></image>
+	<view class="content">
+		<view class="t1">666,666.66</view>
+		<view class="t2">可提现金额（元）</view>
+		<view class="t3" bindtap="gotorecharge">充值</view>
+	</view>
+</view>
+<view class="vi_inp with_inp">
+	<text class="t2">全部提现</text>
+	<input class="input" placeholder="请输入提现金额"></input>
+</view>
+<view class="vi_inp with_inp">
+	<radio-group bindchange="radiochange" class="radio_group">
+		<radio value='微信' checked>微信</radio>
+		<radio value='银行卡'>银行卡</radio>
+	</radio-group>
+</view>
+<view class="service">手续费：0% 最终到账：0</view>
+<view class="red_bt_btn">提现</view>

@@ -1,0 +1,109 @@
+/* 选项卡 */
+.categories {
+  height: 80rpx;
+  line-height: 80rpx;
+  white-space: nowrap;
+  display: flex;
+  background-color: #fff;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.categories .category {
+  width: 120rpx;
+  height: 50rpx;
+  text-align: center;
+  display: inline-block;
+}
+.category.active{
+  position: relative;
+}
+.categories .category:last-child{
+  border: 0
+}
+.category{
+  text-align: center;
+  position: relative;
+}
+.category .text1{
+  font-size: 24rpx;
+  /* position: absolute; */
+  top: 30rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  height: 30rpx;
+  line-height: 30rpx;
+  color: #656565;
+}
+.category.active .text1{
+  color: #fff;
+  padding: 4rpx 18rpx;
+  background-color: #FE0000;
+  border-radius: 20rpx;
+}
+/* 商品列表 */
+.list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.listone{
+  background: #fff;
+  height: 550rpx;
+  width: 340rpx;
+  border-radius: 10rpx;
+  margin-left: 22rpx;
+  margin-top: 20rpx;
+  margin-right: 5rpx;
+  position: relative;
+}
+.listimg{
+  height: 340rpx;
+  width: 340rpx;
+}
+.listtitle{
+  font-size: 28rpx;
+  color: #333;
+  margin-left: 27rpx;
+}
+.listtitle text{
+  font-size: 24rpx;
+  margin-left: 10rpx;
+}
+.origin{
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 26rpx;
+  margin-top: 15rpx;
+}
+.price{
+  font-size: 30rpx;
+  color: #FD0000;
+  margin-left: 27rpx;
+  margin-top: 15rpx;
+}
+.price text{
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 10rpx;
+  text-decoration: line-through;
+}
+.label{
+  border: 1rpx solid #FF874b;
+  font-size: 22rpx;
+  color: #FF874b;
+  width: 80rpx;
+  height: 34rpx;
+  text-align: center;
+  margin-left: 28rpx;
+  margin-top: 19rpx;
+}
+.listmore{
+  height: 50rpx;
+  width: 50rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom: 50rpx;
+}

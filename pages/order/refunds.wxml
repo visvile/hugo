@@ -1,0 +1,79 @@
+<!--pages/order/refunds.wxml-->
+<navigationBar text='退款进度'></navigationBar>
+<view class="refund">
+  <view class="text">退款/售后受理中</view>
+<!-- 进度条 -->
+<view class="jindutiao">
+			<!-- 绿线 -->
+			<view class="green_x">
+			<!-- 灰线长度 -->
+				<view class="in"></view>
+			</view>
+			<view class="all_group">
+				<view class="group">
+				<!-- 绿色对号 -->
+					<image class="icon1" src="/images/tick_g.png"></image>
+					<view class="title">受理中</view>
+				</view>
+				<view class="group">
+				<!-- 绿色圆点 -->
+					<view class="icon black"></view>
+					<view class="title">发起退款</view>
+				</view>
+				<view class="group">
+					<view class="icon black"></view>
+					<view class="title">银行受理</view>
+				</view>
+				<view class="group">
+					<view class="icon black"></view>
+					<view class="title">退款成功</view>
+				</view>
+			</view>
+		</view>
+    <view class="text1">
+      <view>退款金额：￥1289.36</view>
+      <view>退款渠道：原路退回</view>
+    </view>
+</view>
+<view class="nav">
+  <view class="nav_bottom">
+    <view><image class="icon_10" src="{{image_icon}}icon_12.png"></image></view>
+  <view class="tetx2">
+    <view class="nav_name">
+      <view>张三</view>
+      <view class="name_tetx4">18686444488</view>
+    </view>
+    <view class="nav_name nav_text3">
+      <view>北京市朝阳区</view>
+      <view>望京西园B做23号底商</view>
+    </view>
+  </view>
+  </view>
+</view>
+<!-- 商品信息 -->
+ <view class="shop" > 
+  <view class="shop_al">
+    <view class='shop_mc'>商品信息</view>
+  </view>
+  <view>
+    <view class="shop_xx" wx:for="{{4}}">
+      <view>
+        <image class="img_01" src="{{image_icon}}xihongshi.png"></image>
+      </view>
+      <view>
+      <view class="shop_text01">[可口可乐]汽水 碳酸饮料</view>
+        <view class="shop_je">
+          <view class="shop_xj">￥25.00</view>
+          <view class="shop_yj">￥30.00</view>
+          <view class="shop_sl">X1</view>
+        </view>
+      </view>
+    </view>
+    <view class="service">
+      <view><image class="icon_service" src="/images/service.png"></image></view>
+      <view>联系客服</view>
+    </view>
+  </view>
+ </view>
+
+

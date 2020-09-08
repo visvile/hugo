@@ -1,0 +1,21 @@
+<navigationBar text='充值'></navigationBar>
+<view class="rech_top">
+  <image src="/images/money_bg.png" class="image"></image>
+  <view class="content">
+    <view class="t1">666,666.66</view>
+    <view class="t2">余额（元）</view>
+  </view>
+</view>
+<view class="vi_inp">
+  <text class="t1">￥</text>
+  <input class="input" placeholder="请输入自定义金额"></input>
+</view>
+<view class="rech_price">
+  <view class="bt">充值金额</view>
+  <view class="list after">
+    <view class="list_li {{item.id == index1 ? 'red' : ''}}" wx:for="{{list}}" wx:key="key" id="{{item.id}}" data-index1="{{index}}" bindtap="rechPrice">
+      {{item.title}}
+    </view>
+  </view>
+</view>
+<view class="red_bt_btn">立即充值</view>

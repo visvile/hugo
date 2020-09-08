@@ -1,0 +1,60 @@
+<!--logs.wxml-->
+<view>
+  <navigationBar text='购物车' back='{{back}}'></navigationBar>
+  <view class="text">
+     <view>单笔订单金额满300元可使用平台10-50优惠券</view>
+     <view class="text1" bindtap="gotogoodlist">去凑单 ></view>
+  </view>
+ <!-- 购物车商品 -->
+ <view class="shop">
+   <view class="shopping" wx:for="{{getshopping}}" wx:key='key'>
+      <view class="shop_img01">
+        <image class="shop_img02" src="{{image_icon}}shop_icon2.png"></image>
+      </view>
+        <image class="shop_img" src="{{item.img}}"></image>
+        <view>
+          <view class="shop_texts">{{item.title}}</view>
+          <view class="shop_prog">
+            <view class="shop_progress">
+              <view class="shop_bar"></view>
+            </view>
+          </view>
+          <view class="shop_textss">
+            <view class="moneys">{{item.moeney}}</view>
+            <view class="moneys_a">{{item.monyes}}</view>
+          </view>
+        </view>
+        <view>
+          <view bindtap="listcommodity " bindtap='clickmore' data-index="{{index}}">
+            <image class="commodity_more" src="{{image_icon}}more.png"></image>
+          </view>
+          <view> 
+          <view class="commodity_sumber" wx:if="{{status == 1}}">
+            <input type="number" value="{{num}}"></input>
+          </view>
+            <view bindtap="clicksign" data-index="{{index}}" wx:if="{{status == 1}}">
+              <image class="commodity_sign" src="{{image_icon}}sign.png"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+ </view>
+    
+      <!-- 已失效商品 -->
+     <view class="failures">
+         <view class="shop_failure">清空失效商品</view>
+         <view class="failure"  wx:for="{{catshopping}}" wx:key='key' >
+          <view class="shop_tetx1">失效 </view>
+          <image class="shop_img" src="{{item.img}}"></image>
+          <view>
+          <view class="shop_texts">{{item.title}}</view>
+          <view class="shop_prog">
+            <view class="shop_progress">
+              <view class="shop_bar"></view>
+            </view>
+          </view>
+          <view class="shop_textss">商品已下架</view>
+        </view>
+        </view> 
+     </view>
+</view>

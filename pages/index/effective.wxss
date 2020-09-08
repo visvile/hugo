@@ -1,0 +1,72 @@
+/* pages/index/effective.wxss */
+.shop_labers{
+  margin-top: 20rpx;
+  margin-left:  30rpx;
+  display: flex;
+  width: 100%;
+}
+.shop_label{
+  font-size: 22rpx;
+  color: #FF874B;
+  padding: 7rpx;
+  border: 1rpx solid #FF874B;
+  width: 100rpx;
+  text-align: center;
+  margin-right: 20rpx;
+}
+.shop_textss{
+  margin-top: 30rpx;
+}
+/* 选项卡 */
+.categories {
+  height: 100rpx;
+  line-height: 100rpx;
+  white-space: nowrap;
+  display: flex;
+  background-color: #fff;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.categories .category {
+  width: 160rpx;
+  height: 100rpx;
+  text-align: center;
+  display: inline-block;
+}
+.category.active{
+  position: relative;
+}
+.categories .category:last-child{
+  border: 0
+}
+.category{
+  text-align: center;
+  position: relative;
+}
+.category .text2{
+  font-size: 28rpx;
+  /* position: absolute; */
+  top: 30rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  height: 30rpx;
+  line-height: 30rpx;
+  color: #656565;
+}
+.category.active .text2{
+  color: #fff;
+  padding: 7rpx 18rpx;
+  background-color: #FE0000;
+  border-radius: 14rpx;
+}
+.shopping{
+  margin-top: 20rpx;
+}
+.active_imgs{
+  margin-top: 20rpx;
+}
+

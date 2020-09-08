@@ -1,0 +1,232 @@
+.spell_ul{
+  width: 100%;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+}
+.spell_ul .li{
+  width: 710rpx;
+  height: 230rpx;
+  border-radius:10rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  padding: 0 8rpx;
+  box-sizing: border-box;
+}
+.spell_ul .li .bt{
+  height: 70rpx;
+  line-height: 70rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #F7F7F9;
+  position: relative;
+}
+.spell_ul .li .bt .icon{
+  width: 26rpx;
+  height: 26rpx;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 10rpx;
+  transform: translateY(-50%);
+}
+.spell_ul .li .bt .time{
+  float: left;
+  margin-left: 44rpx;
+}
+.spell_ul .li .bt .status_data{
+  float: right;
+  margin-right: 12rpx;
+}
+.spell_ul .li .nr{
+  height: 158rpx;
+  width: 100%;
+  position: relative;
+}
+.spell_ul .li .nr .img{
+  width: 145rpx;
+  height: 130rpx;
+  float: left;
+  margin-left: 10rpx;
+  margin-top: 14rpx;
+}
+.spell_ul .li .nr .all_num{
+  font-size: 22rpx;
+  color: #999;
+  line-height: 158rpx;
+  position: absolute;
+  right: 12rpx;
+  top: 0;
+}
+/* 评价标签 */
+.container{
+  width: calc(96% - 40rpx);
+  float: left;
+  margin-left: 2%;
+  margin-top: 20rpx;
+  background: #fff;
+  border-radius: 10px;
+  padding: 0 20rpx 20rpx;
+}
+.title-text{
+  font-size: 28rpx;
+  color: #333;
+  float: left;
+  width: 16%;
+  margin-top: 16rpx;
+}
+.card-item .item-title,
+.card-item .item-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+ 
+.card-item .item-title{
+  border-bottom: 1rpx solid #eee;
+  padding-bottom: 25rpx;
+  align-items: center;
+  line-height: 70rpx;
+  font-weight: 700;
+}
+ 
+.card-item .item-content{
+  padding-top: 25rpx;
+  line-height: 70rpx;
+}
+ 
+.card-item .image-container{
+  margin-right: 25rpx;
+  width: 40rpx;
+  display: flex;
+  align-items: center;
+}
+ 
+.card-item .title-image{
+  height: 40rpx;
+}
+ 
+.card-item .content-image{
+  height: 70rpx;
+}
+ 
+.card-item .image-container image{
+  width: 40rpx;
+  height: 40rpx;
+}
+ 
+/* feedback.wxss */
+.card-item .content-body{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+ 
+.card-item .content-body .note{
+  line-height: 70rpx;
+  font-size: 26rpx;
+  color: #c0c0c0;
+}
+.commentTit{
+  width: 100%;
+  float: left;
+  font-size: 36rpx;
+  color: #333;
+  margin-top: 50rpx;
+  margin-bottom: 10rpx;
+}
+/* 多选标签 */
+.comment_btn{
+  width: 710rpx;
+  background-color: #fff;
+  margin-left: 20rpx;
+  padding-bottom: 40rpx;
+  box-sizing: border-box;
+}
+.comment_btns{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.name{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 28rpx;
+  color: #333;
+  padding: 17rpx 19rpx;
+  background-color: #999;
+  margin-right: 20rpx;
+  border-radius: 30rpx;
+  margin-top: 20rpx;
+}
+.btn_selected{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 28rpx;
+  color: #fff;
+  padding: 17rpx 19rpx;
+  background-color: #fe0000;
+  margin-right: 20rpx;
+  border-radius: 30rpx;
+  margin-top: 20rpx;
+}
+.comment_btns .btn.active .name{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 28rpx;
+  color: #fff;
+  padding: 17rpx 19rpx;
+  background-color: #fe0000;
+  margin-right: 20rpx;
+  border-radius: 30rpx;
+  margin-top: 20rpx;
+}
+.statr{
+  display: flex;
+  justify-content: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.statr_icon{
+  height: 50rpx;
+  width: 50rpx;
+}
+.other{
+  width: 710rpx;
+  background-color: #fff;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+.text1{
+  height: 66rpx;
+  line-height: 66rpx;
+  padding-left: 20rpx;
+}
+.text2{
+  border: 1rpx solid #999;
+  height: 200rpx;
+  width: 630rpx;
+  border-radius: 10rpx;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+}
+.text3{
+  margin-left: 20rpx;
+  padding-bottom: 40rpx;
+}
+.sumbin{
+  font-size: 36rpx;
+  color: #fff;
+  background-color: #fe0000;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}

@@ -1,0 +1,272 @@
+/* pages/index/market.wxss */
+.nav{
+  position: relative;
+}
+.icon_wjcc{
+  height: 350rpx;
+  width: 750rpx;
+}
+.icon_text{
+  position: absolute;
+  top: 220rpx;
+  color: #fff;
+  width: 750rpx;
+  left: 30%;
+}
+.marth_text{
+  display: flex;
+  align-items: center;
+  height: 67rpx;
+  line-height: 67rpx;
+  justify-content: center;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #AFD08C;
+}
+.icon_left{
+  height: 26rpx;
+  width: 26rpx;
+  background-color: #333;
+  margin-right: 20rpx;
+}
+.icon_right{
+  height: 26rpx;
+  width: 26rpx;
+  background-color: #333;
+  margin-left: 20rpx;
+}
+.marth_time{
+  display: flex;
+}
+.text1{
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  font-weight: bold;
+  height: 81rpx;
+  line-height: 81rpx;
+}
+.market_times{
+  display: flex;
+  color: #fff;
+  width: 130rpx;
+  justify-content: space-around;
+  font-size: 24rpx;
+  align-items: center;
+}
+.market_times view{
+  background-color: #70BC25;
+  width: 30rpx;
+  height: 30rpx;
+}
+/* 商品 */
+.shop_one{
+  height: 190rpx;
+  width: 710rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.one_icon{
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.text2{
+  font-size: 28rpx;
+  color: #333;
+  margin-left: 20rpx;
+  height: 150rpx;
+  line-height: 75rpx;
+}
+.text3{
+  display: flex;
+  font-size: 30rpx;
+  color: #fe0000;
+  font-weight: bold;
+}
+.text5{
+  font-weight: none;
+}
+.tetx4{
+  font-size: 22rpx;
+  margin-left: 20rpx;
+}
+.tetx6{
+  font-size: 24rpx;
+  color: #999;
+  text-decoration:line-through;
+  margin-left: 20rpx;
+}
+.tetx7{
+  font-size: 24rpx;
+  color: #fe0000;
+  font-weight: bold;
+}
+.text8{
+  font-size: 36rpx;
+  color: #fff;
+  background-color: #6FBB25;
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+  line-height: 80rpx;
+  text-align: center;
+  font-weight: bold;
+}
+.text9{
+  position: absolute;
+  right: 20rpx;
+  line-height: 65rpx;
+}
+/* 会员 */
+.vip{
+  position: relative;
+  margin-left: 20rpx;
+  height: 98rpx;
+  width: 710rpx;
+}
+.vip_icon{
+  height: 98rpx;
+  width: 710rpx;
+}
+.vip_text{
+  font-size: 36rpx;
+  color: #333;
+  font-weight: bold;
+  position: absolute;
+  top: 25rpx;
+  left: 200rpx;
+}
+/* 优惠券 */
+.maret_group{
+  height: 130rpx;
+  width: 710rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+.scroll_market{
+  white-space: nowrap;
+}
+.market_icon{
+  height: 110rpx;
+  width: 225rpx;
+}
+.market_yhj{
+  display: inline-block;
+  height: 110rpx;
+  width: 225rpx;
+  background-color: #f7f7f7;
+  margin-right: 60rpx;
+  position: relative;
+  margin-top: 10rpx;
+}
+.money1{
+  font-size: 28rpx;
+  color: #FD857D;
+  font-family: Microsoft YaHei;
+  position: absolute;
+  top: 35rpx;
+  left: 5rpx;
+}
+.money2{
+  font-size: 74rpx;
+  color: #FD857D;
+  position: absolute;
+  top: -10rpx;
+  left: 20rpx;
+  font-weight: bold;
+  letter-spacing: -10rpx;
+}
+.money3{
+  font-size: 26rpx;
+  color: #FD857D;
+  position: absolute;
+  top: 15rpx;
+  left: 100rpx;
+  font-weight: bold;
+  font-family: RS_TeCuHei;
+}
+.money4{
+  font-size: 20rpx;
+  color: #FD857D;
+  position: absolute;
+  top: 50rpx;
+  left: 100rpx;
+  font-family: SimHei;
+}
+.money5{
+  font-size: 20rpx;
+  color: #FD857D;
+  position: absolute;
+  top: 80rpx;
+  left: 25rpx;
+  font-family: SimHei;
+}
+/* 更多精彩 */
+.more{
+  height: 110rpx;
+  display: flex;
+  justify-content: center;
+  padding-top: 20rpx;
+}
+.more_icon{
+  height: 46rpx;
+  width: 260rpx; 
+}
+/* 其他频道 */
+.other_one{
+  height: 200rpx;
+  width: 710rpx;
+  background-color: #a6d47a;
+  border-radius: 20rpx;
+  margin-left: 20rpx;
+  position: relative;
+  margin-bottom: 50rpx;
+}
+.other_gou{
+  font-size: 40rpx;
+  color: #fff;
+  height: 70rpx;
+  line-height: 70rpx;
+  padding-top: 10rpx;
+
+}
+.other_bao{
+  font-size: 23rpx;
+  color: #fff;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.other_cha{
+  height: 50rpx;
+  background-color: #70bc26;
+  border-radius: 20rpx;
+  position: absolute;
+  right: 97rpx;
+  font-size: 24rpx;
+  color: #fff;
+  width: 150rpx;
+  top: 130rpx;
+  line-height: 50rpx;
+}
+.other_text{
+  width: 345rpx;
+  height: 200rpx;
+  text-align: center;
+  position: absolute;
+  right: 0;
+}
+.other_icon{
+  height: 215rpx;
+  width: 365rpx;
+  position: absolute;
+  bottom: 12rpx;
+  margin-top: 30rpx;
+}

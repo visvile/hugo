@@ -1,0 +1,35 @@
+<!--pages/index/addressadd.wxml-->
+<navigationBar text='新增地址'></navigationBar>
+<view class="add">
+  <view class="addtext">
+    <view class="text1">收货人</view>
+    <input class="inputclass" placeholder="请填写姓名" type="text" placeholder-class='placeclass'></input>
+  </view>
+  <view class="addtext">
+    <view class="text1"></view>
+    <view class="rigaogroup">
+      <radio-group bindchange="radioChange" class="radio_group" >
+        <radio value='女士' checked>女士</radio>
+        <radio value='男士'>男士</radio>
+      </radio-group>
+    </view>
+  </view>
+  <view class="addtext">
+    <view class="text1">手机号</view>
+    <input class="inputclass" placeholder="请填写收货人手机号" type="text" placeholder-class='placeclass'></input>
+  </view>
+  <view class="addtext" bindtap="openMap">
+    <view class="text1">收货地址</view>
+    <input class="inputclass" placeholder="点击选择收货地址" type="text" placeholder-class='placeclass' value="{{name}}"></input>
+    <view>
+      <image class="images" src="/images/right.png"></image>
+    </view>
+  </view>
+  <view class="addtext">
+    <view class="text1">门牌号</view>
+    <input class="inputclass" placeholder="详细地址，例如：3号楼2单元105" type="text" placeholder-class='placeclass'></input>
+  </view>
+</view>
+<view class="anniu">
+  <button class="anniu_button">确认保存</button>
+</view>

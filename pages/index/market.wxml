@@ -1,0 +1,89 @@
+<!--pages/index/market.wxml-->
+  <navigationBar text='晚间菜场'></navigationBar>
+  <view class="nav">
+    <view class="icon_wjcc"><image class="icon_wjcc" src="/images/icon_wjcc.png"></image></view>
+    <view class="icon_text">晚间特价：9.9三件起</view>
+  </view>
+  <view class="marth_text">
+    <view><image class="icon_left" src="/images"></image></view>
+    <text>晚间菜场 限时打折</text>
+    <view><image class="icon_right" src="/images"></image></view>
+  </view>
+  <!-- 时间倒计时 -->
+  <view class="marth_time">
+    <view class="text1">据下次折扣时间还有：</view>
+    <view class="market_times">
+      <view>00</view>
+      <view>00</view>
+      <view>00</view>
+    </view>
+  </view>
+<!-- 商品 -->
+<view>
+  <view class="shop_one" wx:for='{{5}}'>
+    <view><image class="one_icon" src="/images/lele.png"></image></view>
+    <view class="text2">
+      <view>[可口可乐] 汽水 碳酸饮料</view>
+      <view class="text3">
+        <view>惊爆价:<text class="text5">25.00</text></view>
+        <view class="tetx4">7折</view>
+        <view class="tetx6">￥30.00</view>
+      </view>
+    </view>
+    <view class="text9">
+      <view class="tetx7">剩余30件</view>
+      <view class="text8">抢</view>
+    </view>
+  </view>
+</view>
+<!-- 会员 -->
+<view class="vip">
+  <view><image class="vip_icon" src="/images/icon_wjcc.png"></image></view>
+  <view class="vip_text">会员满减券 优惠多多</view>
+</view>
+<!-- 优惠券 -->
+ <view class="maret_group">
+    <scroll-view class="scroll_market" scroll-x="true" style="width: 100%">
+      <view  class="market_yhj" wx:for="{{4}}">
+      <image class="market_icon" src="/images/icon_wjcc.png"></image>
+        <view class="money1">￥</view>
+        <view class="money2">10</view>
+        <view class="money3">优惠券</view>
+        <view class="money4">满199使用</view>
+        <view class="money5">充值500可领</view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 更多精彩 -->
+  <view class="more">
+    <image class="more_icon" src="/images/icon_wjcc.png"></image>
+  </view>
+  <!-- 其他频道 -->
+  <view>
+    <view class="other_one">
+      <view><image class="other_icon" src="/images/icon_wjcc.png"></image></view>
+      <view class="other_text">
+        <view class="other_gou">购划算</view>
+        <view class="other_bao">爆款限时抢购</view>
+        <view class="other_cha">点击查看 ▶</view>
+      </view>
+    </view>
+    <!-- 222 -->
+    <view class="other_one">
+      <view><image class="other_icon" src="/images/icon_wjcc.png"></image></view>
+      <view class="other_text">
+        <view class="other_gou">购划算</view>
+        <view class="other_bao">爆款限时抢购</view>
+        <view class="other_cha">点击查看 ▶</view>
+      </view>
+    </view>
+  </view>
+  <!-- 活动规则 -->
+  <view class="active_imgs">
+      <image class="active_img" src="{{image_icon}}active_rule.png"></image>
+    </view>
+    <view class="active_footer">
+      <view class="active_rules" wx:for="{{active_rules}}" wx:key='key'>
+        <view>dshdffhisrhoew富哦热帖瑞如今偶尔偶然荷藕我ueorheoi伛广东省法规特人体退热贴也太热</view>
+      </view>
+   </view>

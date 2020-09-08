@@ -1,0 +1,88 @@
+/* pages/my/recharge.wxss */
+.rech_top{
+  width:715rpx;
+  height: 174rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  position: relative;
+}
+.rech_top .image{
+  width:715rpx;
+  height: 174rpx;
+  background-size: 100%;
+}
+.rech_top .content{
+  width:715rpx;
+  height: 174rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding-top: 15rpx;
+  text-align: center;
+  text-indent: -12rpx;
+  color: #fff;
+}
+.rech_top .content .t1{
+  font-size: 48rpx;
+  line-height: 88rpx;
+}
+.rech_top .content .t2{
+  font-size: 28rpx;
+}
+.vi_inp{
+  width: 710rpx;
+  height: 100rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  position: relative;
+}
+.vi_inp .t1{
+  font-size: 30rpx;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25rpx;
+}
+.vi_inp .input{
+  font-size: 24rpx;
+  line-height: 100rpx;
+  height: 100rpx;
+  margin-left: 60rpx;
+}
+.rech_price{
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.rech_price .bt{
+  font-size: 28rpx;
+  line-height: 110rpx;
+  text-indent: 10rpx;
+}
+.rech_price .list{
+  width: 100%;
+}
+.rech_price .list .list_li{
+  float: left;
+  width: 330rpx;
+  height: 140rpx;
+  line-height: 140rpx;
+  font-size: 30rpx;
+  color: #333;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  border: 2rpx solid #FE0000;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 25rpx;
+  margin-bottom: 30rpx;
+}
+.rech_price .list .list_li:nth-child(2n){
+  margin-right: 0;
+}
+.rech_price .list .list_li.red{
+  background-color: #FE0000;
+  color: #fff;
+}

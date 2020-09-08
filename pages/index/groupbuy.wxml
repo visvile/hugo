@@ -1,0 +1,42 @@
+<!--pages/index/groupbuy.wxml-->
+<view>
+  <navigationBar text='拼团'></navigationBar>
+  <view class="topimg">
+    <image class="luimg" src="{{image_icon}}lunbotu.jpg"></image>
+  </view>
+  <view class="style_name">
+    <image class="style_left" src="{{image_icon}}xihongshi.png"></image>
+    <view class="style_text">有你拼团更放心</view>
+    <image class="style_right" src="{{image_icon}}xihongshi.png"></image>
+  </view>
+  <view>
+    <view class="shopping" wx:for="{{getshopping}}" wx:key='key'>
+      <image class="shop_img" src="{{item.img}}"></image>
+      <view>
+        <view class="shop_texts">{{item.title}}</view>
+        <view class="shop_prog">
+          <view class="shop_progress">
+            <view class="shop_bar"></view>
+          </view>
+          <view class="shop_number">剩余<text>{{item.number}}</text>份成团</view>
+        </view>
+        <view class="shop_textss">
+          <view class="moneys">{{item.moeney}}</view>
+          <view class="moneys_a">{{item.monyes}}</view>
+        </view>
+      </view>
+      <view class="group_grab">
+        <view>马上团 ></view>
+      </view>
+    </view>
+    <!-- 活动规则 -->
+    <view class="active_imgs">
+      <image class="active_img" src="{{image_icon}}active_rule.png"></image>
+    </view>
+    <view class="active_footer">
+      <view class="active_rules" wx:for="{{active_rules}}" wx:key='key'>
+        <view>dshdffhisrhoew富哦热帖瑞如今偶尔偶然荷藕我ueorheoi伛广东省法规特人体退热贴也太热</view>
+      </view>
+   </view>
+  </view>
+</view>

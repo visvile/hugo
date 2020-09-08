@@ -1,0 +1,71 @@
+<!--pages/selectclass/select.wxml-->
+<view>
+  <navigationBar text='分类' back="{{back}}"></navigationBar>
+  <view class="serch">
+    <image class="search_img" src="{{image_icon}}search.png"></image>
+    <input class="search_input" placeholder="土豆"></input>
+  </view>
+</view>
+<view>
+    <view>
+      <scroll-view class="categories" scroll-x="true">
+        <view class="category {{flag == item.id? 'active' : ''}}" wx:for="{{listScroll}}" wx:key='key' bindtap="listScroll" data-index="{{item.id}}" >
+          <text class="text1">{{item.name}}</text>
+        </view>
+        <image  src="/images/selected.png" class="classImgIcon" bindtap="widthFix"></image>
+          <view class="MenuFloat" style="display:{{MenuFloat}}">
+            <view class="white_float">
+              <view class="text1 {{flag==item.id?'active':''}}" data-current="{{item.id}}" bindtap="swichNav" data-index="{{item.id}}" wx:for="{{listScroll}}" wx:key="key">
+                 <text class="text1">{{item.name}}</text>
+              </view>
+            </view>
+            <image src="/images/delect.png" class="xxx" bindtap="xxx"></image>
+            <view class="bottom_black" bindtap="xxx"></view>
+          </view>
+      </scroll-view>
+    </view>
+  <view class="other_three">
+    <view class="other_left">
+      <scroll-view class="secondary" scroll-y="true">
+        <view class="second {{flags == item.id? 'active' : ''}}" wx:for="{{listSecond}}" wx:key='key' bindtap="listleftScroll" data-index="{{item.id}}">
+          <text class="text2" bindtap="clickTab">{{item.name}}</text>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="other_top">
+      <view class="singles">
+        <view class="single {{flagss == item.id? 'active' : ''}}" wx:for="{{listsingle}}" wx:key='key' bindtap="listtopScroll" data-index="{{item.id}}">
+            <view class="text3">{{item.name}}</view>
+        </view>
+      </view>
+      <view>
+      <!-- 商品信息 -->
+          <view class="commodity" wx:for='{{goods_list}}' wx:key='key' data-index="{{item.id}}" bindtap="gotodetail" id="{{item.goods_id}}">
+            <view class="commodity_img">
+              <image class="commodity_img" src='{{item.image}}'></image>
+            </view>
+            <view>
+              <view class="commodity_name">{{item.title}}</view>
+              <view class="commodity_money">{{item.unit_price}}</view>
+            </view>
+            <view>
+              <view>
+                <view bindtap="listcommodity " bindtap='clickmore' data-index="{{index}}">
+                  <image class="commodity_more" src="{{image_icon}}more.png"></image>
+                </view>
+                <view> 
+                <!-- <view class="commodity_sumber" wx:if="{{status == 1}}">
+                  <input type="number" value="{{num}}"></input>
+                </view> -->
+                  <!-- <view bindtap="clicksign" data-index="{{index}}" wx:if="{{status == 1}}">
+                    <image class="commodity_sign" src="{{image_icon}}sign.png"></image>
+                  </view> -->
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+    </view>
+  </view>
+</view>
+

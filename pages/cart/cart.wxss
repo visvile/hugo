@@ -1,0 +1,121 @@
+
+/* page{
+  margin: 0 20rpx;
+} */
+.text{
+  display: flex;
+  font-size: 24rpx;
+  margin-top: 26rpx;
+  justify-content: space-between;
+  width: 710rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+}
+.text1{
+  color: #fe0000;
+}
+.shop{
+  margin-bottom: 20rpx;
+}
+.shopping{
+  position: relative;
+}
+.shop_img01{
+  height: 190rpx;
+  line-height: 190rpx;
+}
+.shop_img02{
+  height: 30rpx;
+  width: 30rpx;
+  margin-left: 20rpx;
+}
+.shop_img03{
+  height: 150rpx;
+  width: 150rpx;
+}
+.shop_texts{
+  margin-top: 50rpx;
+}
+.commodity{
+  height: 170rpx;
+  width: 550rpx;
+  background-color: #fff;
+  display: block;
+  position: relative;
+  left: 166rpx;
+  top: -345rpx;
+  border-radius: 10rpx;
+  display: flex;
+  margin-top: 20rpx;
+}
+.commodity_img{
+  height: 150rpx;
+  width: 150rpx;
+}
+.commodity_name{
+  font-size: 28rpx;
+  color: #333;
+  margin-top: 40rpx;
+  margin-left: 44rpx;
+}
+.commodity_money{
+  font-size: 30rpx;
+  color: #FF874B;
+  margin-left: 44rpx;
+  margin-top: 26rpx;
+}
+.commodity_more{
+  height: 38rpx;
+  width: 38rpx;
+  position: absolute;
+  right: 32rpx;
+  top: 110rpx;
+}
+.commodity_sign{
+  height: 38rpx;
+  width: 38rpx;
+  position: absolute;
+  right: 111rpx;
+  top: 110rpx;
+}
+.commodity_sumber{
+  font-size: 30rpx;
+  color: #333;
+  position: absolute;
+  right: 70rpx;
+  top: 107rpx;
+  width: 30rpx;
+}
+/* 失效 */
+.failure{
+  background-color: #fff;
+  display: flex;
+}
+.failure:nth-child(1){
+  padding-top: 20rpx;
+}
+.failures{
+  width: 710rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  position: relative;
+  margin-left: 20rpx;
+}
+.shop_tetx1{
+  font-size: 24rpx;
+  color: #999;
+  line-height: 190rpx;
+  margin-left: 20rpx;
+}
+.shop_textss{
+  font-size: 24rpx;
+  color: #999;
+}
+.shop_failure{
+  font-size: 24rpx;
+  color: #fe0000;
+  padding-top: 20rpx;
+  margin-right: 20rpx;
+  text-align: right;
+}
+

@@ -1,0 +1,39 @@
+<!--申请发票 - 选择-->
+  <navigationBar text='我的发票'></navigationBar>
+<view class="addInvoiceList">
+	<checkbox-group bindchange="radioChange">
+		<label class="addInvoiceListLi" wx:for="{{list}}" wx:key="key" bindtap="btn" data-index="{{index}}" id="{{item.id}}">
+			<checkbox value="{{item.name}}" checked="{{item.checked}}" class="addInvoiceListLiR" />
+			<view class="addInvoiceListLiRight" bindtap="btn" data-index="{{index}}" id="{{item.id}}">
+				<view class="addInvoiceListLiRightText1">{{item.number}}<text>{{item.pay_time}}</text> </view>
+			</view>
+			<view class="addInvoiceListLiRightText2" bindtap="btn" data-index="{{index}}" id="{{item.id}}">￥{{item.old_price}}</view>
+		</label>
+	</checkbox-group>
+</view>
+<!-- 弹出 - 明细 -->
+<!-- 遮罩层 -->
+<view bindtap="ok" class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}">
+	<!-- 弹出层 -->
+	<view class="modalDlg">
+		<view class="addInvoiceModalListLi" wx:for="{{goods_list}}" wx:key="key">
+			<view>{{item.title}}</view>
+			<text>￥{{item.price}}</text>
+			<text style="margin-right:40rpx">x{{item.num}}</text>
+		</view>
+	</view>
+  <view class="bottom_q">
+    <view class="btntb">确认</view>
+  </view>
+</view>
+
+
+<view class="addInviceBottom">
+	<checkbox-group bindchange="checkboxChange">
+		<label class="checkbox" bindtap="selectall">
+			<checkbox value="全选" /> <text>全选</text>
+		</label>
+	</checkbox-group>
+	<text>请选择要开票的订单</text>
+	<view bindtap="nextTo">提交订单</view>
+</view>

@@ -1,0 +1,38 @@
+/* pages/my/binding.wxss */
+.bin_inp{
+  width: 710rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #333;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+}
+.bin_inp .t1{
+  float: left;
+}
+.bin_inp .inp{
+  float: right;
+  font-size: 26rpx;
+  height: 100rpx;
+  text-align: right;
+  width: 400rpx;
+}
+.red_bt_queren{
+  width: 750rpx !important;
+  height: 100rpx !important;
+  background-color: #fe0000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  line-height: 100rpx !important ;
+  font-size: 36rpx;
+  padding: 0;
+  border-radius: 0;
+}
+
+  

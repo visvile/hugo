@@ -1,0 +1,248 @@
+/* pages/invoice/addInvoice.wxss */
+.addInvoiceList{
+  width: 710rpx;
+  float: left;
+  margin-bottom: 120rpx;
+  margin-left: 20rpx;
+}
+.addInvoiceListLi{
+  width: 710rpx;
+  float: left;
+  padding: 20rpx;
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 20rpx;
+  height: 120rpx;
+  box-sizing: border-box;
+}
+.addInvoiceListLiR{
+  zoom: 0.5;
+  float: left;
+  margin-top: 30rpx;
+}
+.addInvoiceListLiRight{
+  width: 60%;
+  float: left;
+  margin-left: 10rpx;
+}
+.addInvoiceListLiRightText1{
+  width: 100%;
+  float: left;
+  font-size: 28rpx;
+  color: #333;
+}
+.addInvoiceListLiRightText1 text{
+  width: 100%;
+  float: left;
+  font-size: 26rpx;
+  color: #c0c0c0;
+}
+.addInvoiceListLiRightText2{
+  float: right;
+  font-size: 30rpx;
+  color: #FE0000;
+  margin-top: 20rpx;
+}
+.addInviceBottom{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  background: #fff;
+  height: 100rpx;
+}
+.addInviceBottom text{
+  line-height: 100rpx;
+  float: left;
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 180rpx;
+}
+.addInviceBottom view{
+  width: 230rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  float: right;
+  font-size: 30rpx;
+  text-align: center;
+  color: #fff;
+  background: #FE0000;
+}
+/* 弹出 */
+/* 外面的按钮 */
+.btn{
+  width:80px;
+  height:35px;
+  background:#44b549;
+  line-height:35px;
+  text-align:center;
+  color:#fff;
+  font-size:15px;
+  margin:20px auto;
+  border-radius:100px;
+}
+ 
+/* 遮罩层 */
+.mask{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0, 0, 0, 0.5);
+    z-index:99999;
+}
+  
+/* 弹出层 */
+.modalDlg{
+    width:calc(100% - 40rpx);
+    position:fixed;
+    bottom:100rpx;
+    padding: 0 20rpx;
+    left:0;
+    right:0;
+    z-index:999999;
+    margin:0 auto;
+    background-color:#fff;
+    border-radius:10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 500rpx;
+    overflow-y: auto;
+}
+ 
+/* 弹出层里面的图片 */
+.modalDlg image{
+  width:120px;
+  height:120px;
+  margin-top:30px;
+}
+ 
+/* 弹出层里面的按钮 */
+.ok{
+  width:80px;
+  height:35px;
+  background:#44b549;
+  line-height:35px;
+  text-align:center;
+  color:#fff;
+  font-size:15px;
+  margin:20px auto;
+  border-radius:100px;
+}
+.addInvoiceModalListLi{
+  width: 100%;
+  padding-bottom: 20rpx;
+  margin-top: 20rpx;
+  border-bottom: 1px solid #f7f7f7;
+  float: left;
+}
+.addInvoiceModalListLi view{
+  font-size: 28rpx;
+  color: #333;
+  float: left;
+}
+.addInvoiceModalListLi text{
+  font-size: 26rpx;
+  color: #333;
+  float: right;
+}
+checkbox-group{
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  z-index: 11111
+}
+
+checkbox-group checkbox{
+  width: 52rpx;
+  height: 52rpx;
+  float: left;
+}
+checkbox .wx-checkbox-input {
+  width: 52rpx;
+  height: 52rpx;
+  text-align: center;
+  box-sizing: border-box;
+  border: 4rpx solid #E6E6E6;
+  border-radius:50%;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #FE0000;
+  border: 4rpx solid #FE0000;
+  padding: 5rpx;
+  box-sizing: border-box;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  width: 52rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+  
+}
+
+.addInviceBottom checkbox-group checkbox{
+  width: 26rpx;
+  height: 26rpx;
+  float: left;
+}
+.addInviceBottom checkbox .wx-checkbox-input {
+  width: 26rpx;
+  height: 26rpx;
+  text-align: center;
+  box-sizing: border-box;
+  border: 2rpx solid #E6E6E6;
+  box-shadow:0px 4px 6px 0px rgba(245,245,245,1);
+  border-radius:50%;
+}
+.addInviceBottom checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #FE0000;
+  border: 2rpx solid #FE0000;
+  box-sizing: border-box;
+}
+.addInviceBottom checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  width: 26rpx;
+  height: 26rpx;
+  line-height: 26rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+  
+}
+.checkbox{
+  float: left;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  color: #999;
+  line-height: 100rpx;
+}
+.bottom_q{
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  font-size: 28rpx;
+  border-top: 2rpx solid #f7f7f7;
+  box-sizing: border-box;
+}
+.btntb{
+  width: 130rpx;
+  height: 50rpx;
+  background-color: #FD0000;
+  border-radius: 50rpx;
+  color: #fff;
+  line-height: 50rpx;
+  text-align: center;
+  float: right;
+  margin-top: 25rpx;
+  margin-right: 20rpx;
+}
+.checkbox text{
+  margin-left: 20rpx;
+}

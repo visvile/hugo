@@ -1,0 +1,24 @@
+<navigationBar text='我的银行卡'></navigationBar>
+<form bindsubmit="formSubmit" report-submit='true'>
+  <view class="bin_inp">
+    <text class="t1">持卡人</text>
+    <input class="inp" placeholder="请输入姓名" name='name' type="text" value="{{list.name}}"></input>
+  </view>
+  <view class="bin_inp">
+    <text class="t1">银行卡号</text>
+    <input class="inp" placeholder="请输入银行卡号" name='card' value="{{list.number}}"></input>
+  </view>
+  <view class="bin_inp">
+    <text class="t1">选择开户行</text>
+    <picker class="inp" bindchange="bindPickerChange" value="{{account}}" range="{{array}}" range-key="name" name='account'>
+      <view class="picker">
+        {{array[index].name}}
+      </view>
+    </picker>
+  </view>
+  <view class="bin_inp">
+    <text class="t1">输入支行信息</text>
+    <input class="inp" placeholder="请输入支行信息" name='branch' value="{{list.remark}}"></input>
+  </view>
+  <button class="red_bt_queren" form-type='submit'>确认绑定</button>
+</form>

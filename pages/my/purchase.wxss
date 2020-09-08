@@ -1,0 +1,62 @@
+/* pages/my/records.wxss */
+.navlist{
+  height: 190rpx;
+  width: 710rpx;
+  background-color: #fff;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+}
+.nav{
+  display: flex;
+  margin-left: 20rpx;
+}
+.nav_icon{
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+}
+.nav_tetx{
+  margin-left: 20rpx;
+  height: 150rpx;
+  line-height: 50rpx;
+  margin-top: 20rpx;
+}
+.nav_more{
+  height: 50rpx;
+  width: 50rpx;
+}
+.nav_money{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500rpx;
+}
+.nav_moneys{
+  display: flex;
+}
+.nav_bq{
+  display: flex;
+  align-items: center;
+}
+.nav_biao{
+  border: 1rpx solid #FF874B;
+  color: #FF874B;
+  font-size: 22rpx;
+  margin-right: 20rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  padding: 0 12rpx;
+}
+.text1{
+  font-size: 28rpx;
+}
+.text2{
+  font-size: 30rpx;
+  color: #fe0000;
+}
+.text3{
+  font-size: 24rpx;
+  color: #999;
+}

@@ -1,0 +1,40 @@
+<!--pages/my/serci/new.wxml-->
+<navigationBar text='新品需求'></navigationBar>
+<view class="nav">
+  <view class="nav_text">
+    <view class="text1">
+      <view><text>*</text>商品名称</view>
+      <input class="input_text" placeholder="请输入商品名称" ></input>
+    </view>
+    <view class="text1">
+      <view><text>*</text>添加分类</view>
+      <input class="input_text" placeholder="请输入商品分类" ></input>
+    </view>
+    <view class="text1">
+      <view><text>*</text>商品图片</view>
+    </view>
+    <view>
+      <image class="img1" src="{{image_icon}}upload.png"></image>
+    </view>
+    <view class="text2">JPG、PNG、GIF格式，5M一下，最多9张</view>
+    <view class="text3">
+      <view>商品产地</view>
+      <input class="input_text" placeholder="请输入商品产地" ></input>
+    </view>
+  </view>
+</view>
+<view class="content">
+    <view class="text3">
+      <view>姓名</view>
+      <input class="input_text" placeholder="请输入姓名" ></input>
+    </view>
+    <view class="text3">
+      <view>电话</view>
+      <input class="input_text" placeholder="请输入电话" ></input>
+    </view>
+</view>
+<view class="content">
+      <view>备注说明</view>
+      <textarea class="input_text1" placeholder="请填写商品描述"></textarea> 
+</view>
+<view class="btn_circular">提交</view>

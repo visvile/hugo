@@ -1,0 +1,18 @@
+<navigationBar text='我的消息'></navigationBar>
+<view class="read">
+  <image src="{{image_icon}}tick.png" class="tick"></image>
+  全部标为已读
+</view>
+<view class="news_ul after">
+  <view class="li" wx:for="{{list}}" wx:key="key">
+    <view class="img">
+      <image src="{{item.img}}"></image>
+      <view class="right_red" wx:if="{{item.status == 2}}">{{item.status_data}}</view>
+    </view>
+    <view class="txt one after">
+      <text class="bt">{{item.title}}</text>
+      <text class="time">{{item.time}}</text>
+    </view>
+    <view class="txt two">{{item.nr}}</view>
+  </view>
+</view>

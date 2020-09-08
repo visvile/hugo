@@ -1,0 +1,143 @@
+
+<view>
+  <view>
+  <!-- 自定义导航图片 -->
+  <navigationBar text='每日菜场'></navigationBar>
+    <!-- 定位和搜索 -->
+    <view>
+      <image class="bg_bg2" src="../../images/icon_bg2.png"></image>
+    </view>
+  <view class="nav_botton" >
+    <view class="nav" style="top:{{navigationBarHeight + 44}}px">
+     <!-- 定位 -->
+      <view bindtap="gotoaddress" class="address"><image class="address_img" src="{{image_icon}}address.png"></image>远东路</view> 
+      <!-- 搜索 -->
+      <view class="search" bindtap="gotosearchpages">
+        <view><image class="search_img" src="{{image_icon}}search.png"></image></view>
+       <view class="prompt">每日菜场为您优选</view>
+      </view>
+    </view>
+    <!-- 定位悬浮 -->
+    <view class="navs" wx:if='{{fixTop<scrollTop}}'  style="top:{{navigationBarHeight + 44}}px">
+     <!-- 定位 -->
+      <view bindtap="gotoaddress" class="address"><image class="address_img" src="/images/weizhi.png"></image>远东路</view> 
+      <!-- 搜索 -->
+      <view class="search" bindtap="gotosearchpage">
+        <view><image class="search_img" src="{{image_icon}}search.png"></image></view>
+       <view class="prompt">每日菜场为您优选</view>
+      </view>
+    </view>
+    <!-- 新人赚享价 -->
+    <view wx:if="{{new == 0}}" class="new">
+      <image class="newimg" src="{{image_icon}}newbg.png"></image>
+      <view class="newname">新人专享</view>
+      <view class="newtext">
+         <view>首件商品1元</view>
+         <view class="gotohome">包邮到家</view>
+      </view>
+     <view class="newall">
+      <view class="newlist" wx:for="{{4}}">
+        <view class="newsimg">
+          <image class="newsimgg" src="{{image_icon}}xihongshi.png"></image>
+          <view class="newmony">
+            <view class="newmonys">新人价</view>
+            <view class="newsmoney">￥25.00</view>
+          </view>
+        </view>
+      </view>
+     <view class="newmore">更多优惠 ></view>
+     </view>
+    </view>
+    <!-- 轮播图 -->
+    <view class="carousel" wx:if="{{new == 1}}">
+      <swiper class="carouselall" indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{getcarousel}}"  wx:key="key">
+             <swiper-item >
+                <image class="carousel_img" src="{{item.img}}"></image>
+             </swiper-item>
+          </block>
+      </swiper>
+    </view>
+    
+    <!-- 分类图标 -->
+    <view class="icon">
+      <view class="icon1" wx:for="{{iconimg}}" wx:key="key">
+        <view class="iconbg"><image class="icon_img" src="{{item.image}}"></image></view>
+        <view class="icon_name">{{item.title}}</view>
+      </view>
+    </view>
+    <!-- 会员入口 -->
+    <view class="vip">
+      <image class="vip_img" src="{{image_icon}}vip.png"></image>
+    </view>
+    <!-- 活动版块 -->
+    <view class="activity">
+      <view class="activetop" >
+        <view class="activeone" bindtap="gotoghs">
+          <view class="name">
+            <view>购划算</view>
+            <image class="discount" src="{{image_icon}}tuijia.png"></image>
+          </view>
+          <view class="hint">爆款限时抢购</view>
+          <view class="shop">
+            <view class="shop_a" wx:for="{{shopping}}" wx:key="key">
+              <image class="shopimg" src="{{item}}"></image>
+              <view class="shop_text">
+                <view class="money">￥25.00</view>
+                <view class="money_a">￥30.00</view>
+              </view>
+            </view>  
+            <view class="shoptwo" wx:if="{{laseimgidnex === 0}}">
+               <view class="name">
+                  <view>晚间菜场</view>
+                  <image class="discount" src="{{image_icon}}tuijia.png"></image>
+              </view>
+              <view class="hint">特价菜9.9元3件起</view>
+              <view class="last">
+                <image class="lastimg" src="{{image_icon}}zhurou.png"></image>
+                <image class="lastimg" src="{{image_icon}}zhurou.png"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="heng"></view>
+      <view class="activefoot">
+        <view class="footer" wx:for="{{getactive}}" wx:key='key' >
+          <view class="titles">{{item.title}}</view>
+          <view class="hints">{{item.hint}}</view>
+          <view>
+            <image class="shopimg" src="{{item.img}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 领钱 -->
+    <image class="daymoney" src="{{image_icon}}lingqian.png"></image>
+    <!-- 选项卡导航 -->
+    <view class="selected" style="top:{{navigationBarHeight + 90}}px">
+      <scroll-view class="categories" scroll-x="true"  > 
+        <view class="category {{flag == item.id? 'active' : ''}}" wx:for="{{listScrollShop}}" wx:key='key' bindtap="listScroll" data-index="{{item.id}}" >
+          <text class="text1">{{item.name}}</text>
+          <text class="text2">{{item.remark}}</text>
+        </view>
+      </scroll-view>
+    </view>
+    <!-- 商品列表 -->
+    <view>
+      <view class="list">
+        <view wx:for="{{shoplist}}" class="listone" wx:key='key'>
+          <image class="listimg" src="{{item.img}}"></image>
+          <view class="listtitle">{{item.name}} <text>{{item.hint}}</text></view>
+          <view class="origin">{{item.chandi}}</view>
+          <view class="price">{{item.money}}<text>{{item.moy}}</text></view>
+          <view class="label">{{item.biaoxi}}</view>
+          <view> <image class="listmore" src="{{image_icon}}more.png"></image> </view>
+        </view>
+      </view>
+    </view>
+    </view>
+
+  </view>
+</view>

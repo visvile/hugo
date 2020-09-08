@@ -1,0 +1,52 @@
+/* components/navigationBar/navigationBar.wxss */
+.navbar {
+  width: 100%;
+  background-image: url('http://192.168.1.22:80/static/pc/icon/img_01.png');
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-size: 100% 100%;
+  z-index: 111;
+}
+.title-container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.capsule {
+  margin-left: 10px;
+  height: 30px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+}
+.capsule .capsule_view{
+  width: 45px;
+  height: 60%;
+  position: relative;
+}
+.capsule .img{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.title {
+  color: white;
+  position: absolute;
+  top: 6px;
+  left: 104px;
+  right: 104px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: absolute;
+}

@@ -1,0 +1,309 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"scopeDataCheck": false,
+		"coverView": true,
+		"es6": true,
+		"postcss": true,
+		"compileHotReLoad": false,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"autoAudits": false,
+		"newFeature": false,
+		"uglifyFileName": false,
+		"uploadWithSourceMap": true,
+		"useIsolateContext": true,
+		"nodeModules": true,
+		"enhance": false,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"showShadowRootInWxmlPanel": true,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.12.1",
+	"appid": "wx70057a310014606e",
+	"projectname": "%E6%AF%8F%E6%97%A5%E8%8F%9C%E5%9C%BA%20-%20TO%20C",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "拼团",
+					"pathName": "pages/index/groupbuy",
+					"query": "name='123456789'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "拼团详情",
+					"pathName": "pages/index/groupdetail",
+					"query": "name='123456789'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "购划算",
+					"pathName": "pages/index/effective",
+					"query": "name='123456789'",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "分类",
+					"pathName": "pages/selectclass/select",
+					"query": "name='123456789'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "优惠券",
+					"pathName": "pages/my/coupon",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "购物车",
+					"pathName": "pages/cart/cart",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "凑单页面",
+					"pathName": "pages/cart/goodlist",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "确认付款",
+					"pathName": "pages/payment/payment",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单",
+					"pathName": "pages/order/order",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "充值",
+					"pathName": "pages/my/recharge",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的消息",
+					"pathName": "pages/my/news_list",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "提现",
+					"pathName": "pages/my/withdrawal",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新品需求",
+					"pathName": "pages/my/serci/new",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的拼团",
+					"pathName": "pages/my/spell_group",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "配送信息",
+					"pathName": "pages/order/delivery",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/index/search",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单详情",
+					"pathName": "pages/order/detail",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "申请退款",
+					"pathName": "pages/order/refund",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "晚间菜场",
+					"pathName": "pages/index/market",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "特价",
+					"pathName": "pages/index/special",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "临期清仓",
+					"pathName": "pages/index/clearance",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的发票",
+					"pathName": "pages/invoice/list",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "选择发票",
+					"pathName": "pages/invoice/addInvoice",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": 23,
+					"name": "发票类型",
+					"pathName": "pages/invoice/electronicsCon",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "填写发票",
+					"pathName": "pages/invoice/fillInvoicePaper",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "浏览记录",
+					"pathName": "pages/my/records",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "常购商品",
+					"pathName": "pages/my/purchase",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "设置",
+					"pathName": "pages/my/set",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "退款详情",
+					"pathName": "pages/order/refunds",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "位置",
+					"pathName": "pages/index/address",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评价",
+					"pathName": "pages/order/evaluation",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "钱包",
+					"pathName": "pages/my/wallet",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/my/index",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新增地址",
+					"pathName": "pages/index/addressadd",
+					"query": "name='123'",
+					"scene": null
+				}
+			]
+		}
+	}
+}

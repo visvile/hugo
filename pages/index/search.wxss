@@ -1,0 +1,357 @@
+/* pages/index/search.wxss *//* pages/search/index.wxss */
+/* pages/search/index.wxss */
+page{
+  width: 100%;
+  background: #f7f7f7;
+  float: left;
+}
+button{
+  font-weight: none;
+}
+button::after{
+  border:none;
+}
+input{
+  outline:none;
+  border:none;
+  list-style: none;
+}
+.searchCon{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  background-color: #f7f7f7;
+  z-index: 111;
+}
+.searchConInput{
+  width: 630rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  float: left;
+  background: #fff;
+  border-radius: 30px;
+  margin-left: 19rpx;
+  position: relative;
+}
+.searchConInput image{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 26rpx;
+}
+.searchConInput input{
+  width: 480rpx;
+  font-size: 24rpx;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 75rpx;
+}
+.searchConBut{
+  float: right;
+  background: none;
+  font-size: 23rpx;
+  padding: 0 0;
+  text-align: center;
+  color: #FE0000;
+  /* margin-top: 20rpx; */
+}
+.searchHistory{
+  float: left;
+  margin-top: 30rpx;
+  width: 96%;
+  margin-left: 2%;
+}
+.searchHistory text{
+  float: left;
+  font-size: 26rpx;
+  color: #333;
+}
+.searchHistory image{
+  width: 34rpx;
+  height: 34rpx;
+  float: right;
+  margin-top: 2rpx;
+}
+.searchHistoryList{
+  width: 100%;
+  float: left;
+}
+.searchHistoryList text{
+  padding: 0 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  float: left;
+  margin-left: 2%;
+  color: #333;
+  font-size: 24rpx;
+  border-radius: 10px;
+  border: 1px solid #c0c0c0;
+  margin-top: 20rpx;
+}
+/* 搜索结果 */
+.searchListLianCai{
+  width: calc(96% - 40rpx);
+  float: left;
+  margin-left: 2%;
+  margin-top: 20rpx;
+  background: #fff;
+  border-radius: 10px;
+  padding: 0 20rpx;
+}
+.searchListLianCaiLi{
+  width: 100%;
+  float: left;
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #f7f7f7;
+}
+.searchListLianCaiLiTop{
+  width: 100%;
+  float: left;
+}
+.searchListLianCaiLiImg{
+  width: 138rpx;
+  height: 138rpx;
+  float: left;
+  border-radius: 10px;
+}
+.searchListLianCaiLiTetx{
+  width: calc(100% - 220rpx);
+  float: left;
+  margin-left: 20rpx;
+}
+.searchListLianCaiLiTetx_t1{
+  width: 100%;
+  float: left;
+  font-size: 26rpx;
+  color: #333;
+  margin-top: 14rpx;
+}
+.searchListLianCaiLiTetx_t2{
+  width: 100%;
+  float: left;
+  font-size: 24rpx;
+  color: #FE0000;
+  margin-top: 8rpx;
+}
+.searchListLianCaiLiTetx_t3{
+  width: 100%;
+  float: left;
+  font-size: 22rpx;
+  color: #999;
+  margin-top: 4rpx;
+}
+.searchListLianCaiLiAdd{
+  width: 40rpx;
+  height: 40rpx;
+  float: right;
+  margin-top: 80rpx;
+}
+.searchListLianCaiLiBottom{
+  width: 100%;
+  float: left;
+  margin-top: 20rpx;
+}
+.searchListLianCaiLiBottomText{
+  float: left;
+  font-size: 30rpx;
+  color: #333;
+}
+.searchListLianCaiLiBottomText text{
+  color: #686868;
+  font-size: 26rpx;
+  margin-left: 10rpx;
+}
+.searchListLianCaiLiBottomSpeed{
+  width: 100%;
+  float: left;
+  height: 34rpx;
+  border: 1px solid #FE0000;
+  border-radius: 30px;
+  background: #fff;
+  margin-top: 20rpx;
+}
+.searchListLianCaiLiBottomSpeedBack{
+  width: 30%;
+  float: left;
+  height: 34rpx;
+  background: #FE0000;
+  border-radius: 30px;
+}
+.searchBody{
+  width: 100%;
+  float: left;
+  padding-bottom: 30rpx;
+  margin-top: 100rpx;
+}
+.searchNone{
+  width: 96%;
+  float: left;
+  margin: 0 auto;
+  line-height: 100rpx;
+  color: #333;
+  font-size: 24rpx;
+  text-align: center;
+}
+.searchNone text{
+  color: #FE0000;
+  font-size: 24rpx;
+}
+/* 原来 */
+page{
+  height: 100%;
+  width: 100%;
+}
+.no_input{
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    padding-top: 100rpx;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.search_sok{
+  margin-left: 20rpx;
+}
+.serch_ss{
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.serch_sr{
+  display: flex;
+  height: 60rpx;
+  width: 630rpx;
+  border-radius: 25rpx;
+  background-color: #fff;
+  align-items: center;
+  line-height: 60rpx;
+}
+.text1{
+  font-size: 24rpx;
+  color: #333;
+  margin-left: 20rpx;
+}
+.tetx2{
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 20rpx;
+}
+.icon_1{
+  height: 30rpx;
+  width: 30rpx;
+  padding-left: 20rpx;
+}
+.search_lsdel{
+  margin-right: 20rpx;
+}
+.input_class{
+  font-size: 22rpx;
+  color: #999;
+}
+.input_sr{
+  font-size: 22rpx;
+  color: #666;
+  padding-left: 20rpx;
+}
+.ls{
+  display: flex;
+  width: 710rpx;
+  justify-content: space-between;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #333;
+  align-items: center;
+}
+.ls_dele{
+  height: 35rpx;
+  width: 35rpx;
+}
+.lslist{
+  display: flex;
+}
+.lslist text{
+  padding: 0 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  float: left;
+  margin-left: 2%;
+  color: #333;
+  font-size: 24rpx;
+  border-radius: 10px;
+  border: 1px solid #c0c0c0;
+  margin-top: 20rpx;
+}
+/* 商品 */
+.list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.listone{
+  background: #fff;
+  height: 550rpx;
+  width: 340rpx;
+  border-radius: 10rpx;
+  margin-left: 22rpx;
+  margin-top: 20rpx;
+  margin-right: 5rpx;
+  position: relative;
+}
+.listimg{
+  height: 340rpx;
+  width: 340rpx;
+}
+.listtitle{
+  font-size: 28rpx;
+  color: #333;
+  margin-left: 27rpx;
+}
+.listtitle text{
+  font-size: 24rpx;
+  margin-left: 10rpx;
+}
+.origin{
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 26rpx;
+  margin-top: 15rpx;
+}
+.price{
+  font-size: 30rpx;
+  color: #FD0000;
+  margin-left: 27rpx;
+  margin-top: 15rpx;
+}
+.price text{
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 10rpx;
+  text-decoration: line-through;
+}
+.label{
+  border: 1rpx solid #FF874b;
+  font-size: 22rpx;
+  color: #FF874b;
+  width: 80rpx;
+  height: 34rpx;
+  text-align: center;
+  margin-left: 28rpx;
+  margin-top: 19rpx;
+}
+.listmore{
+  height: 50rpx;
+  width: 50rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom: 50rpx;
+}

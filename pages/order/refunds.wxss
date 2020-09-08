@@ -1,0 +1,194 @@
+.refund{
+  height: 300rpx;
+  width: 710rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  border-radius: 10rpx;
+}
+.text{
+  font-size: 28rpx;
+  color: #333;
+  margin-left: 20rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.text1{
+  font-size: 28rpx;
+  color: #333;
+  margin-left: 20rpx;
+  line-height: 60rpx;
+}
+/* 地址 */
+.nav{
+  height: 150rpx;
+  width: 710rpx;
+  background-color: #fff;
+  margin-left: 20rpx;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+}
+.nav_top{
+  display: flex;
+  margin-left: 20rpx;
+  padding-top: 20rpx;
+  font-size: 28rpx;
+  justify-content: space-between;
+}
+.icon_10{
+  height: 30rpx;
+  width: 30rpx;
+  margin-left: 20rpx;
+  margin-top: 37rpx;
+}
+.nav_name{
+  display: flex;
+  color: #333;
+  font-size: 28rpx;
+}
+.nav_bottom{
+  display: flex;
+  padding-top: 20rpx;
+}
+.tetx2{
+  margin-left: 20rpx;
+  line-height: 40rx;
+  margin-top: 10rpx;
+}
+/* 进度条 */
+.jindutiao{
+  width: 100%;
+  height: 80rpx;
+  float: left;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.all_group{
+  width: 100%;
+  height: 80rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.green_x{
+  width: 75%;
+  height: 4rpx;
+  background-color: rgb(92,199,117);
+  top: 10rpx;
+  left: 12.5%;
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+}
+.green_x .in{
+  width: 100%;
+  height: 100%;
+  background-color: #999;
+}
+.jindutiao .group{
+  width: 25%;
+  float: left;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  padding-top: 6rpx;
+  box-sizing: border-box;
+  z-index: 111;
+}
+.jindutiao .group .icon{
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background-color: rgb(92,199,117);
+  margin: 0 auto;
+}
+.jindutiao .group .icon.black{
+  background-color: #999;
+}
+.jindutiao .group .icon1{
+  width: 24rpx;
+  height: 24rpx;
+  background-size: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 111;
+  background-color: #fff;
+}
+.jindutiao .group .title{
+  font-size: 24rpx;
+  color: #656565;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* 商品信息 */
+.shop{
+  width: 710rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  margin-bottom: 200rpx;
+}
+.shop_al{
+  margin-left: 20rpx;
+  padding-bottom: 20rpx;
+}
+.shop_mc{
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #f7f7f7;
+  height: 66rpx;
+  line-height: 66rpx;
+}
+.shop_xx{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.img_01{
+  height: 150rpx;
+  width: 150rpx;
+  margin-right: 20rpx;
+}
+.shop_text01{
+  margin-top: 25rpx;
+  font-size: 28rpx;
+}
+.shop_je{
+  display: flex;
+  margin-top: 46rpx;
+  align-items: center;
+}
+.shop_sl{
+  margin-left: 242rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+.shop_xj{
+  font-size: 30rpx;
+  color: #fe0000;
+}
+.shop_yj{
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 20rpx;
+  text-decoration:line-through;
+}
+.service{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 24rpx;
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.icon_service{
+  height: 32rpx;
+  width: 32rpx;
+  padding-right: 20rpx;
+}

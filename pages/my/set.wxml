@@ -1,0 +1,20 @@
+<!--pages/my/set.wxml-->
+<navigationBar text='设置'></navigationBar>
+<view class="set">
+  <view class="jingying">
+    <view>经营证照</view>
+    <view><image class="set_icon" src="/images/right.png"></image></view>
+  </view>
+ <view class="jingying">
+    <view>用户协议</view>
+    <view><image class="set_icon" src="/images/right.png"></image></view>
+  </view>
+  <view class="jingying">
+    <view>隐私政策</view>
+    <view><image class="set_icon" src="/images/right.png"></image></view>
+  </view>
+  <view class="jingying">
+    <view>资质规则</view>
+    <view><image class="set_icon" src="/images/right.png"></image></view>
+  </view>
+</view>

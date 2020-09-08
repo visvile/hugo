@@ -1,0 +1,33 @@
+<view>
+  <navigationBar text='满减购物'></navigationBar>
+<van-dropdown-menu active-color="#fe0000">
+  <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+  <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+  <van-dropdown-item value="{{ value3 }}" options="{{ option3 }}" />
+</van-dropdown-menu>
+</view>
+
+<!-- 横向滚动菜单 -->
+  <view>
+    <scroll-view class="categories" scroll-x="true">
+      <view class="category {{flag == item.id? 'active' : ''}}" wx:for="{{listScroll}}" wx:key='key' bindtap="listScroll" data-index="{{index}}" >
+        <text class="text1">{{item.name}}</text>
+      </view>
+    </scroll-view>
+  </view> 
+<!-- 商品列表 -->
+    <view>
+      <view class="list">
+        <view wx:for="{{shoplist}}" class="listone" wx:key='key'>
+          <image class="listimg" src="{{item.img}}"></image>
+          <view class="listtitle">{{item.name}} <text>{{item.hint}}</text></view>
+          <view class="origin">{{item.chandi}}</view>
+          <view class="price">{{item.money}}<text>{{item.moy}}</text></view>
+          <view class="label">{{item.biaoxi}}</view>
+          <view> <image class="listmore" src="{{image_icon}}more.png"></image> </view>
+        </view>
+      </view>
+
+    </view>
+
+

@@ -1,0 +1,23 @@
+/* pages/index/groupdetail.wxss */
+swiper {
+  height: 600rpx;
+}
+.detail_paly{
+  height: 200rpx;
+  width: 710rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.footer_money{
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  margin-top: 10rpx;
+}
+.fotter_hint{
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+}

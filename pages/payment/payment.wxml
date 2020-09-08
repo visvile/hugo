@@ -1,0 +1,136 @@
+<!--pages/payment/payment.wxml-->
+
+<page-meta page-style="overflow-y:{{isPage}}">
+
+<view>
+<navigationBar text='确认付款'></navigationBar>
+  <view class="select">
+      <view class="text {{flag == item.id? 'active' : ''}}" wx:for="{{listsingle}}" wx:key='key' bindtap="listtopScroll" data-index="{{index}}">
+        <view class="text3" wx:if='{{item.status === 0}}'>
+          <view> 一刻达</view>
+        </view>
+        <view class="text3" wx:if='{{item.status === 1}}'>
+          <view>到店自取</view>
+        </view>
+      </view>
+  </view>
+  <!-- 地址 一刻达-->
+    <view class="address" wx:if='{{dz === 0}}'>
+    <view class="address_phone">
+      <view bindtap="gotoselect" >
+       <view class="address_text">园东路社区2楼</view>
+       <view class="address_name">成成（女士） 18686442641</view>
+    </view>
+    <view>></view>
+    </view>
+      <view class="address_time">
+        <view>立即送出</view>
+        <view class="address_times">
+         <view class="address_timess">大约13：14送达</view>
+         <view>></view>
+        </view>
+      </view>
+    </view>
+
+
+    <!-- 地址 到店自取 -->
+      <view class="addresss"  wx:else='{{dz === 1}}'>
+        <view class="address_phone">
+          <view>
+          <view class="address_text">自取点：园东路2楼  丰农超市</view>
+          <view class="address_name">联系方式： 18686442641</view>
+        </view>
+        <view>></view>
+        </view>
+      </view>
+      <view class="address_lx">
+          <view>
+            <view>收货人： <text>成成</text></view>
+            <view>联系方式： <text>4567468</text></view>
+          </view>
+      </view>
+        <!-- 弹出层 -->
+<!-- 商品信息 -->
+  <view class="shopdetail">
+    <view class="shoptitle">
+       <view>商品信息</view>
+       <view class="shop_ykd">一刻达</view>
+    </view>
+ <view class="shop">
+   <view class="shopping" wx:for="{{getshopping}}" wx:key='key'>
+        <image class="shop_img" src="{{item.img}}"></image>
+        <view>
+          <view class="shop_texts">{{item.title}}</view>
+          <view class="shop_prog">
+            <view class="shop_progress">
+              <view class="shop_bar"></view>
+            </view>
+          </view>
+          <view class="shop_textss">
+            <view class="moneys">{{item.moeney}}</view>
+            <view class="moneys_a">{{item.monyes}}</view>
+            <view class="number_a">X1</view>
+          </view>
+      </view>
+ </view>
+    <view class="commodity">
+      <view>优惠券</view>
+      <view>优惠券￥20 ></view>
+    </view>
+    <view class="commodity">
+      <view>满减</view>
+      <view class="commodity_je">￥-30.00</view>
+    </view>
+    <view class="commodity">
+      <view>运费</view>
+      <view class="commodity_je">￥30.00</view>
+    </view>
+    <view class="commditys">
+      <view class="commdity_xj">小计：<text>￥25.00</text></view>
+       <view>共<text>3</text>件</view>
+    </view>
+  </view>
+  </view>
+    <view class="prompt">
+      <view>温馨提示:</view>
+      <view class="prompt_tis">您正在支付 最终解释权归每日菜场所有</view>
+  </view>
+  <view class="zf">
+    <view>待支付 <text>￥200.65</text></view>
+    <view class="zf_zf">去支付</view>
+  </view>
+</view>
+  <!-- 弹出层 -->
+  <view hidden="{{hiddenName}}">
+    <view class="mask_address" bindtap="showMask"></view>
+     <view class="mask_dcc">
+        <view class="mask_ssdz">选择收货地址</view>
+        <view class="vi_inp with_inp">
+          <radio-group bindchange="radiochange" class="radio_group">
+            <radio value='001' checked>
+            <view class="mask_bj">
+              <view class="mask_dz">
+                <view>园东路社区</view>
+                <view class="mask_name">张三先生<text>18898987859</text></view>
+              </view>
+               <view><image class="mask_bi" src="{{image_icon}}pen.png"></image></view>
+              </view>
+            </radio>
+            <radio value='002'>
+            <view class="mask_bj">
+              <view class="mask_dz">
+                <view>园东路社区</view>
+                <view class="mask_name">张三先生<text>18898987859</text></view>
+              </view>
+              <view><image class="mask_bi" src="{{image_icon}}pen.png"></image></view>
+            </view>
+            </radio>
+          </radio-group>
+        </view>
+         <view class="mask_xz">
+          <image class="mask_more" src="{{image_icon}}more.png"></image>
+          <view>新增收货地址</view>
+         </view>
+    </view>
+</view>
+</page-meta>

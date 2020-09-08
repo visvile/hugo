@@ -1,0 +1,60 @@
+<!--pages/index/groupdetail.wxml-->
+
+  <navigationBar text='拼团详情'></navigationBar>
+  <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{getcarousel}}"  wx:key="key">
+      <swiper-item >
+          <image class="detail_img" src="{{item.img}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="detail_heng">
+    <view class="detail_text">￥0.70/斤<text>原价￥1.20/斤</text></view>
+    <view class="detail_hint">已累计拼成450份</view>
+    <view class="detail_left">
+      <view>还剩<text>18</text>份成团</view>
+    </view>
+  </view>
+  <view class="detail_label">
+    <view class="detail_labels">
+      <view class="text">黄心土豆 - 1两以上（大）</view>
+      <view class="texts">黄心土豆又大又圆还好 吃过买过不后悔 看过路过瞧一瞧 看一看 保证吃了还想吃 买了还想</view>
+    </view>
+  </view>
+  <view class="delivery">配送<text>23:00前下单，预计23：15送达</text></view>
+  <view class="detail_shop">
+    <view class="detail_name">商品详情</view>
+    <view class="detail_shopp">
+      <view>产地 <text>山东</text></view>
+      <view>等级 <text>SSSS</text></view>
+      <view>品牌 <text>其他</text></view>
+      <view>包装 <text>无</text></view>
+      <view>储藏 <text>冷藏</text></view>
+    </view>
+  </view>
+  <view class="detail_paly"></view>
+  <view class="detail_imgs">
+    <image class="detail_imgpng" src="{{image_icon}}xihongshi.png"></image>
+  </view>
+  <view class="detail_rule">
+    <image class="detail_rules" src="{{image_icon}}xihongshi.png"></image>
+  </view>
+  <view class="detail_footer">
+    <view class="detail_all">
+      <image class="detail_icon" src="{{image_icon}}home.png"></image>
+      <view>回首页</view>
+    </view>
+    <view class="detail_foot">
+      <view class="detail_button">
+        <view class="footer_money">￥95.00</view>
+        <view class="fotter_hint">单独购买</view>
+      </view>
+      <view class="detail_buttons">
+        <view class="footer_money">￥90.00</view>
+        <view class="fotter_hint">一键开团</view>
+      </view>
+    </view>
+
+  </view>
+

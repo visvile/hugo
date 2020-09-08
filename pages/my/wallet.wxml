@@ -1,0 +1,40 @@
+<navigationBar text='钱包'></navigationBar>
+<view class="top_or">
+	<image class="image" src="/images/money_bg.png">
+	</image>
+	<view class="content">
+		<view class="one">
+			<view class="left">余额（元）</view>
+			<view class="middle">{{list.balance}}</view>
+			<view class="right" bindtap="gotowithdrawal">充值</view>
+		</view>
+		<view class="one two" bindtap="gotoaddwallet">
+			<view class="left">
+				<text class="t1">银行</text>
+				<text class="t2" wx:if="{{wallet_status == 2}}">添加银行卡(仅限一张）</text>
+				<text class="t2" wx:if="{{wallet_status == 1}}" style="color:#fff">{{list.open_bank}} 储蓄卡</text>
+			</view>
+			<view class="middle">
+				<text class="t1">卡号</text>
+				<text class="t2" wx:if="{{wallet_status == 2}}">******************</text>
+				<text class="t2" wx:if="{{wallet_status == 1}}" style="color:#fff">{{list.number}}</text>
+			</view>
+			<image class="right" src="/images/pen.png"></image>
+		</view>
+	</view>
+</view>
+<!-- 菜单 -->
+<view class="cou_top after">
+  <view class="top {{item.id == index1 ? 'active' : ''}}" wx:for="{{couTop}}" data-index1="{{index}}" wx:key="key" catchtap="clickTab">
+    <text class="t1">{{item.name}}</text>
+  </view>
+</view>
+<!-- 列表 -->
+ <view class="none">{{none}}</view>
+<view class="ul">
+  <view class="li" wx:for="{{listScroll}}" wx:key="key">
+    <view class="time">{{item.addtime}}</view>
+    <view class="price">￥{{item.price}}</view>
+    <view class="status">{{item.title}}</view>
+  </view>
+</view>

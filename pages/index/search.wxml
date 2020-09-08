@@ -1,0 +1,61 @@
+<!--pages/index/search.wxml-->
+  <navigationBar text='搜索'></navigationBar>
+<!--搜索-->
+  <!--搜索-->
+<view class="searchCon">
+  <view class="searchConInput">
+    <image src="{{image_icon}}icon_6.png"></image>
+    <input type="text" placeholder="情输入您要搜索的关键字" bindinput="inputBin" value="{{search_ss}}"></input>
+  </view>
+  <button style="width:11%;" wx:if="{{searchShow == 1}}" class="searchConBut" bindtap="searchS">搜索</button>
+  <button style="width:11%; color:#333" class="searchConBut" wx:if="{{searchHide == 1}}" bindtap="searchHide">取消</button>
+</view>
+<view class="no_input" style="display:{{no_input}}">
+  <!-- 历史搜索 -->
+  <view class="searchHistory" style="display:{{searchHistory}}">
+    <view class="searchHistoryTit">
+      <text>历史搜索</text>
+      <image src="{{image_icon}}icon_17.png" bindtap="search_lsdel"></image>
+    </view>
+    <view class="searchHistoryList">
+      <text wx:for="{{arr2}}" wx:key="key" id="{{item}}" bindtap="search_url">{{item}}</text>
+    </view>
+  </view>
+  <!-- 推荐搜索 -->
+  <view class="searchHistory">
+    <view class="searchHistoryTit">
+      <text>推荐搜索</text>
+      <!-- <image src="{{image_icon}}icon_17.png"></image> -->
+    </view>
+    <view class="searchHistoryList">
+      <text wx:for="{{recommend}}" wx:key="key" id="{{item.name}}" bindtap="search_url">{{item.name}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="searchBody">
+  <!-- 搜索结果 -->
+  <view class="searchListLianCai">
+     <view class="searchListLianCaiLi" wx:for="{{goods_list}}" wx:key="key" id="{{item.id}}" bindtap="details">
+      <view class="searchListLianCaiLiTop">
+        <navigator><image class="searchListLianCaiLiImg" src="{{item.image}}"></image></navigator>
+        <view class="searchListLianCaiLiTetx">
+          <text class="searchListLianCaiLiTetx_t1">{{item.goods_name}}</text>
+          <text class="searchListLianCaiLiTetx_t2">当前价格：￥{{item.price}}/{{item.unit}}</text>
+          <text class="searchListLianCaiLiTetx_t3">最低价格：￥{{item.least_price}}/{{item.unit}}</text>
+        </view>
+        <image class="searchListLianCaiLiAdd" src="{{image_icon}}icon_7.png"></image>
+      </view>
+      <view class="searchListLianCaiLiBottom" wx:if="{{item.is_pin ==1}}">
+        <view class="searchListLianCaiLiBottomText">价格动态<text>已售{{item.buy}}{{item.unit}}  再累计{{item.num - item.buy}}{{item.unit}}价格可达￥{{item.present_price}}/{{item.unit}}</text></view>
+        <view class="searchListLianCaiLiBottomSpeed">
+          <view class="searchListLianCaiLiBottomSpeedBack" style="width:{{item.buy / item.num}}%"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="searchNone">
+    没有找到相关商品？
+    <text>告诉我们</text>
+  </view> 
+</view>

@@ -1,0 +1,18 @@
+<!--我的发票-->
+  <navigationBar text='我的发票'></navigationBar>
+<view class="myInvoice">
+  <view class="myInvoiceLi" wx:for="{{list}}" wx:key="key" bindtap="details" id="{{item.id}}">
+    <text class="myInvoiceLiT1">{{item.title}}</text>
+    <text class="myInvoiceLiT2">发票内容：{{item.content}}</text>
+    <text class="myInvoiceLiT2">发票类型：{{item.type_name}}</text>
+    <text class="myInvoiceLiT2">开票项目：{{item.contents}}</text>
+    <view class="myInvoiceLiT3">
+      <view class="myInvoiceLiT3_t1">发票金额<text>￥{{item.price}}</text></view>
+      <view class="myInvoiceLiT3_t2">待邮寄</view>
+    </view>
+  </view>
+</view>
+
+
+<navigator url="./addInvoice"><image src="/images/icon_17.png" mode="widthFix" class="listAdd"></image></navigator>
+<!-- <view class="no_more">没有更多了</view> -->

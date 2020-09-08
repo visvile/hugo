@@ -1,0 +1,48 @@
+<view>
+<navigationBar text='我的订单'></navigationBar>
+<!-- 选项卡 -->
+<view>
+<view class="cou_top after">
+  <view class="top {{item.id == index1 ? 'active' : ''}}" wx:for="{{couTop}}" data-index1="{{index}}" wx:key="key" bindtap="top">
+    <view class="t1">{{item.name}}</view>
+  </view>
+</view>
+<!-- 没有订单的显示 -->
+<view class="no_group" wx:if="{{group != 1}}">
+  <image class="img" src="{{image_icon}}no_group.png"></image>
+  <view class="tips">您还有没订单哦 快去下单吧！</view>
+  <view class="btn_circular">去下单</view>
+</view>
+<!-- 有单子 -->
+<view class="spell_ul">
+  <view class="li" wx:for="{{list}}" wx:key="key">
+    <view class="bt">
+      <image class="icon" src="{{image_icon}}hui_time.png"></image>
+      <view class="time">{{item.time}}</view>
+      <view class="status_data">{{item.status_data}}</view>
+    </view>
+    <view class="nr">
+      <image wx:for="{{item.images}}" wx:key="key" src="{{item}}" class="img"></image>
+      <text class="all_num">共{{item.images_num}}件商品</text>
+    </view>
+    <view class="bottom">
+      <view class="left">实付:
+        <text class="price">￥{{item.price}}</text>
+      </view>
+      <view wx:for="{{item.rightstatus}}" wx:key='key'>
+        <view class="right" wx:if="{{item.statusimg == 0}}">取消订单</view>
+        <view class="right rights" wx:if="{{item.statusimg == 1}}">去支付</view>
+        <view class="right" wx:if="{{item.statusimg == 2}}">已退款</view>
+        <view class="right" wx:if="{{item.statusimg == 3}}">评价</view>
+        <view class="right" wx:if="{{item.statusimg == 4}}">查看详情</view>
+        <view class="right" wx:if="{{item.statusimg == 5}}">催货</view>
+        <view class="right" wx:if="{{item.statusimg == 6}}">查看物流</view>
+        <view class="right" wx:if="{{item.statusimg == 7}}">确认收货</view>
+        <view class="right" wx:if="{{item.statusimg == 8}}">再次购买</view>
+        <view class="right" wx:if="{{item.statusimg == 9}}">删除订单</view>
+      </view>
+    </view>
+    </view>
+  </view>
+</view>
+</view>

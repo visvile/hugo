@@ -1,0 +1,70 @@
+<!--pages/index/effective.wxml-->
+<view>
+<navigationBar text='购划算'></navigationBar>
+   <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <swiper-item wx:for="{{3}}">
+      <view class="shopping" wx:for="{{getshopping}}">
+        <image class="shop_img" src="{{item.img}}"></image>
+        <view>
+          <view class="shop_texts">{{item.title}}</view>
+          <view class="shop_prog">
+            <view class="shop_progress">
+              <view class="shop_bar"></view>
+            </view>
+            <view class="shop_labers">
+              <view class="shop_label">一刻达</view>
+              <view class="shop_label">满30减3</view>
+            </view>
+          </view>
+          <view class="shop_textss">
+            <view class="moneys">{{item.moeney}}</view>
+            <view class="moneys_a">{{item.monyes}}</view>
+          </view>
+        </view>
+        <view class="group_grab">
+          <view>马上抢 ></view>
+        </view>
+      </view>
+    </swiper-item>
+   </swiper>
+    <view>
+      <scroll-view class="categories" scroll-x="true">
+        <view class="category {{flag == item.id? 'active' : ''}}" wx:for="{{listScroll}}" wx:key='key' bindtap="listScroll" data-index="{{index}}" >
+          <text class="text2">{{item.name}}</text>
+        </view>
+      </scroll-view>
+    </view> 
+    <!-- 列表 -->
+    <view class="shopping" wx:for="{{getshopping}}">
+        <image class="shop_img" src="{{item.img}}"></image>
+        <view>
+          <view class="shop_texts">{{item.title}}</view>
+          <view class="shop_prog">
+            <view class="shop_progress">
+              <view class="shop_bar"></view>
+            </view>
+            <view class="shop_labers">
+              <view class="shop_label">一刻达</view>
+              <view class="shop_label">满30减3</view>
+            </view>
+          </view>
+          <view class="shop_textss">
+            <view class="moneys">{{item.moeney}}</view>
+            <view class="moneys_a">{{item.monyes}}</view>
+          </view>
+        </view>
+        <view class="group_grab">
+          <view>马上抢 ></view>
+        </view>
+      </view>
+      <!-- 活动规则 -->
+    <view class="active_imgs">
+      <image class="active_img" src="{{image_icon}}active_rule.png"></image>
+    </view>
+    <view class="active_footer">
+      <view class="active_rules" wx:for="{{active_rules}}" wx:key='key'>
+        <view>dshdffhisrhoew富哦热帖瑞如今偶尔偶然荷藕我ueorheoi伛广东省法规特人体退热贴也太热</view>
+      </view>
+   </view>
+</view>

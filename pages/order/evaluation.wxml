@@ -1,0 +1,35 @@
+<!--pages/order/evaluation.wxml-->
+<navigationBar text='评价'></navigationBar>
+<view class="spell_ul">
+  <view class="li" >
+   <view class="bt">
+      <image class="icon" src="/images/lele.png"></image>
+      <view class="time">2020-02-31</view>
+    </view>
+    <view class="nr">
+      <image wx:for="{{3}}" wx:key="key" src="/images/lele.png" class="img"></image>
+      <text class="all_num">共1件商品</text>
+    </view>
+  </view>
+  </view>
+  <view class="comment_btn">
+    <view>
+      <view class="statr">
+         <image wx:for='{{statr_icon}}'  class="statr_icon" src="{{item.img}}" wx:key='key'></image>
+      </view>
+    </view>
+    <view  class="comment_btns">
+      <view wx:for='{{riderCommentList}}' wx:key='key' bindtap="checkboxChange"  data-index1="{{index}}"  class="btn {{item.id == index1 ? 'active' : ''}}">
+        <view class="name" bindtap="chenkboxBiao">{{item.name}}</view>
+      </view>
+    </view>
+	</view>
+  <view class="other">
+    <view class="text1">其他建议</view>
+    <view class="text3">
+       <textarea class="text2" placeholder="请输入评价内容"></textarea>
+    </view>
+  </view>
+  <view class="sumbin">提交</view>
+
+  

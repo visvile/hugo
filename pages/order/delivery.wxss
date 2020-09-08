@@ -1,0 +1,169 @@
+/* page{
+  height: 100%;
+  width: 100%;
+} */
+.nav{
+  height: 150rpx;
+  width: 710rpx;
+  background-color: #fff;
+  margin-left: 20rpx;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+}
+.nav_top{
+  display: flex;
+  margin-left: 20rpx;
+  padding-top: 20rpx;
+  font-size: 28rpx;
+  justify-content: space-between;
+}
+.icon_12{
+  height: 30rpx;
+  width: 30rpx;
+  margin-right: 20rpx;
+  margin-top: 35rpx;
+}
+.incon_11{
+  height: 28rpx;
+  width: 28rpx;
+}
+.nav_left{
+  display: flex;
+}
+.ps_psy{
+  margin-left:50rpx;
+  margin-top: 20rpx;
+}
+.ps_psy text{
+  color: #192BAF;
+  margin-left: 20rpx;
+}
+.tetx1{
+  margin-left: 20rpx;
+}
+.icon_10{
+  height: 30rpx;
+  width: 30rpx;
+  margin-left: 20rpx;
+  margin-top: 37rpx;
+}
+.nav_name{
+  display: flex;
+  color: #333;
+  font-size: 28rpx;
+}
+.nav_bottom{
+  display: flex;
+  padding-top: 20rpx;
+}
+.tetx2{
+  margin-left: 20rpx;
+}
+.nav_text3{
+  margin-top: 20rpx;
+}
+.name_tetx4{
+  margin-left: 20rpx;
+}
+/* 商品信息 */
+.shop{
+  height: 490rpx;
+  width: 710rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+}
+.shop_al{
+  padding-top: 20rpx;
+  margin-left: 20rpx;
+  border-bottom: 1rpx solid f7f7f7;
+  padding-bottom: 20rpx;
+}
+.shop_mc{
+  font-size: 28rpx;
+}
+.shop_xx{
+  display: flex;
+  margin-bottom: 20rpx;
+
+}
+.img_01{
+  height: 150rpx;
+  width: 150rpx;
+  margin-right: 20rpx;
+}
+.shop_text01{
+  margin-top: 25rpx;
+  font-size: 28rpx;
+}
+.shop_je{
+  display: flex;
+  margin-top: 46rpx;
+  align-items: center;
+}
+.shop_sl{
+  margin-left: 242rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+.shop_xj{
+  font-size: 30rpx;
+  color: #fe0000;
+}
+.shop_yj{
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 20rpx;
+  text-decoration:line-through;
+}
+/* 订单编号 */
+.ddbh{
+  /* height: 170rpx; */
+  width: 710rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  color: #999;
+  line-height: 50rpx;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+.xinxi{
+  display: flex;
+  justify-content: space-between;
+}
+.xinxi_je{
+  margin-right: 20rpx;
+  font-size: 24rpx;
+  color: #333;
+}
+.sfk{
+  text-align: right;
+}
+.sfk text{
+  font-size: 30rpx;
+  color: #fe0000;
+  margin-right: 20rpx;
+}
+.agile{
+  height: 98rpx;
+  width: 750rpx;
+  background-color: #fff;
+  margin-top: 64rpx;
+  text-align: right;
+  line-height: 98rpx;
+}
+.tetx11{
+  border: #fe0000 solid 1rpx;
+  color: #fe0000;
+  padding: 18rpx 20rpx; 
+  border-radius: 30rpx;
+  font-size: 24rpx;
+  margin-right: 20rpx;
+
+}

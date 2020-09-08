@@ -1,0 +1,329 @@
+page{
+  margin: 0 20rpx;
+  height: 100%;
+  /* overflow: hidden; */
+}
+.select{
+  display: flex;
+  width: 710rpx;
+  margin-top: 20rpx;
+  justify-content: space-between;
+}
+.select .text{
+  height: 80rpx;
+  width: 346rpx;
+  background-color: #fff;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #333;
+}
+.select .text.active{
+  color: #fe0000;
+}
+.address{
+  height: 190rpx;
+  width: 710rpx;
+  background-color: #fff;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+.addresss{
+  height: 130rpx;
+  width: 710rpx;
+  background-color: #fff;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+.address_phone{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20rpx;
+  align-items: center;
+  height: 107rpx;
+}
+.address_text{
+  font-size: 28rpx;
+  color: #333;
+  padding-top: 20rpx;
+  height: 26rpx;
+  text-align: left;
+}
+.address_name{
+  font-size: 24rpx;
+  color: #999;
+  padding-top: 20rpx;
+  border-bottom: 1rpx solid #f7f7f7;
+}
+.address_time{
+  display: flex;
+  font-size: 24rpx;
+  color: #999;
+  justify-content: space-between;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 10rpx;
+}
+.address_times{
+  display: flex;
+  margin-right: 20rpx;
+}
+.address_timess{
+  margin-right: 20rpx;
+}
+.shopdetail{
+  width: 710rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}
+.shoptitle{
+  font-size: 28rpx;
+  display: flex;
+  color: #333;
+  justify-content: space-between;
+  margin: 0 20rpx;
+  border-bottom: solid 1rpx #f7f7f7;
+  padding-bottom: 20rpx;
+}
+.shop_ykd{
+  font-size: 24rpx;
+  color: #656565;
+}
+.shop{
+  margin-bottom: 20rpx;
+}
+.shopping{
+  position: relative;
+}
+.shop_texts{
+  margin-top: 50rpx;
+}
+.number_a{
+  font-size: 28rpx;
+  color: #999;
+  right: 20rpx;
+  position: absolute;
+}
+.commodity{
+  display: flex;
+  font-size: 24rpx;
+  color: #333;
+  justify-content: space-between;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  line-height: 70rpx;
+}
+.commodity_je{
+  font-size: 24rpx;
+  color: #999;
+}
+.commditys{
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 24rpx;
+  color: #999;
+  align-items: center;
+}
+.commdity_xj{
+  font-size: 24rpx;
+  color: #333;
+  margin-left: 20rpx;
+}
+.commdity_xj text{
+  font-size: 30rpx;
+  color: #fe0000;
+  margin-right: 20rpx;
+}
+.prompt{
+  height: 150rpx;
+  width: 710rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #333;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+.prompt_tis{
+  font-size: 24rpx;
+  color: #999;
+  padding-top: 20rpx;
+}
+.zf{
+  font-size: 24rpx;
+  color: #999;
+  display: flex;
+  height: 95rpx;
+  width: 750rpx;
+  background-color: #fff;
+  bottom: 0;
+  margin-top: 141rpx;
+  margin-left: -20rpx;
+  padding-left: 20rpx;
+  line-height: 95rpx;
+}
+.zf text{
+  font-size: 30rpx;
+  color: #333;
+}
+.zf_zf{
+  font-size: 24rpx;
+  color: #fff;
+  background-color: #fe0000;
+  text-align: center;
+  width: 232rpx;
+  margin-left: 300rpx;
+}
+.address_lx{
+  font-size: 24rpx;
+  color: #333;
+  line-height: 40rpx;
+  height: 110rpx;
+  width: 710rpx;
+  background-color: #fff;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+}
+.address_lx text{
+  font-size: 24rpx;
+  color: #999;
+}
+/* 弹出层 */
+.mask_address{
+  height: 100%;
+  width: 750rpx;
+  background-color: #333;
+  opacity: 0.5;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.mask_dcc{
+  height: 500rpx;
+  width: 750rpx;
+  z-index: 999;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+.mask_ssdz{
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+  padding-top: 40rpx;
+}
+/* danxuan */
+.vi_inp{
+  width: 710rpx;
+  height: 100rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  position: relative;
+  border-radius:10rpx
+}
+.vi_inp .t1{
+  font-size: 30rpx;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25rpx;
+}
+.vi_inp .input{
+  font-size: 24rpx;
+  line-height: 100rpx;
+  height: 100rpx;
+  margin-left:20rpx;
+}
+.with_inp .t2{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20rpx;
+  color: #FE0000;
+  font-size: 24rpx;
+  line-height: 100rpx;
+}
+.service{
+  font-size: 24rpx;
+  color: #999;
+  line-height: 64rpx;
+  padding-left: 22rpx;
+}
+.radio_group{
+  height: 50rpx;
+  padding-left: 20rpx;
+}
+.radio_group radio{
+  font-size: 28rpx;
+  line-height: 50rpx;
+  margin-right: 50rpx;
+  display: flex;
+}
+.mask_dz{
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+}
+.mask_name{
+  font-size: 24rpx;
+  color: #999;
+}
+.mask_bj{
+  display: flex;
+}
+.mask_bi{
+    height: 26rpx;
+    width: 26rpx;
+    position: absolute;
+    right: 0;
+    margin-right: 20rpx;
+    margin-top: 30rpx;
+}
+/* 未选中的 背景样式 */
+.radio_group radio .wx-radio-input{ 
+  height: 30rpx; 
+  width: 30rpx;
+  border-radius: 50%;
+  background: transparent;
+  box-sizing: border-box;
+  border: 2rpx solid #999;
+}
+/* 选中后的 背景样式 */
+.radio_group radio .wx-radio-input.wx-radio-input-checked{
+  border: 2rpx solid #FE0000;
+  background-color: transparent;
+}
+/* 选中后的 对勾样式 */
+.radio_group radio .wx-radio-input.wx-radio-input-checked::before{
+ border-radius: 50%;
+ width: 20rpx; 
+ height: 20rpx;
+ line-height: 20rpx;
+ text-align: center;
+ font-size:20rpx; 
+ color:transparent;
+ background: #FE0000;
+}
+/* 新增 */
+.mask_xz{
+  font-size: 28rpx;
+  color: #FE0000;
+  margin-top: 250rpx;
+  align-items: center;
+  display: flex;
+  margin-left: 260rpx;
+}
+.mask_more{
+  height: 38rpx;
+  width: 38rpx;
+  align-items: center;
+  margin-right: 20rpx;
+}

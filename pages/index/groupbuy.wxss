@@ -1,0 +1,63 @@
+/* pages/index/groupbuy.wxss */
+.topimg{
+  width: 710rpx;
+  height: 300rpx;
+}
+.luimg{
+  height: 300rpx;
+  width: 710rpx;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+}
+.style_name{
+  display: flex;
+  justify-content: center;
+  margin-top: 70rpx;
+  align-items: center;
+  margin-bottom: 50rpx;
+}
+.style_left{
+  height: 25rpx;
+  width: 25rpx;
+  color: #333;
+}
+.style_text{
+  font-size: 36rpx;
+  color: #FD0000;
+  font-family:SimHei;
+  font-weight: bold;
+  
+}
+.style_right{
+  height: 25rpx;
+  width: 25rpx;
+  color: #333;
+}
+.shopping{
+  margin-bottom: 20rpx;
+}
+.shop_prog{
+  display: flex;
+  margin-left: 25rpx;
+  margin-top: 38rpx;
+  align-items: center;
+}
+.shop_progress{
+  height: 20rpx;
+  width: 200rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #FF874B;
+}
+.shop_bar{
+  height: 20rpx;
+  width: 150rpx;
+  background: #FF874B;
+  border-radius: 10rpx;
+}
+.shop_number{
+  font-size: 20rpx;
+  color: #969595;
+  margin-left: 20rpx;
+}
+

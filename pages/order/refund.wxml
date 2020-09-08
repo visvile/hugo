@@ -1,0 +1,67 @@
+<!--pages/order/refund.wxml-->
+<navigationBar text='申请退款'></navigationBar>
+<view>
+  <view class="nav_bg">
+    <view class="nav_title">
+      <view>每日菜场社区（园东路点）</view>
+      <view class="mav_icon">
+        <image class="nav_icon11" src="/images/icon_phones.png"></image>
+        <view>拨打电话</view>
+      </view>
+    </view>
+    <!-- 商品 -->
+    <view>
+    <view class="vi_inp with_inp" wx:for='{{shopList}}' wx:key='key'>
+      <radio-group bindchange="radiochange" class="radio_group">
+        <radio value='index'>
+          <view class="shoplist">
+            <view>
+              <image class="shop_icon" src="{{item.img}}"></image>
+            </view>
+            <view class="shoptexts">
+              <view>{{item.title}}</view>
+              <view class="shopmoney">
+                <view class="money_jg">
+                  <view>￥{{item.mone}}</view>
+                  <view class="money_hx">￥{{item.hxjg}}</view>
+                </view>
+                <view class="money_num">X{{item.num}}</view>
+              </view>
+            </view>
+          </view>
+        </radio>
+      </radio-group>
+    </view>
+    </view>
+    <!-- end -->
+    <view class="group_qx">
+      <radio-group class='radio_group'>
+        <radio><view class="radio_group">全选</view></radio>
+      </radio-group>
+      <view class="group_je">金额：<text>￥25.00</text></view>
+    </view>
+  </view>
+  <!-- 退款原因 -->
+    <view class="tukuan_bg">
+      <view class="tuikuan">
+        <view>退款原因</view>
+        <view class="tuik_yy">
+          <view>请选择</view>
+          <image class="icon_right" src="/images/right.png"></image>
+        </view>
+      </view>
+      <view class="tuikuanxx">
+        <textarea placeholder-class='tetxclass' placeholder="请描述申请售后服务的具体原因"></textarea>
+      </view>
+      <view>
+       <image class="tuikuan_img" src="/images/icon_img.png"></image>
+       <view class="tuikuan_text01">为了帮您更好的解决问题，请务必上传照片凭证</view>
+      </view>
+    </view>
+    <!-- 退款金额 -->
+    <view class="tui_bottom">
+      <view>退款金额：<text class="tui_jine">￥200.65</text></view>
+      <view class="tuikuan_tshi"> 退款至您的支付账户</view>
+    </view>
+    <view class="tuikuan_tj">提交</view>
+</view>

@@ -1,0 +1,21 @@
+<view>
+  <navigationBar class='dfsfds' text='优惠券'></navigationBar>
+  <view class="cou_top after">
+    <view class="top {{item.id == index1 ? 'active' : ''}}" wx:for="{{couTop}}" data-index1="{{index}}" wx:key="key" bindtap="top">
+      <text class="t1">{{item.name}}</text>
+    </view>
+  </view>
+  <view class="list" wx:for="{{list}}" wx:key="key">
+    <view class="or {{item.status == 1 ? '' : 'hui'}}">
+      <view class="first">{{item.title}}<text class="t1"><text class="yang">￥</text>{{item.pirce}}</text></view>
+      <view class="second">有效期至{{item.time}}<text class="t1">满{{item.man_price}}可用</text></view>
+      <image class="bottom" src="{{item.status == 1 ? image_icon + 'coupon1.png' : image_icon + 'coupon2.png'}}"></image>
+    </view>
+    <view class="white">
+      <view class="t1">需支付{{item.xu_price}}元购买</view>
+      <view class="t2" wx:if="{{item.status == 1}}">立即使用</view>
+      <view class="t3" wx:if="{{item.status == 2}}">已使用</view>
+      <view class="t3" wx:if="{{item.status == 3}}">已过期</view>
+    </view>
+  </view>
+</view>

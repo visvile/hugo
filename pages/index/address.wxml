@@ -1,0 +1,51 @@
+<!--pages/index/address.wxml-->
+<navigationBar text='我的位置'></navigationBar>
+
+<!--搜索-->
+  <view class="search_sok">
+    <view class="serch_ss">
+      <view class="serch_sr" bindtap="openMap">
+          <image class="icon_1" src="{{image_icon}}search.png"></image>
+          <input class="input_sr" placeholder-class="input_class" placeholder='请输入您要搜索的关键字' bindinput="inputBin" value="{{search_ss}}"></input>
+           <view class="text1" bindtap="searchS"  wx:if="{{searchShow == 1}}">搜索</view>
+           <view class="tetx2" wx:if="{{searchHide == 1}}" bindtap="searchHide">取消</view>
+      </view>
+      <view class="newaddress" bindtap="gotoaddressadd">新增地址</view>
+    </view>
+  </view>
+  <view>
+  </view>
+  <view class="my_address">
+    <view class="address">
+      <view class="dq_address">
+        <view><image class="address_icon" src="/images/weizhi.png"></image></view>
+        <view>当前位置</view>
+      </view>
+      <view class="cx_address">
+      <image class="address_icon" src="/images/shuxin.png"></image>
+        <view>重新定位</view>
+      </view>
+    </view>
+    <view class="text">{{address}}</view>
+  </view>
+  <view class="wodedd">
+    <view class="wo_address" wx:if='{{listaddress < 0}}'>我的地址</view>
+    <view class="dizhi" wx:for='{{listaddress}}' wx:key='key'>
+      <view class="dizhi_top">  
+        <view>{{item.address}}</view>
+        <view> <image class="dele_icon" src="/images/icon_17.png"></image> </view>
+      </view>
+      <view class="dizhi_bottom">
+        <view>{{item.name}}</view>
+        <view>{{item.province}}</view>
+        <view>{{item.phone}}</view>
+      </view>
+      </view>
+  </view>
+  <view class="wodedd">
+    <view class="wo_address">附近地址</view>
+    <view>
+      <view class="fjdizhi" wx:for='{{nearbyList}}' wx:key='key'>{{item.address}}</view>
+    </view>
+    
+  </view>

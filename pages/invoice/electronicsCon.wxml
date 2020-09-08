@@ -1,0 +1,38 @@
+<!--电子 - 发票详情-->
+  <navigationBar text='发票详情'></navigationBar>
+<view class="paperConTop1">
+  <image class="paperConTop1Img" src="/images/icon_17.png"></image>
+  <view class="paperConTop1t">暂无物流信息 <text>2020-02-06 07:00:20</text> </view>
+  <image src="/images/icon_17.png" mode="widthFix" class="paperConTop1Img2"></image>
+  <view class="paperConTop1Li">
+    <text>邮箱地址</text>
+    <view style="text-align:left">1313578524152@qq.com</view>
+  </view>
+</view>
+<view class="paperConTop1">
+  <view class="paperConTop2ListTit">北京餐数网络科技公司 <text>￥517.66</text></view>
+  <view class="paperConTop1Li">
+    <text>纳税人识别号</text>
+    <view>90209156489723157</view>
+  </view>
+
+  <view class="paperConTop1Li">
+    <text>发票内容</text>
+    <view>蔬菜采购*肉禽*鸡蛋</view>
+  </view>
+
+  <view class="paperConTop1Li">
+    <text>开票类型</text>
+    <view>电子发票</view>
+  </view>
+
+  <view class="paperConTop1Li">
+    <text>开票项目</text>
+    <view>餐厅食材采购</view>
+  </view>
+
+  <view class="paperConTop1Li">
+    <text>发票备注</text>
+    <view class="bottom_bz">项目：食材采购 订单号DD20200210140577214下单时间:2020-1-25</view>
+  </view>
+</view>

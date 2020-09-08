@@ -1,0 +1,64 @@
+/* pages/my/serci/new.wxss */
+page{
+  margin: 0 20rpx;
+  height: 100%;
+  width: 100%;
+}
+.nav{
+  width: 710rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+}
+.nav_text{
+  padding-top: 20rpx;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  color: #333;
+}
+.nav_text text{
+  color: #fe0000;
+}
+.text1{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.text3{
+  display: flex;
+  align-items: center;
+  padding-bottom: 20rpx;
+}
+.input_text{
+  margin-left: 50rpx;
+}
+.img1{
+  height: 160rpx;
+  width: 160rpx;
+  border-radius: 10rpx;
+}
+.text2{
+  font-size: 18rpx;
+  color: #fe0000;
+  margin-top: 15rpx;
+  margin-bottom: 40rpx;
+}
+.content{
+  width: 710rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  height: 150rpx;
+  font-size: 24rpx;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+  color: #999;
+}
+.input_text1{
+  padding-top: 20rpx;
+}
+.btn_circular{
+  margin: 180rpx 0rpx 0rpx 55rpx;
+}

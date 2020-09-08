@@ -1,0 +1,117 @@
+
+.cou_top{
+  font-size: 28rpx;
+  color: #333;
+  width: 750rpx;
+  height: 90rpx;
+  background-color: #fff;
+  margin-bottom: 17rpx;
+}
+.cou_top .top{
+  width: 33.33333%;
+  text-align: center;
+  position: relative;
+  float: left;
+  height: 90rpx;
+}
+.cou_top .top .t1{
+  height: 40rpx;
+  line-height: 40rpx;
+  display: inline-block;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.cou_top .top.active .t1{
+  background-color: #FE0000;
+  padding: 0 12rpx;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius:14rpx;
+  color: #fff;
+}
+.list{
+  width: 710rpx;
+  height: 230rpx;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+}
+.list .or{
+  width: 710rpx;
+  height: 157rpx;
+  padding: 0 20rpx;
+  border-radius: 14rpx 14rpx 0 0;
+  background:linear-gradient(-90deg,rgba(255,117,85,1),rgba(255,161,79,1));
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 22rpx;
+}
+.list .hui{
+  background: linear-gradient(-90deg,#C0C0C0,#C0C0C0)
+}
+.list .or .bottom{
+  width: 710rpx;
+  height: 10rpx;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.list .or .first{
+  line-height: 66rpx;
+  font-size: 40rpx;
+  color: #fff;
+}
+.list .or .first .t1 .yang{
+  font-size: 28rpx;
+  line-height: 28rpx;
+}
+.list .or .first .t1,
+.list .or .second .t1{
+  float: right;
+}
+.list .or .second{
+  font-size: 24rpx;
+  line-height: 26rpx;
+  color: #fff;
+}
+.list .white{
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #fff;
+  width: 710rpx;
+  font-size: 24rpx;
+  color: #C0C0C0;
+}
+.list .white .t1{
+  float: left;
+  margin-left: 26rpx;
+}
+.list .white .t2{
+  float: right;
+  font-size: 28rpx;
+  color: #FF874B;
+  margin-right: 30rpx;
+  position: relative;
+}
+.list .white .t3{
+  float: right;
+  color: #C0C0C0;
+  margin-right: 30rpx;
+}
+.list .white .t2::after{
+  content: "";
+  width: 30rpx;
+  height: 30rpx;
+  background:url(http://192.168.1.22:80/static/pc/icon/or_right.png);
+  background-size: 100%;
+  position: absolute;
+  right: -30rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
