@@ -15,7 +15,15 @@
   <view class="comment_btn">
     <view>
       <view class="statr">
-         <image wx:for='{{statr_icon}}'  class="statr_icon" src="{{item.img}}" wx:key='key'></image>
+        <van-rate
+          value="{{ value }}"
+          size="{{ 25 }}"
+          color="#ee0a24"
+          void-icon='/images/statr.png'
+          icon='/images/statrs.png'
+          bind:change="onChange"
+        />
+         <!-- <image wx:for='{{statr_icon}}'  class="statr_icon" src="{{item.img}}" wx:key='key' bindtap="Ckickselect" data-index2="{{index}}"></image> -->
       </view>
     </view>
     <view  class="comment_btns">

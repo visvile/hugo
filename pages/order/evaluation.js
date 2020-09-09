@@ -6,6 +6,7 @@ Page({
    */
   data: {
     index1:0,
+    index2:4,
     riderCommentList:[{
       name:'送货慢',
       id:0,
@@ -40,6 +41,13 @@ Page({
   },
   onChange() {
 
+  },
+  onChange(e){
+    console.log(e)
+    var index2  =e.detail
+    this.setData({
+      index2:index2
+    })
   },
    // 多选评价标签
    checkboxChange(e){
