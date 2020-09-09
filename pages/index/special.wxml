@@ -36,7 +36,7 @@
  <view class="maret_group">
     <scroll-view class="scroll_market" scroll-x="true" style="width: 100%">
       <view  class="market_yhj" wx:for="{{4}}">
-      <image class="market_icon" src="/images/icon_wjcc.png"></image>
+      <image class="market_icon" src="/images/icon_youhui.png"></image>
         <view class="money1">￥</view>
         <view class="money2">10</view>
         <view class="money3">优惠券</view>
@@ -47,9 +47,9 @@
   </view>
   <!-- 更多精彩 -->
   <view class="marth_text">
-    <view><image class="icon_left" src="/images"></image></view>
+    <view><image class="icon_left" src="/images/icon_left.png"></image></view>
     <text>爆款毫无</text>
-    <view><image class="icon_right" src="/images"></image></view>
+    <view><image class="icon_right" src="/images/icon_right.png"></image></view>
   </view>
   <!-- 商品 -->
   <view>
@@ -72,12 +72,12 @@
   </view>
     <!-- 更多精彩 -->
   <view class="more">
-    <image class="more_icon" src="/images/icon_wjcc.png"></image>
+    <image class="more_icon" src="/images/icon_vip.png"></image>
   </view>
   <!-- 其他频道 -->
   <view>
     <view class="other_one">
-      <view><image class="other_icon" src="/images/icon_wjcc.png"></image></view>
+      <view><image class="other_icon" src="/images/icon_gohua.png"></image></view>
       <view class="other_text">
         <view class="other_gou">购划算</view>
         <view class="other_bao">爆款限时抢购</view>
@@ -85,12 +85,12 @@
       </view>
     </view>
     <!-- 222 -->
-    <view class="other_one">
-      <view><image class="other_icon" src="/images/icon_wjcc.png"></image></view>
+    <view class="other_one other_one1">
+      <view><image class="other_icon" src="/images/icon_lajiao.png"></image></view>
       <view class="other_text">
         <view class="other_gou">购划算</view>
         <view class="other_bao">爆款限时抢购</view>
-        <view class="other_cha">点击查看 ▶</view>
+        <view class="other_cha other_cha1">点击查看 ▶</view>
       </view>
     </view>
   </view>

@@ -1,11 +1,12 @@
-// pages/index/special.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    active_rules:[1,2]
+    active_rules:[1,2],
+    image_icon:app.globalData.image_icon,
   },
 
   /**

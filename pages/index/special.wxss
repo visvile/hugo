@@ -48,13 +48,11 @@
 .icon_left{
   height: 26rpx;
   width: 26rpx;
-  background-color: #333;
   margin-right: 20rpx;
 }
 .icon_right{
   height: 26rpx;
   width: 26rpx;
-  background-color: #333;
   margin-left: 20rpx;
 }
 .marth_time{
@@ -179,13 +177,12 @@
 }
 .market_icon{
   height: 110rpx;
-  width: 225rpx;
+  width: 252rpx;
 }
 .market_yhj{
   display: inline-block;
   height: 110rpx;
   width: 225rpx;
-  background-color: #f7f7f7;
   margin-right: 60rpx;
   position: relative;
   margin-top: 10rpx;
@@ -292,4 +289,12 @@
   position: absolute;
   bottom: 12rpx;
   margin-top: 30rpx;
+  border: 4rpx solid #fff;
+  border-radius: 20rpx;
+}
+.other_one1{
+  background-color: #fd6262;
+}
+.other_cha1{
+  background-color: #fe0100;
 }
