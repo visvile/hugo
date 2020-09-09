@@ -74,21 +74,21 @@
     <!-- 活动版块 -->
     <view class="activity">
       <view class="activetop" >
-        <view class="activeone" bindtap="gotoghs">
+        <view class="activeone" >
           <view class="name">
             <view>购划算</view>
             <image class="discount" src="{{image_icon}}tuijia.png"></image>
           </view>
           <view class="hint">爆款限时抢购</view>
-          <view class="shop">
-            <view class="shop_a" wx:for="{{shopping}}" wx:key="key">
+          <view class="shop" >
+            <view class="shop_a" wx:for="{{shopping}}" wx:key="key" bindtap="gotoghs">
               <image class="shopimg" src="{{item}}"></image>
               <view class="shop_text">
                 <view class="money">￥25.00</view>
                 <view class="money_a">￥30.00</view>
               </view>
             </view>  
-            <view class="shoptwo" wx:if="{{laseimgidnex === 0}}">
+            <view class="shoptwo" wx:if="{{laseimgidnex === 0}}" bindtap="gotowjcc">
                <view class="name">
                   <view>晚间菜场</view>
                   <image class="discount" src="{{image_icon}}tuijia.png"></image>
@@ -104,7 +104,7 @@
       </view>
       <view class="heng"></view>
       <view class="activefoot">
-        <view class="footer" wx:for="{{getactive}}" wx:key='key' >
+        <view class="footer" wx:for="{{getactive}}" wx:key='key' name='{{item.id}}' bindtap="{{gotoActive}}">
           <view class="titles">{{item.title}}</view>
           <view class="hints">{{item.hint}}</view>
           <view>

@@ -9,6 +9,7 @@ Page({
   data: {
     fixTop:'',
     scrollTop:0,
+    id:0,
     statusBarHeight: app.globalData.statusBarHeight + 'px',
     navigationBarHeight:app.globalData.statusBarHeight ,
     image_icon:app.globalData.image_icon,
@@ -191,7 +192,7 @@ Page({
   //晚间菜场
   gotowjcc(){
     wx.navigateTo({
-      url: './groupbuy',
+      url: './market',
     })
   },
   // 定位
@@ -200,5 +201,12 @@ Page({
       url: './address',
     })
   },
+  gotoActive(){
+    wx.navigateTo({
+      url: './groupbuy    '
+    })
+    console.log(id)
+  }
+  
   
 })

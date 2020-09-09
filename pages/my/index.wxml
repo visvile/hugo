@@ -88,7 +88,7 @@
     </view>
     <view class="group">
       <image class="icon" src="{{image_icon}}my_icon6.png"></image>
-      <view class="icon_t">在线客服</view>
+      <view class="icon_t"><button class="icon_ts" open-type="contact">在线客服</button></view>
     </view>
     <view class="group">
       <image class="icon" src="{{image_icon}}my_icon7.png"></image>
