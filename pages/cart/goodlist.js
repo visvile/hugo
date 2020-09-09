@@ -1,4 +1,8 @@
 var app = getApp();
+import {
+  List
+} from '/model.js';
+var model = new List();
 Page({
   data: {
     image_icon:app.globalData.image_icon,

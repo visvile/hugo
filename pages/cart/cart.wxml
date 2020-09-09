@@ -8,36 +8,36 @@
  <!-- 购物车商品 -->
  <view class="shop">
    <view class="shopping" wx:for="{{getshopping}}" wx:key='key'>
-      <view class="shop_img01">
-        <image class="shop_img02" src="{{image_icon}}shop_icon2.png"></image>
-      </view>
-        <image class="shop_img" src="{{item.img}}"></image>
-        <view>
-          <view class="shop_texts">{{item.title}}</view>
-          <view class="shop_prog">
-            <view class="shop_progress">
-              <view class="shop_bar"></view>
-            </view>
+    <checkbox-group bindchange="checkboxChange" data-index="{{item.id}}">
+      <checkbox class="checkbox"> 
+          <view class="shop_text">
+            <view><image class="shop_img" src="/images/lele.png"></image></view>
+              <view class="text3">
+                <view>可口可乐【汽水】</view>
+                <view class="tetx4">
+                  <view>￥25.00</view>
+                  <view class="text5">30.00</view>
+                </view>
+              </view>
+              <!-- 数量 -->
+               <view>
+                  <view catchtap="clickmore"  data-index="{{item.id}}"> 
+                    <image class="commodity_more" src="{{image_icon}}more.png"></image>
+                  </view>
+                  <view> 
+                  <view class="commodity_sumber" wx:if="{{status == 1}}">
+                    <input disabled='disabled' type="number" value="{{num}}"></input>
+                  </view>
+                    <view catchtap="clicksign"  wx:if="{{status == 1}}">
+                      <image class="commodity_sign" src="{{image_icon}}more.png"></image>
+                    </view>
+                  </view>
+                </view>
+              <!-- end -->
           </view>
-          <view class="shop_textss">
-            <view class="moneys">{{item.moeney}}</view>
-            <view class="moneys_a">{{item.monyes}}</view>
-          </view>
-        </view>
-        <view>
-          <view bindtap="listcommodity " bindtap='clickmore' data-index="{{index}}">
-            <image class="commodity_more" src="{{image_icon}}more.png"></image>
-          </view>
-          <view> 
-          <view class="commodity_sumber" wx:if="{{status == 1}}">
-            <input type="number" value="{{num}}"></input>
-          </view>
-            <view bindtap="clicksign" data-index="{{index}}" wx:if="{{status == 1}}">
-              <image class="commodity_sign" src="{{image_icon}}sign.png"></image>
-            </view>
-          </view>
-        </view>
-      </view>
+        </checkbox>
+      </checkbox-group>
+    </view>
  </view>
     
       <!-- 已失效商品 -->
@@ -57,4 +57,21 @@
         </view>
         </view> 
      </view>
+     <!-- 底部 -->
+     <view>
+      <view class="footer">
+      <view class="footer_xuanze">
+        <checkbox class="checkbox">
+          <checkbox-group>全选</checkbox-group>
+        </checkbox>
+      </view>
+      <view class="footer_dibu">
+        <view>合计：</view>
+        <view class="footer_money">￥0元</view>
+      </view>
+        <view class="jiesuan">结算</view>
+      </view>
+     </view>
+
+
 </view>

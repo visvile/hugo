@@ -1,7 +1,4 @@
 
-/* page{
-  margin: 0 20rpx;
-} */
 .text{
   display: flex;
   font-size: 24rpx;
@@ -11,30 +8,41 @@
   margin-left: 20rpx;
   margin-bottom: 20rpx;
 }
-.text1{
-  color: #fe0000;
-}
 .shop{
   margin-bottom: 20rpx;
 }
 .shopping{
   position: relative;
+  display: flex;
 }
-.shop_img01{
-  height: 190rpx;
-  line-height: 190rpx;
-}
-.shop_img02{
-  height: 30rpx;
-  width: 30rpx;
-  margin-left: 20rpx;
-}
-.shop_img03{
+.shop_img{
   height: 150rpx;
   width: 150rpx;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
 }
-.shop_texts{
-  margin-top: 50rpx;
+.shop_text{
+  display: flex;
+}
+.text3{
+  font-size: 28rpx;
+  color: #333;
+  height: 150rpx;
+  line-height: 75rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.tetx4{
+  display: flex;
+  font-size: 30rpx;
+  align-items: center;
+  color: #fe0000;
+}
+.text5{
+  font-size: 24rpx;
+  color: #999;
+  text-decoration: line-through;
+  padding-left: 20rpx;
 }
 .commodity{
   height: 170rpx;
@@ -42,11 +50,10 @@
   background-color: #fff;
   display: block;
   position: relative;
-  left: 166rpx;
-  top: -345rpx;
   border-radius: 10rpx;
   display: flex;
   margin-top: 20rpx;
+  margin-left: 20rpx;
 }
 .commodity_img{
   height: 150rpx;
@@ -82,9 +89,9 @@
   font-size: 30rpx;
   color: #333;
   position: absolute;
-  right: 70rpx;
-  top: 107rpx;
-  width: 30rpx;
+  right: 77rpx;
+  top: 106rpx;
+  width: 20rpx;
 }
 /* 失效 */
 .failure{
@@ -118,4 +125,56 @@
   margin-right: 20rpx;
   text-align: right;
 }
-
+.footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 96rpx;
+  width: 750rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #f7f7f7;
+}
+.jiesuan{
+  position: absolute;
+  right: 0;
+  background-color: #fe0000;
+  color: #fff;
+  font-size: 28rpx;
+  width: 232rpx;
+  height: 96rpx;
+  line-height: 96rpx;
+  text-align: center;
+}
+.footer_dibu{
+  font-size: 28rpx;
+  color: #333;
+  line-height: 96rpx;
+  display: flex;
+  position: absolute;
+  right: 259rpx;
+}
+.footer_money{
+  font-size: 30rpx;
+  color: #fe0000;
+}
+.footer_xuanze{
+  position: absolute;
+  line-height: 96rpx;
+  font-size: 24rpx;
+  color: #333;
+  left: 20rpx;
+}
+.checkbox .wx-checkbox-input{
+  border-radius: 50%;
+  height: 30rpx;
+  width: 30rpx;
+  border: #999 1rpx solid; 
+  margin-left: 20rpx;
+}
+.checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+  background-color: #fe0000;
+  color: #fff;
+  height: 30rpx;
+  width: 30rpx;
+  border: #fe0000 1rpx solid; 
+}
