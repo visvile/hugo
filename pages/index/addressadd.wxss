@@ -39,6 +39,10 @@
   display: flex;
   justify-content: space-between;
 }
+.radio_group radio .wx-radio-input.wx-radio-input-checked{
+  background-color: #fe0000;
+  border: 4rpx solid #fe0000
+}
 .radio_group radio .wx-radio-input{ 
   height: 30rpx; 
   width: 30rpx;
@@ -47,6 +51,7 @@
   box-sizing: border-box;
   border: 2rpx solid #999;
 }
+
 .inputclass{
   font-size: 28rpx;
 }
