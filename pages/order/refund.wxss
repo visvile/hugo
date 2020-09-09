@@ -26,7 +26,7 @@
   width: 25rpx;
   margin-right: 20rpx;
 }
-/* 单选的样式 */
+/* 多选的样式 */
 .vi_inp{
   width: 710rpx;
   height: 150rpx;
@@ -38,10 +38,20 @@
   border-bottom: 1rpx solid #f7f7f7;
   padding-bottom: 20rpx;
 }
+.checkbox{
+  padding-left: 20rpx;
+}
 .radio_group{
   padding-left: 20rpx;
 }
 /* 未选中的 背景样式 */
+.checkbox .wx-checkbox-input{
+  border-radius: 50%;
+  height: 30rpx;
+  width: 30rpx;
+  border: #999 1rpx solid; 
+}
+
 .radio_group radio .wx-radio-input{ 
   height: 30rpx; 
   width: 30rpx;
@@ -51,21 +61,18 @@
   border: 2rpx solid #999;
 }
 /* 选中后的 背景样式 */
+.checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+  background-color: #fe0000;
+  color: #fff;
+  height: 30rpx;
+  width: 30rpx;
+  border: #fe0000 1rpx solid; 
+}
 .radio_group radio .wx-radio-input.wx-radio-input-checked{
   border: 2rpx solid #FE0000;
   background-color: transparent;
 }
 /* 选中后的 对勾样式 */
-.radio_group radio .wx-radio-input.wx-radio-input-checked::before{
- border-radius: 50%;
- width: 20rpx; 
- height: 20rpx;
- line-height: 20rpx;
- text-align: center;
- font-size:20rpx; 
- color:transparent;
- background: #FE0000;
-}
 .shoplist{
   height: 150rpx;
   display: flex;
