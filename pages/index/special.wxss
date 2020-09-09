@@ -4,6 +4,12 @@
   height: 780rpx;
   z-index: 0;
 }
+.bg_bg2{
+  width: 750rpx;
+  position: absolute;
+  height: 582rpx;
+  background-size: 100%;
+}
 .title{
   color: white;
   display: flex;

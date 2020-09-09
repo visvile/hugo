@@ -105,7 +105,9 @@ page{
 }
 .market_yhj{
   position: relative;
-  width: 252rpx;
+  width: 225rpx;
+  margin-right: 58rpx;
+  margin-top: 10rpx;
 }
 .market_icon{
   width: 252rpx;
@@ -115,16 +117,14 @@ page{
   font-size: 28rpx;
   color: #FE867D;
   position: absolute;
-  left: 4rpx;
   bottom: 36rpx;
 }
 .money2{
   font-size: 75rpx;
   color: #FE867D;
-  font-weight: bold;
   position: absolute;
   bottom: 26rpx;
-  left: 25rpx;
+  right: 134rpx;
   font-family: Impact;
 }
 .money3{
@@ -132,6 +132,139 @@ page{
   color: #FE867D;
   font-weight: bold;
   position: absolute;
-  bottom: 20rpx;
-  right: 20rpx;
+  right:40rpx;
+  top: 14rpx;
+  font-family:' RS_TeCuHei';
+}
+.money4{
+  font-size: 20rpx;
+  color: #FE867D;
+  position: absolute;
+  top: 50rpx;
+  right: 38rpx;
+  font-family: SimHei;
+}
+.money5{
+  font-size: 20rpx;
+  color: #FE867D;
+  position: absolute;
+  bottom: 16rpx;
+  right: 74rpx;
+}
+.baokuan{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+}
+.baokuan_one{
+  margin-right: 96rpx;
+  position: relative;
+}
+
+.bao_icon{
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 10rpx;
+}
+.baokuan_one:nth-child(3){
+  margin-right: 0;
+}
+.baokuan_one:nth-child(6){
+  margin-right: 0;
+}
+.baokuan_shengyu{
+  font-size: 22rpx;
+  color: #fff;
+  height: 40rpx;
+  width: 150rpx;
+  background-color: #f8adac;
+  line-height: 40rpx;
+  text-align: center;
+  position: absolute;
+  top: 110rpx;
+}
+.baokuan_title{
+  font-size: 24rpx;
+  width: 150rpx;
+}
+.baokuan_money{
+  display: flex;
+  font-size: 24rpx;
+  color: #FF874B;
+  align-items: center;
+}
+.baokuan_hx{
+  font-size: 22rpx;
+  color: #999;
+  text-decoration: line-through;
+}
+.baokuan_ku{
+  font-size: 22rpx;
+  color: #999;
+  margin-bottom: 20rpx;
+}
+.other_one{
+  width: 710rpx;
+  height: 200rpx;
+  background-color: #a9d77d;
+  border-radius: 20rpx;
+  margin-top: 133rpx;
+  position: relative;
+}
+.other_icon{
+  width: 365rpx;
+  height: 215rpx;
+  position: absolute;
+  bottom: 13rpx;
+  border: 4rpx solid #fff;
+  box-shadow: 0px 3px 7px 0px rgba(112, 188, 38, 0.6);
+  border-radius: 20rpx;
+}
+.other_gou{
+  font-size: 40rpx;
+  color: #fff;
+  position: absolute;
+  top: 30rpx;
+  right: 112rpx;
+}
+.other_bao{
+  font-size: 24rpx;
+  color: #fff;
+  position: absolute;
+  right: 101rpx;
+  top: 88rpx;
+}
+.other_cha{
+  background-color: #70bc26;
+  color: #fff;
+  font-size: 24rpx;
+  height:50rpx;
+  width: 150rpx;
+  position: absolute;
+  top: 130rpx;
+  border-radius: 20rpx;
+  right: 95rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.other_one1{
+  background-color: #fcb490;
+  margin-top: 50rpx;
+  margin-bottom: 70rpx;
+}
+.other_cha1{
+  background-color: #ff874b;
+}
+.active_img{
+  height: 46rpx;
+  width: 184rpx;
+  position: relative;
+  z-index: 10;
+  left: 40%;  
+}
+.active_footer{
+  margin: 0;
+  margin-top: -30rpx;
+  margin-bottom: 85rpx;
 }

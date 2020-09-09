@@ -1,14 +1,12 @@
 <!--pages/index/market.wxml-->
-  <!-- <navigationBar text='今日特价'></navigationBar> -->
-    <view class="status-bar" style='height: {{statusBarHeight}}px'> 
-      <view>
-        <image class="bg_bg" src="{{image_icon}}bg.png"></image>
-      </view>
+  <navigationBar text='今日特价'></navigationBar>
+    <view>
+      <image class="bg_bg2" src="../../images/icon_bg2.png"></image>
     </view>
     <!-- 标题 -->
     <view class="title">每日菜场</view>
   <view class="nav">
-    <view><image class="icon_wjcc" src="/images/icon_wjcc.png"></image></view>
+    <view><image class="icon_wjcc" src="/images/icon_tj.png"></image></view>
   </view>
 <!-- 商品 -->
 <view>
@@ -31,8 +29,8 @@
 </view>
 <!-- 会员 -->
 <view class="vip">
-  <view><image class="vip_icon" src="/images/icon_wjcc.png"></image></view>
-  <view class="vip_text">会员满减券 优惠多多</view>
+  <view><image class="vip_icon" src="/images/icon_vip.png"></image></view>
+  <!-- <view class="vip_text">会员满减券 优惠多多</view> -->
 </view>
 <!-- 优惠券 -->
  <view class="maret_group">
