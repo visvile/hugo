@@ -203,10 +203,15 @@ Page({
   },
   gotoActive(){
     wx.navigateTo({
-      url: './groupbuy    '
+      url: './groupbuy'
     })
     console.log(id)
-  }
-  
+  },
+  //搜索
+  gotosearchpage(){
+    wx.navigateTo({
+      url: './search'
+    })
+  },
   
 })

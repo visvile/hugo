@@ -12,7 +12,7 @@
      <!-- 定位 -->
       <view bindtap="gotoaddress" class="address"><image class="address_img" src="{{image_icon}}address.png"></image>远东路</view> 
       <!-- 搜索 -->
-      <view class="search" bindtap="gotosearchpages">
+      <view class="search" bindtap="gotosearchpage">
         <view><image class="search_img" src="{{image_icon}}search.png"></image></view>
        <view class="prompt">每日菜场为您优选</view>
       </view>

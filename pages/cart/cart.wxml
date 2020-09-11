@@ -21,7 +21,7 @@
               </view>
               <!-- 数量 -->
                <view>
-                  <view catchtap="clickmore"  data-index="{{item.id}}"> 
+                  <view catchtap="clickmore" > 
                     <image class="commodity_more" src="{{image_icon}}more.png"></image>
                   </view>
                   <view> 

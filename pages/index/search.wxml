@@ -1,7 +1,5 @@
-<!--pages/index/search.wxml-->
-  <navigationBar text='搜索'></navigationBar>
 <!--搜索-->
-  <!--搜索-->
+  <navigationBar text='搜索'></navigationBar>
 <view class="searchCon">
   <view class="searchConInput">
     <image src="{{image_icon}}icon_6.png"></image>
@@ -13,14 +11,14 @@
 <view class="no_input" style="display:{{no_input}}">
   <!-- 历史搜索 -->
   <view class="searchHistory" style="display:{{searchHistory}}">
-    <view class="searchHistoryTit">
+    <view class="searchHistoryTit serch_lishi">
       <text>历史搜索</text>
       <image src="{{image_icon}}icon_17.png" bindtap="search_lsdel"></image>
     </view>
+  </view>
     <view class="searchHistoryList">
       <text wx:for="{{arr2}}" wx:key="key" id="{{item}}" bindtap="search_url">{{item}}</text>
     </view>
-  </view>
   <!-- 推荐搜索 -->
   <view class="searchHistory">
     <view class="searchHistoryTit">

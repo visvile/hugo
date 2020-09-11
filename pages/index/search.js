@@ -1,72 +1,18 @@
 // pages/search/index.js
 const app = getApp();
+import {
+  List
+} from '/model.js';
+var model = new List();
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    image_icon:app.globalData.image_icon,
-    recommend:[{
-      id:0,
-      name:'土豆'
-    },{
-      id:1,
-      name:'西红柿'
-    },{
-      id:2,
-      name:'辣椒'
-    }],
-    shoplist:[{
-      img: app.globalData.image_icon + 'xihongshi.png',
-      id:0,
-      name:'土豆',
-      hint:'约500g/份',
-      chandi:'产地：河北',
-      money:'￥25.00',
-      moy:'￥30.00',
-      biaoxi:'一刻达',
-      more:app.globalData.image_icon + 'more.png'
-    },{
-      id:1,
-      img:'https://hbimg.huabanimg.com/239eb7bb5c79824b039444e24e377c414ebd25eeebbd7-9s0Nns_fw658/format/webp',
-      name:'西红柿',
-      hint:'约250g/份',
-      chandi:'产地：吉林',
-      money:'￥12.00',
-      moy:'￥18.00',
-      biaoxi:'一刻达',
-      more:app.globalData.image_icon + 'more.png'
-    },{
-      id:2,
-      name:'茄子',
-      img:'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1913720567,1657534009&fm=26&gp=0.jpg',
-      hint:'约250g/份',
-      chandi:'产地：吉林',
-      money:'￥12.00',
-      moy:'￥18.00',
-      biaoxi:'一刻达',
-      more:app.globalData.image_icon + 'more.png'
-    },{
-      id:3,
-      img:app.globalData.image_icon + 'xihongshi.png',
-      name:'辣椒',
-      hint:'约180g/份',
-      chandi:'产地：吉林',
-      money:'￥8.9.00',
-      moy:'￥12.00',
-      biaoxi:'一刻达',
-      more:app.globalData.image_icon + 'more.png'
-    }],
     page:1,
     search_name:0,
     sup_id:0,
-    goods_list:[{
-      id:0,
-      image:app.globalData.image_icon + 'xihongshi.png',
-      goods_name:'西红柿',
-      price:50,
-      unit:2
-    }],
+    goods_list:[],
     arr2:[],
     search_ss:'',
     no_input:'block', //输入框内是否有文字   block 无    none  有
@@ -80,6 +26,8 @@ Page({
     that.setData({
       sup_id:options.sup_id
     })
+    
+    
   },
   onShow(e){
     //搜索历史
@@ -96,6 +44,11 @@ Page({
         })
       }
     })
+    this.loadorData();
+    setTimeout(function(){
+      that.loadData();
+    },100)
+
   },
   searchHide(e){
     this.setData({
@@ -144,7 +97,8 @@ Page({
   },
   loadData: function () {
     var that = this;
-    if(that.data.arr2.length <= 0){
+    console.log('that.data.arr2.length',that.data.arr2.length)
+    if(that.data.arr2.length <= 0){
       that.setData({
         searchHistory: 'none'
       })
@@ -153,7 +107,44 @@ Page({
         searchHistory: 'block'
       })
     }
-
+    //获取ajax请求数据接口
+    var page = that.data.page
+    var search_name = that.data.search_name
+    var sup_id = that.data.sup_id
+    model.getOrderListPageData(page,search_name,sup_id,(data) => {
+      console.log(data);
+      let artArr = data.data.goods_list;
+      for (var i = 0; i < artArr.length; i++) {
+        that.data.goods_list.push(artArr[i]);
+      }
+      that.setData({
+        recommend:data.data.recommend,
+        goods_list:that.data.goods_list
+      });
+    });
+  },
+  //首次进入 获取推荐
+  loadorData: function () {
+    var that = this;
+    if(that.data.arr2.length <= 0){
+      that.setData({
+        searchHistory: 'none'
+      })
+    }
+    //获取ajax请求数据接口
+    var page = that.data.page
+    var search_name = that.data.search_name
+    var sup_id = that.data.sup_id
+    model.getOrderListPageData(page,search_name,sup_id,(data) => {
+      console.log(data);
+      let artArr = data.data.goods_list;
+      for (var i = 0; i < artArr.length; i++) {
+        that.data.goods_list.push(artArr[i]);
+      }
+      that.setData({
+        recommend:data.data.recommend,
+      });
+    });
   },
    //下滑方法从写接口  触底刷新
    onReachBottom: function () {
