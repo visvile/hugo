@@ -7,9 +7,9 @@
   </view>
  <!-- 购物车商品 -->
  <view class="shop">
-   <view class="shopping" wx:for="{{getshopping}}" wx:key='key'>
+   <view class="shopping" wx:for="{{getshopping}}" wx:key='key'  data-index="{{index}}" id="{{item.id}}">
     <checkbox-group bindchange="checkboxChange" data-index="{{item.id}}">
-      <checkbox class="checkbox"> 
+      <checkbox class="checkbox" checked="{{item.checked}}"> 
           <view class="shop_text">
             <view><image class="shop_img" src="/images/lele.png"></image></view>
               <view class="text3">
@@ -61,9 +61,11 @@
      <view>
       <view class="footer">
       <view class="footer_xuanze">
-        <checkbox class="checkbox">
-          <checkbox-group>全选</checkbox-group>
-        </checkbox>
+        <checkbox-group bindchange="checkboxChanges">
+            <label class="checkbox" bindtap="selectall">
+              <checkbox value="全选" /> <text>全选</text>
+            </label>
+        </checkbox-group>
       </view>
       <view class="footer_dibu">
         <view>合计：</view>

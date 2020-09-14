@@ -69,7 +69,7 @@
       <image class="icon" src="{{image_icon}}my_icon2.png"></image>
       <view class="icon_t">拼团</view>
     </view>
-    <view class="group">
+    <view class="group" bindtap="gotorecords">
       <image class="icon" src="{{image_icon}}my_icon3.png"></image>
       <view class="icon_t">浏览记录</view>
     </view>
@@ -82,7 +82,7 @@
 <view class="my_order comm">
 	<view class="bt">服务中心</view>
 	<view class="comm_group">
-    <view class="group">
+    <view class="group" bindtap="gotosercinew">
       <image class="icon" src="{{image_icon}}my_icon5.png"></image>
       <view class="icon_t">新品需求</view>
     </view>
@@ -90,11 +90,11 @@
       <image class="icon" src="{{image_icon}}my_icon6.png"></image>
       <view class="icon_t"><button class="icon_ts" open-type="contact">在线客服</button></view>
     </view>
-    <view class="group">
+    <view class="group" bindtap="gotoinvoice">
       <image class="icon" src="{{image_icon}}my_icon7.png"></image>
       <view class="icon_t">申请发票</view>
     </view>
-    <view class="group">
+    <view class="group" bindtap="gotoset">
       <image class="icon" src="{{image_icon}}my_icon8.png"></image>
       <view class="icon_t">设置</view>
     </view>

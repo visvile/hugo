@@ -10,7 +10,7 @@ Page({
   //订单
   gotoother(){
     wx.navigateTo({
-      url: './news_list',
+      url: '../order/order',
     })
   },
     //信息
@@ -25,13 +25,37 @@ Page({
         url: './purchase',
       })
     },
+    // 我的拼团
   gotospellgroup(){
     wx.navigateTo({
       url: './spell_group',
     })
   },
-  
-  gowowallet(){
+  //浏览记录
+  gotorecords(){
+    wx.navigateTo({
+      url: './records',
+    })
+  },
+  //新品需求
+  gotosercinew(){
+    wx.navigateTo({
+      url: './serci/new',
+    })
+  },
+  //我的发票
+  gotoinvoice(){
+    wx.navigateTo({
+      url: '../invoice/list',
+    })
+  },
+  // 我的设置
+  gotoset(){
+    wx.navigateTo({
+      url: './set',
+    })
+  },
+    gowowallet(){
     wx.navigateTo({
       url: './wallet',
     })

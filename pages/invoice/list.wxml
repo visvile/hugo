@@ -14,5 +14,5 @@
 </view>
 
 
-<navigator url="./addInvoice"><image src="/images/icon_17.png" mode="widthFix" class="listAdd"></image></navigator>
+<navigator url="./addInvoice"><image src="/images/add.png" mode="widthFix" class="listAdd"></image></navigator>
 <!-- <view class="no_more">没有更多了</view> -->

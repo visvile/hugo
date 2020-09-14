@@ -9,7 +9,7 @@ Page({
   data: {
     fixTop:'',
     scrollTop:0,
-    id:0,
+    id:'',
     statusBarHeight: app.globalData.statusBarHeight + 'px',
     navigationBarHeight:app.globalData.statusBarHeight ,
     image_icon:app.globalData.image_icon,
@@ -201,11 +201,25 @@ Page({
       url: './address',
     })
   },
-  gotoActive(){
-    wx.navigateTo({
-      url: './groupbuy'
-    })
-    console.log(id)
+  //拼团  // 特价  // 临期
+  gotoActive(e){
+    console.log(e)
+    var that = this
+    var id = e.currentTarget.dataset.id
+    if(id == 0){
+      wx.navigateTo({
+        url: './groupbuy' 
+      })
+    }else if (id == 1){
+      wx.navigateTo({
+        url: './special' 
+      })
+    }else{
+      wx.navigateTo({
+        url: './clearance' 
+      })
+    }
+
   },
   //搜索
   gotosearchpage(){

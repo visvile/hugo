@@ -1,7 +1,7 @@
 /* components/navigationBar/navigationBar.wxss */
 .navbar {
   width: 100%;
-  background-image: url('http://192.168.1.22:80/static/pc/icon/img_01.png');
+  background-image: url('http://192.168.1.27:80/static/pc/icon/img_01.png');
   position: fixed;
   top: 0;
   left: 0;

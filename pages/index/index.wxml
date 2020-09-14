@@ -104,7 +104,7 @@
       </view>
       <view class="heng"></view>
       <view class="activefoot">
-        <view class="footer" wx:for="{{getactive}}" wx:key='key' name='{{item.id}}' bindtap="{{gotoActive}}">
+        <view class="footer" wx:for="{{getactive}}" wx:key='key' name='{{item.id}}' bindtap="gotoActive" data-id="{{item.id}}">
           <view class="titles">{{item.title}}</view>
           <view class="hints">{{item.hint}}</view>
           <view>
