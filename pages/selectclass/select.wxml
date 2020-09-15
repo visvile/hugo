@@ -1,7 +1,7 @@
 <!--pages/selectclass/select.wxml-->
 <view>
   <navigationBar text='分类' back="{{back}}"></navigationBar>
-  <view class="serch">
+  <view class="serch" bindtap="gotoSerch">
     <image class="search_img" src="{{image_icon}}search.png"></image>
     <input class="search_input" placeholder="土豆"></input>
   </view>

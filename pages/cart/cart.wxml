@@ -7,8 +7,8 @@
   </view>
  <!-- 购物车商品 -->
  <view class="shop">
-   <view class="shopping" wx:for="{{getshopping}}" wx:key='key'  data-index="{{index}}" id="{{item.id}}">
-    <checkbox-group bindchange="checkboxChange" data-index="{{item.id}}">
+   <view class="shopping" wx:for="{{getshopping}}" wx:key='key' >
+    <checkbox-group bindchange="checkboxChange">
       <checkbox class="checkbox" checked="{{item.checked}}"> 
           <view class="shop_text">
             <view><image class="shop_img" src="/images/lele.png"></image></view>
@@ -21,7 +21,7 @@
               </view>
               <!-- 数量 -->
                <view>
-                  <view catchtap="clickmore" > 
+                  <view catchtap="clickmore" data-index="{{item.id}}" name='{{item.id}}'> 
                     <image class="commodity_more" src="{{image_icon}}more.png"></image>
                   </view>
                   <view> 

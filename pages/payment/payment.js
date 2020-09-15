@@ -7,7 +7,6 @@ Page({
   data: {
     image_icon:app.globalData.image_icon,
     flag:0,
-    dz:0,
     hiddenName:true,
     listsingle:[{
       id:0,

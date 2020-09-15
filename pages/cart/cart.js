@@ -18,7 +18,7 @@ Page({
       moeney:'￥25.00',
       monyes:'￥30.00',
     },{
-      id:0,
+      id:1,
       img:app.globalData.image_icon + 'xihongshi.png',
       title:'[可口可乐]汽水 碳酸饮料',
       number:'10',
@@ -49,14 +49,15 @@ Page({
     
   },
   // 点击获取每个id
-  checkboxChange(e) {
-    var that = this
-    var name = e.currentTarget.dataset.index
-    console.log(name);
-    that.setData({
-      name:name
-    })
-  },
+  // checkboxChange(e) {
+  //   var that = this
+  //   console.log(e)
+  //   var name = e.currentTarget.dataset.index
+  //   console.log(name);
+  //   that.setData({
+  //     name:name
+  //   })
+  // },
   //点击加一
   clickmore: function (e) {
     console.log(e)
@@ -93,29 +94,23 @@ Page({
       status:that.data.status
     });
   },
-  //跳转凑单页面
-  gotogoodlist(){
-    wx.navigateTo({
-      url: './goodlist'
-    })
-  },
     // 调用方法
     // onLoad: function () {
     //   this.listData();
     // },
-  // 获取购物车的数据
-  // listData:function(){
-  //   var that = this
-  //   var lat = that.data.lat
-  //   var lng = that.data.lng
-  //   console.log(lat,lng)
-  //   model.getSoppingCart(lat,lng, (data) => {
-  //     that.setData({
-  //       getshopping:data.data,
-  //     })
-  //     console.log(data)
-  //   })
-  // },
+    // 获取购物车的数据
+    // listData:function(){
+    //   var that = this
+    //   var lat = that.data.lat
+    //   var lng = that.data.lng
+    //   console.log(lat,lng)
+    //   model.getSoppingCart(lat,lng, (data) => {
+    //     that.setData({
+    //       getshopping:data.data,
+    //     })
+    //     console.log(data)
+    //   })
+    // },
 
   // 全选与单选
   checkboxChanges: function (e) {
@@ -130,6 +125,12 @@ Page({
     that.setData({
       getshopping: that.data.getshopping,
       select_all: (!that.data.select_all)
+    })
+  },
+  //跳转凑单页面
+  gotogoodlist(){
+    wx.navigateTo({
+      url: './goodlist'
     })
   },
 })
