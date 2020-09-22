@@ -31,7 +31,7 @@
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.12.1",
+	"libVersion": "2.13.0",
 	"appid": "wx70057a310014606e",
 	"projectname": "%E6%AF%8F%E6%97%A5%E8%8F%9C%E5%9C%BA%20-%20TO%20C",
 	"debugOptions": {
@@ -300,6 +300,27 @@
 					"id": -1,
 					"name": "新增地址",
 					"pathName": "pages/index/addressadd",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": 34,
+					"name": "pages/ceshi/index",
+					"pathName": "pages/ceshi/index",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新人活动",
+					"pathName": "pages/index/newGift",
+					"query": "name='123'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "地址",
+					"pathName": "pages/order/detail",
 					"query": "name='123'",
 					"scene": null
 				}

@@ -55,8 +55,9 @@ page{
   margin-bottom: 5rpx;
 }
 .content .three_group{
-  width: 750rpx;
-  padding:0 60rpx;
+  width: 710rpx;
+  padding:0 40rpx;
+  /* margin: 0 auto; */
   box-sizing: border-box;
   display:flex;
   flex-wrap:wrap;
@@ -74,6 +75,10 @@ page{
   font-size: 24rpx;
   line-height: 26rpx;
 }
+.icon_order{
+  height: 33rpx;
+  width: 33rpx;
+}
 .my_order{
   width: 710rpx;
   height: 160rpx;
@@ -84,8 +89,8 @@ page{
 }
 .my_order .bt{
   font-size: 28rpx;
-  line-height: 68rpx;
-  height: 68rpx;
+  line-height: 60rpx;
+  height: 60rpx;
   position: relative;
   margin-bottom: 8rpx;
   padding: 0 20rpx;
@@ -95,7 +100,7 @@ page{
   content: "";
   width: 24rpx;
   height: 24rpx;
-  background:url(http://192.168.1.22:80/static/pc/icon/bl_right.png);
+  background:url(http://192.168.1.27:80/static/pc/icon/bl_right.png);
   background-size: 100%;
   position: absolute;
   top: 50%;
@@ -108,9 +113,12 @@ page{
   justify-content:space-between;
   text-align: center;
   font-size: 24rpx;
-  line-height: 26rpx;
+  line-height: 20rpx;
   box-sizing: border-box;
   padding: 0 20rpx;
+}
+.my_order .order_group .group{
+  position: relative;
 }
 .my_order .order_group .t1{
   margin-bottom: 16rpx;
@@ -130,6 +138,7 @@ page{
   margin: 0 auto;
   position: relative;
   margin-bottom: 20rpx;
+  margin-top: 20rpx;
 }
 .order_num .img{
   width: 120rpx;
@@ -203,3 +212,16 @@ page{
   text-align: center;
   margin: 0;
 }
+.right_red{
+  height: 24rpx;
+  width: 24rpx;
+  font-size: 20rpx;
+  color: #fff;
+  line-height: 24rpx;
+  background-color: #FE0000;
+  position: absolute;
+  top: -13rpx;
+  border-radius: 24rpx;
+  right: 6rpx;
+}
+

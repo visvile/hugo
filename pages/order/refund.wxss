@@ -26,6 +26,19 @@
   width: 25rpx;
   margin-right: 20rpx;
 }
+.money_biaoq{
+  display: flex;
+  margin-top: 15rpx;
+}
+.money_biaoqian{
+  font-size: 22rpx;
+  color: #FF874B;
+  border: 1rpx solid #FF874B;
+  padding: 7rpx ;
+  margin-right: 20rpx;
+
+
+}
 /* 多选的样式 */
 .vi_inp{
   width: 710rpx;
@@ -88,6 +101,7 @@
   font-size: 30rpx;
   color: #FE0000;
   justify-content: space-between;
+  margin-top: 20rpx;
 }
 .money_jg{
   display: flex;
@@ -97,7 +111,7 @@
   color: #333;
   padding-left: 20rpx;
   height: 150rpx;
-  line-height: 75rpx;
+  /* line-height: 75rpx; */
 }
 .money_hx{
   padding-left: 20rpx;

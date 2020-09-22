@@ -31,12 +31,12 @@ page{
   font-size: 28rpx;
   color: #333;
   font-family: SimHei;
-  margin-top: 25rpx;
+  margin-top: 20rpx;
   margin-left: 20rpx;
 }
 .shop_textss{
   display: flex;
-  margin-top: 30rpx;
+  margin-top: 20rpx;
   margin-left: 20rpx;
   align-items: center;
 }
@@ -228,12 +228,6 @@ page{
   height: 600rpx;
   width: 710rpx;
 }
-.detail_footer{
-  height: 100rpx;
-  width: 750rpx;
-  background: #fff;
-  display: flex;
-}
 .detail_icon{
   height: 42rpx;
   width: 42rpx;
@@ -244,26 +238,7 @@ page{
   font-size: 20rpx;
   color: #656565;
   margin-top: 10rpx;
-}
-.detail_button{
-  background: #FF874B;
-  border-top-left-radius: 40rpx;
-  border-bottom-left-radius: 40rpx;
-  height: 80rpx;
-  width: 230rpx;
-}
-.detail_buttons{
-  background: #FD0000;
-  border-top-right-radius: 40rpx;
-  border-bottom-right-radius: 40rpx;
-  height: 80rpx;
-  width: 230rpx;
-}
-.detail_foot{
-  display: flex;
-  margin-left: 124rpx;
-  margin-top: 5rpx;
-}
+} 
 .after::after{
   content: "";
   clear: both;

@@ -6,20 +6,20 @@
     <swiper-item wx:for="{{3}}">
       <view class="shopping" wx:for="{{getshopping}}">
         <image class="shop_img" src="{{item.img}}"></image>
-        <view>
+        <view class="shop_all">
           <view class="shop_texts">{{item.title}}</view>
           <view class="shop_prog">
             <view class="shop_progress">
               <view class="shop_bar"></view>
             </view>
-            <view class="shop_labers">
-              <view class="shop_label">一刻达</view>
-              <view class="shop_label">满30减3</view>
-            </view>
           </view>
           <view class="shop_textss">
             <view class="moneys">{{item.moeney}}</view>
             <view class="moneys_a">{{item.monyes}}</view>
+          </view>
+          <view class="shop_labers">
+              <view class="shop_label">一刻达</view>
+              <view class="shop_label">满30减3</view>
           </view>
         </view>
         <view class="group_grab">
@@ -44,14 +44,14 @@
             <view class="shop_progress">
               <view class="shop_bar"></view>
             </view>
-            <view class="shop_labers">
-              <view class="shop_label">一刻达</view>
-              <view class="shop_label">满30减3</view>
-            </view>
           </view>
           <view class="shop_textss">
             <view class="moneys">{{item.moeney}}</view>
             <view class="moneys_a">{{item.monyes}}</view>
+          </view>
+          <view class="shop_labers">
+            <view class="shop_label">一刻达</view>
+            <view class="shop_label">满30减3</view>
           </view>
         </view>
         <view class="group_grab">

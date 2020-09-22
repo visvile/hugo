@@ -21,3 +21,172 @@ swiper {
   font-size: 24rpx;
   color: #fff;
 }
+.active{
+  height: 150rpx;
+  width: 710rpx;
+  background-color: #fff;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  display: flex;
+}
+.active_all{
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.active_t1{
+  font-size: 24rpx;
+  color: #333;
+}
+.t1{
+  font-size: 22rpx;
+  color: #fe0000;
+  border: 1rpx solid #fe0000;
+  padding: 5rpx 28rpx;
+  border-radius: 20rpx;
+}
+.active_t2{
+  margin-top: 30rpx;
+}
+/* 底部 */
+.detail_footer{
+  height: 100rpx;
+  width: 750rpx;
+  background: #fff;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+}
+.detail_foot{
+  display: flex;
+  margin-left: 124rpx;
+  margin-top: 5rpx;
+}
+.detail_buttons{
+  background: #FD0000;
+  border-radius: 40rpx;
+  height: 80rpx;
+  width: 230rpx;
+}
+.detail_all{
+  margin-left: 40rpx;
+}
+.detail_foot{
+  position: absolute;
+  right: 40rpx;
+  bottom: 10rpx;
+}
+.footer_t1{
+  color: #fff;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.detail_button{
+  border-top-right-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+  height: 80rpx;
+  width: 230rpx;
+  background-color: #fe0000;
+}
+.detail_bt{
+  border-top-left-radius: 40rpx;
+  border-bottom-left-radius: 40rpx;
+  background-color: #FF874B;
+  height: 80rpx;
+  width: 230rpx;
+}
+/* 弹出 */
+.bg{
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+  position: fixed;
+}
+.bg_bg1{
+  height: 240rpx;
+  width: 750rpx;
+  background-color: #fff;
+  position: absolute;
+  bottom: 100rpx;
+  padding-left: 20rpx;
+  position: fixed;
+}
+.bg_2{
+  height: 100rpx;
+  width: 750rpx;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+.bg_t1{
+  font-size: 22rpx;
+  color: #333;
+  margin-top: 20rpx;
+}
+.bg_picter{
+  height: 120rpx;
+  width: 120rpx;
+  margin-top: 20rpx;
+}
+.bg_all{
+  display: flex;
+}
+.bg_money{
+  display: flex;
+  font-size: 30rpx;
+  color: #FD0000;
+  margin-top: 20rpx;
+  align-items: center;
+}
+.bg_moneyt1{
+  font-size: 24rpx;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 20rpx;
+}
+.bg_biaoq{
+  display: flex;
+}
+.biaoqqq{
+  font-size: 22rpx;
+  color: #FF874B;
+  border: 1rpx solid #FF874B;
+  margin-right: 20rpx;
+  padding: 7rpx 12rpx;
+  margin-top: 20rpx;
+}
+.bg_t2{
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+.bg_bgt1{
+  margin-left: 20rpx;
+}
+.bg_picters{
+  display: flex;
+  align-items: center;
+}
+.bg_picter1{
+  height: 36rpx;
+  width: 36rpx;
+  position: absolute;
+  right: 130rpx;
+  top: 138rpx;
+}
+.bg_picter2{
+  position: absolute;
+  right: 95rpx;
+  top: 138rpx;
+  font-size: 24rpx;
+}
+.bg_picter3{
+  height: 36rpx;
+  width: 36rpx;
+  position: absolute;
+  right: 40rpx;
+  top: 138rpx;
+}

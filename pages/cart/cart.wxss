@@ -8,6 +8,9 @@
   margin-left: 20rpx;
   margin-bottom: 20rpx;
 }
+.text1{
+  color: #fe0000;
+}
 .shop{
   margin-bottom: 20rpx;
 }
@@ -28,7 +31,7 @@
   font-size: 28rpx;
   color: #333;
   height: 150rpx;
-  line-height: 75rpx;
+  line-height: 50rpx;
   margin-left: 20rpx;
   margin-top: 20rpx;
 }
@@ -37,6 +40,17 @@
   font-size: 30rpx;
   align-items: center;
   color: #fe0000;
+}
+.biaoqian{
+  display: flex;
+}
+.biaoq_text{
+  font-size: 22rpx;
+  border: #FF874B 1rpx solid;
+  padding: 0 12rpx;
+  text-align: center;
+  color: #FF874B;
+  margin-right: 20rpx;
 }
 .text5{
   font-size: 24rpx;
@@ -113,6 +127,9 @@
   color: #999;
   line-height: 190rpx;
   margin-left: 20rpx;
+}
+.shop_texts{
+  margin-top: 40rpx;
 }
 .shop_textss{
   font-size: 24rpx;

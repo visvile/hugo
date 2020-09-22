@@ -1,4 +1,4 @@
-// pages/order/detail.js
+const app = getApp()
 Page({
 
   /**
@@ -7,6 +7,7 @@ Page({
   data: {
     isselect:2,
     hiddenName:true,
+    image_icon:app.globalData.image_icon,
   },
   clickfales(){
     var that = this
@@ -54,6 +55,11 @@ Page({
         showModalStatus: true,
       })
     }
+  },
+  gotoRefund(){
+    wx.navigateTo({
+      url: './refund',
+    })
   },
   /**
    * 生命周期函数--监听页面加载

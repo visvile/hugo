@@ -1,24 +1,48 @@
 /* pages/my/wallet.wxss */
 .top_or{
   width: 715rpx;
-  height: 300rpx;
+  height: 200rpx;
   margin: 0 auto;
   margin-top: 20rpx;
   position: relative;
 }
 .top_or .image{
   width: 715rpx;
-  height: 300rpx;
+  height: 200rpx;
   background-size: 100%;
 }
 .top_or .content{
   width: 715rpx;
-  height: 300rpx;
+  height: 200rpx;
   position: absolute;
   top: 0;
   left: 0;
   box-sizing: border-box;
   padding: 50rpx 40rpx 0 50rpx;
+}
+.content .t1{
+  font-size: 48rpx;
+  color: #fff;
+  text-align: center;
+}
+.content .t2{
+  display: flex;
+  font-size: 28rpx;
+  color: #fff;
+  justify-content: center;
+}
+.content .t3{
+  width: 60rpx;
+  height: 36rpx;
+  font-size: 24rpx;
+  color: #fff;
+  background-color: #FE0000;
+  border-radius:14rpx;
+  line-height: 36rpx;
+  text-align: center;
+  margin-left: 40rpx;
+  position: absolute;
+  right: 214rpx;
 }
 .top_or .content .one{
   line-height: 60rpx;
@@ -29,6 +53,7 @@
   margin-bottom: 50rpx;
   color: #fff;
 }
+
 .top_or .content .one .left{
   font-size: 28rpx;
   width: 280rpx;

@@ -1,6 +1,7 @@
 <!--pages/index/groupdetail.wxml-->
-
-  <navigationBar text='拼团详情'></navigationBar>
+<page-meta page-style="overflow-y:{{isPage}}">
+  <navigationBar text='商品详情'></navigationBar>
+  <!-- 轮播图 -->
   <swiper indicator-dots="{{indicatorDots}}"
         autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{getcarousel}}"  wx:key="key">
@@ -9,6 +10,7 @@
       </swiper-item>
     </block>
   </swiper>
+  <!-- 横幅 -->
   <view class="detail_heng">
     <view class="detail_text">￥0.70/斤<text>原价￥1.20/斤</text></view>
     <view class="detail_hint">已累计拼成450份</view>
@@ -16,13 +18,24 @@
       <view>还剩<text>18</text>份成团</view>
     </view>
   </view>
+  <!-- 商品介绍 -->
   <view class="detail_label">
     <view class="detail_labels">
       <view class="text">黄心土豆 - 1两以上（大）</view>
       <view class="texts">黄心土豆又大又圆还好 吃过买过不后悔 看过路过瞧一瞧 看一看 保证吃了还想吃 买了还想</view>
     </view>
   </view>
+  <!-- 配送 -->
   <view class="delivery">配送<text>23:00前下单，预计23：15送达</text></view>
+    <!-- 活动 -->
+  <view class="active">
+    <view class="detail_name">活动</view>
+    <view class="active_all">
+      <view class="active_t1"><text class="t1">满减</text> 满3000元减300元</view>
+      <view class="active_t1 active_t2"><text class="t1">买赠</text> 买一斤送一斤</view>
+    </view>
+  </view>
+  <!-- 商品详情 -->
   <view class="detail_shop">
     <view class="detail_name">商品详情</view>
     <view class="detail_shopp">
@@ -33,28 +46,93 @@
       <view>储藏 <text>冷藏</text></view>
     </view>
   </view>
+  <!-- 拼团规则 -->
   <view class="detail_paly"></view>
+  <!-- 商品图片 -->
   <view class="detail_imgs">
     <image class="detail_imgpng" src="{{image_icon}}xihongshi.png"></image>
   </view>
+  <!-- 价格说明 -->
   <view class="detail_rule">
     <image class="detail_rules" src="{{image_icon}}xihongshi.png"></image>
   </view>
-  <view class="detail_footer">
+  <!-- 底部 -->
+  <!-- 样式1 -->
+  <view class="detail_footer" wx:if='{{flag == 0}}'>
     <view class="detail_all">
       <image class="detail_icon" src="{{image_icon}}home.png"></image>
       <view>回首页</view>
     </view>
     <view class="detail_foot">
-      <view class="detail_button">
-        <view class="footer_money">￥95.00</view>
-        <view class="fotter_hint">单独购买</view>
-      </view>
       <view class="detail_buttons">
         <view class="footer_money">￥90.00</view>
         <view class="fotter_hint">一键开团</view>
       </view>
     </view>
-
   </view>
-
+  <!-- 样式2 -->
+    <view class="detail_footer" wx:else='{{flag == 1}}'>
+    <view class="detail_all">
+      <image class="detail_icon" src="{{image_icon}}home.png"></image>
+      <view>回首页</view>
+    </view>
+    <view class="detail_all">
+      <image class="detail_icon" src="/images/cart.png"></image>
+      <view>购物车</view>
+    </view>
+    <view class="detail_foot">
+      <view class="detail_bt">
+        <view class="footer_t1" bindtap="getClickcart">加入购物车</view>
+      </view>
+      <view class="detail_button">
+        <view class="footer_t1" >立即购买</view>
+      </view>
+    </view>
+  </view>
+  <!-- 弹出层 -->
+  <view  hidden="{{hiddenName}}">
+    <view class="bg" bindtap="showMask"></view>
+    <view class="bg_bg1">
+      <view class="bg_t1">今日达</view>
+      <view class="bg_all">
+        <view><image class="bg_picter" src="/images/shouhuo.png"></image></view>
+        <view class="bg_bgt1">
+          <view class="bg_t2">黄心土豆 - 1两以上（大）</view>
+          <view class="bg_money">
+            <view>￥25.00</view>
+            <view class="bg_moneyt1">￥30.00</view>
+          </view>
+          <!-- <view class="bg_biaoq">
+            <view class="biaoqqq">一刻达</view>
+            <view class="biaoqqq">今日特价</view>
+          </view> -->
+        </view>
+        <view class="bg_picters">
+          <view><image class="bg_picter1" src="/images/mareak.png"></image></view>
+          <view class="bg_picter2">1</view>
+          <view><image class="bg_picter3" src="/images/mareak.png"></image></view>
+        </view>
+      </view>
+    </view>
+    <view class="bg_2">
+      <view class="detail_footer">
+        <view class="detail_all">
+          <image class="detail_icon" src="{{image_icon}}home.png"></image>
+          <view>回首页</view>
+        </view>
+        <view class="detail_all">
+          <image class="detail_icon" src="/images/cart.png"></image>
+          <view>购物车</view>
+        </view>
+        <view class="detail_foot">
+          <view class="detail_bt">
+            <view class="footer_t1">加入购物车</view>
+          </view>
+          <view class="detail_button">
+            <view class="footer_t1">立即购买</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+ </page-meta>

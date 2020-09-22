@@ -38,7 +38,10 @@
     "pages/order/refunds",
     "pages/index/address",
     "pages/order/evaluation",
-    "pages/index/addressadd"
+    "pages/index/addressadd",
+    "pages/ceshi/index",
+    "pages/index/shop_je",
+    "pages/index/newGift"
   ],
   "usingComponents": {
     "navigationBar": "/components/navigationBar/navigationBar"

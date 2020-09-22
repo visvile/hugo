@@ -2,7 +2,7 @@
 <navigationBar text='浏览记录'></navigationBar>
 <view class="navlist" wx:for='{{4}}'>
   <view class="nav">
-    <view><image class="nav_icon" src="/images/lele.png"></image></view>
+    <view><image class="nav_icon" src="{{image_icon}}kele.png"></image></view>
     <view class="nav_tetx">
       <view class="text1">[可口可乐] 汽水 碳酸饮料</view>
       <view class="nav_money">

@@ -22,7 +22,7 @@
     <view class="text1">收货地址</view>
     <input class="inputclass" placeholder="点击选择收货地址" type="text" placeholder-class='placeclass' value="{{name}}"></input>
     <view>
-      <image class="images" src="/images/right.png"></image>
+      <image class="images" src="{{image_icon}}right.png"></image>
     </view>
   </view>
   <view class="addtext">

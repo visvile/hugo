@@ -1,4 +1,4 @@
-// pages/my/set.js
+// pages/index/shop_je.js
 Page({
 
   /**
@@ -7,16 +7,7 @@ Page({
   data: {
 
   },
-  gotoinvoice(){
-    wx.navigateTo({
-      url: '../invoice/list',
-    })
-  },
-  gotonews_list(){
-    wx.navigateTo({
-      url: '../my/serci/new',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

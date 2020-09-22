@@ -1,7 +1,7 @@
 <!--pages/index/market.wxml-->
   <navigationBar text='今日特价'></navigationBar>
     <view>
-      <image class="bg_bg2" src="../../images/icon_bg2.png"></image>
+      <image class="bg_bg2" src="/images/icon_bg2.png"></image>
     </view>
     <!-- 标题 -->
     <view class="title">每日菜场</view>
@@ -11,7 +11,7 @@
 <!-- 商品 -->
 <view>
   <view class="shop_one" wx:for='{{5}}'>
-    <view><image class="one_icon" src="/images/lele.png"></image></view>
+    <view><image class="one_icon" src="{{image_icon}}kele.png"></image></view>
     <view class="text2">
       <view>[可口可乐] 汽水 碳酸饮料</view>
       <view class="text3">
@@ -29,7 +29,7 @@
 </view>
 <!-- 会员 -->
 <view class="vip">
-  <view><image class="vip_icon" src="/images/icon_vip.png"></image></view>
+  <view><image class="vip_icon" src="{{image_icon}}icon_vip.png"></image></view>
   <!-- <view class="vip_text">会员满减券 优惠多多</view> -->
 </view>
 <!-- 优惠券 -->
@@ -54,7 +54,7 @@
   <!-- 商品 -->
   <view>
     <view class="shop_one" wx:for='{{2}}'>
-      <view><image class="one_icon" src="/images/lele.png"></image></view>
+      <view><image class="one_icon" src="{{image_icon}}kele.png"></image></view>
       <view class="text2">
         <view>[可口可乐] 汽水 碳酸饮料</view>
         <view class="text3">
@@ -72,7 +72,7 @@
   </view>
     <!-- 更多精彩 -->
   <view class="more">
-    <image class="more_icon" src="/images/icon_vip.png"></image>
+    <image class="more_icon" src="{{image_icon}}icon_vip.png"></image>
   </view>
   <!-- 其他频道 -->
   <view>

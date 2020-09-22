@@ -6,6 +6,7 @@
   <view class="top {{item.id == index1 ? 'active' : ''}}" wx:for="{{couTop}}" data-index1="{{index}}" wx:key="key" bindtap="top">
     <view class="t1">{{item.name}}</view>
   </view>
+
 </view>
 <!-- 没有订单的显示 -->
 <view class="no_group" wx:if="{{group != 1}}">
@@ -34,8 +35,8 @@
         <view class="right rights" wx:if="{{item.statusimg == 1}}">去支付</view>
         <view class="right" wx:if="{{item.statusimg == 2}}">已退款</view>
         <view class="right" wx:if="{{item.statusimg == 3}}">评价</view>
-        <view class="right" wx:if="{{item.statusimg == 4}}">查看详情</view>
-        <view class="right" wx:if="{{item.statusimg == 5}}">催货</view>
+        <view class="right" wx:if="{{item.statusimg == 4}}" bindtap="gotoDetail">查看详情</view>
+        <view class="right" wx:if="{{item.statusimg == 5}}" bindtap="getClickToast">催货</view>
         <view class="right" wx:if="{{item.statusimg == 6}}">查看物流</view>
         <view class="right" wx:if="{{item.statusimg == 7}}">确认收货</view>
         <view class="right" wx:if="{{item.statusimg == 8}}">再次购买</view>

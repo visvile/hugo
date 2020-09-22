@@ -5,7 +5,7 @@
   <navigationBar text='每日菜场'></navigationBar>
     <!-- 定位和搜索 -->
     <view>
-      <image class="bg_bg2" src="../../images/icon_bg2.png"></image>
+      <image class="bg_bg2" src="/images/icon_bg2.png"></image>
     </view>
   <view class="nav_botton" >
     <view class="nav" style="top:{{navigationBarHeight + 44}}px">
@@ -20,7 +20,7 @@
     <!-- 定位悬浮 -->
     <view class="navs" wx:if='{{fixTop<scrollTop}}'  style="top:{{navigationBarHeight + 44}}px">
      <!-- 定位 -->
-      <view bindtap="gotoaddress" class="address"><image class="address_img" src="/images/weizhi.png"></image>远东路</view> 
+      <view bindtap="gotoaddress" class="address"><image class="address_img" src="{{image_icon}}icon_12.png"></image>远东路</view> 
       <!-- 搜索 -->
       <view class="search" bindtap="gotosearchpage">
         <view><image class="search_img" src="{{image_icon}}search.png"></image></view>

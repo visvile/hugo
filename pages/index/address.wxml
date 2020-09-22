@@ -18,7 +18,7 @@
   <view class="my_address">
     <view class="address">
       <view class="dq_address">
-        <view><image class="address_icon" src="/images/weizhi.png"></image></view>
+        <view><image class="address_icon" src="{{image_icon}}icon_12.png"></image></view>
         <view>当前位置</view>
       </view>
       <view class="cx_address">

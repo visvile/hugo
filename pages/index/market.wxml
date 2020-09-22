@@ -21,7 +21,7 @@
 <!-- 商品 -->
 <view>
   <view class="shop_one" wx:for='{{5}}'>
-    <view><image class="one_icon" src="/images/lele.png"></image></view>
+    <view><image class="one_icon" src="{{image_icon}}kele.png"></image></view>
     <view class="text2">
       <view>[可口可乐] 汽水 碳酸饮料</view>
       <view class="text3">
@@ -38,7 +38,7 @@
 </view>
 <!-- 会员 -->
 <view class="vip">
-  <view><image class="vip_icon" src="/images/icon_vip.png"></image></view>
+  <view><image class="vip_icon" src="{{image_icon}}icon_vip.png"></image></view>
   <!-- <view class="vip_text">会员满减券 优惠多多</view> -->
 </view>
 <!-- 优惠券 -->

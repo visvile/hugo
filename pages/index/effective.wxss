@@ -1,6 +1,5 @@
 /* pages/index/effective.wxss */
 .shop_labers{
-  margin-top: 20rpx;
   margin-left:  30rpx;
   display: flex;
   width: 100%;
@@ -8,14 +7,18 @@
 .shop_label{
   font-size: 22rpx;
   color: #FF874B;
-  padding: 7rpx;
   border: 1rpx solid #FF874B;
-  width: 100rpx;
   text-align: center;
   margin-right: 20rpx;
+  margin-top: 20rpx;
+  padding: 7rpx 12rpx;
 }
-.shop_textss{
-  margin-top: 30rpx;
+.shop_img{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+.shop_all{
+  height: 190rpx;
 }
 /* 选项卡 */
 .categories {

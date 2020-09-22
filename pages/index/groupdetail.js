@@ -10,6 +10,8 @@ Page({
    */
   data: {
     id:'',
+    flag:1,
+    hiddenName:true,
     image_icon:app.globalData.image_icon,
     indicatorDots: true,
     vertical: false,
@@ -47,53 +49,37 @@ Page({
       // })
     })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  getClickcart(){
+    console.log('点击了购物车')
+    this.setData({
+      hiddenName:!this.data.hiddenName
+    })
+    if (this.data.gotoselect) {
+      this.setData({
+        isPage: "scroll",
+        showModalStatus: true,
+      })
+    } else {
+      this.setData({
+        isPage: "hidden",
+        showModalStatus: false,
+      })
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  showMask:function(){
+    this.setData({
+      hiddenName:!this.data.hiddenName
+    })
+    if (this.data.getClickcart) {
+      this.setData({
+        isPage: "hidden",
+        showModalStatus: false,
+      })
+    } else {
+      this.setData({
+        isPage: "scroll",
+        showModalStatus: true,
+      })
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })

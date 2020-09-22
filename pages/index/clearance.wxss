@@ -155,11 +155,15 @@ page{
   display: flex;
   flex-wrap: wrap;
   margin-top: 50rpx;
-  margin-left: 20rpx;
+  background-color: #fff;
+  width: 710rpx;
+  border-radius: 10rpx;
 }
 .baokuan_one{
   margin-right: 96rpx;
   position: relative;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
 }
 
 .bao_icon{
@@ -209,7 +213,7 @@ page{
   height: 200rpx;
   background-color: #a9d77d;
   border-radius: 20rpx;
-  margin-top: 133rpx;
+  margin-top: 60rpx;
   position: relative;
 }
 .other_icon{
@@ -267,4 +271,15 @@ page{
   margin: 0;
   margin-top: -30rpx;
   margin-bottom: 85rpx;
+}
+.more{
+  height: 110rpx;
+  display: flex;
+  justify-content: center;
+  padding-top: 20rpx;
+
+}
+.more_icon{
+  height: 45rpx;
+  width: 260rpx;
 }

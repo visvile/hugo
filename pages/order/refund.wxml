@@ -13,7 +13,7 @@
     <view>
     <view class="vi_inp with_inp" wx:for='{{shopList}}' wx:key='key'>
       <checkbox-group bindchange="radiochange" >
-        <checkbox class="checkbox" value='index'>
+        <checkbox class="checkbox" value='index' checked="{{item.checked}}"> 
           <view class="shoplist">
             <view>
               <image class="shop_icon" src="{{item.img}}"></image>
@@ -27,6 +27,10 @@
                 </view>
                 <view class="money_num">X{{item.num}}</view>
               </view>
+              <view class="money_biaoq">
+                  <view class="money_biaoqian">一刻达</view>
+                  <view class="money_biaoqian">今日特价</view>
+              </view>
             </view>
           </view>
         </checkbox>
@@ -35,8 +39,10 @@
     </view>
     <!-- end -->
     <view class="group_qx">
-      <checkbox-group class='checkbox'>
-        <checkbox><view class="radio_group">全选</view></checkbox>
+      <checkbox-group class='checkbox' bindchange="checkboxChanges">
+        <label bindtap="selectall">  
+          <checkbox value="全选" /> <text class="radio_group">全选</text>
+        </label>
       </checkbox-group>
       <view class="group_je">金额：<text>￥25.00</text></view>
     </view>
@@ -63,5 +69,5 @@
       <view>退款金额：<text class="tui_jine">￥200.65</text></view>
       <view class="tuikuan_tshi"> 退款至您的支付账户</view>
     </view>
-    <view class="tuikuan_tj">提交</view>
+    <view class="tuikuan_tj" bindtap="gotoReunds">提交</view>
 </view>

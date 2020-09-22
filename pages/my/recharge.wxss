@@ -1,19 +1,19 @@
 /* pages/my/recharge.wxss */
 .rech_top{
   width:715rpx;
-  height: 174rpx;
+  height: 200rpx;
   margin: 0 auto;
   margin-top: 20rpx;
   position: relative;
 }
 .rech_top .image{
   width:715rpx;
-  height: 174rpx;
+  height: 200rpx;
   background-size: 100%;
 }
 .rech_top .content{
   width:715rpx;
-  height: 174rpx;
+  height: 200rpx;
   position: absolute;
   top: 0;
   left: 0;

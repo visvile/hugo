@@ -100,7 +100,7 @@
 }
 .shop_je{
   display: flex;
-  margin-top: 46rpx;
+  margin-top: 20rpx;
   align-items: center;
 }
 .shop_sl{
@@ -165,5 +165,15 @@
   border-radius: 30rpx;
   font-size: 24rpx;
   margin-right: 20rpx;
-
+}
+.shop_biaoq{
+  display: flex;
+  margin-top: 20rpx;
+}
+.biaoq_text{
+  font-size: 22rpx;
+  color: #FF874B;
+  border: 1rpx solid #FF874B;
+  padding: 7rpx;
+  margin-right: 20rpx;
 }

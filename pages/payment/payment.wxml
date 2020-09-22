@@ -74,6 +74,10 @@
             <view class="moneys_a">{{item.monyes}}</view>
             <view class="number_a">X1</view>
           </view>
+          <view class="money_biaoq">
+            <view class="money_biaoqian">一刻达</view>
+            <view class="money_biaoqian">临期清仓</view>
+          </view>
       </view>
  </view>
     <view class="commodity">

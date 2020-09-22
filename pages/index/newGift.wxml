@@ -1,0 +1,54 @@
+<!-- 新人专享大礼包 -->
+<navigationBar text='新人专享'></navigationBar>
+<view class="newGiftBanner">
+  <image class="bg1" src="/images/bg1.png" mode="widthFix"></image>
+</view>
+<view class="newGiftCon">
+  <image class="newGiftConImgTop" mode="widthFix" src="/images/bg2.png"></image>
+  <view class="newGiftConCoupon">
+    <view class="newGiftConCouponList">
+      <view class="newGiftConCouponListLi" wx:for="{{discount}}" wx:key="key">
+      <image src="/images/bg4.png" class="imageee"></image>
+        <text class="t1">{{item.price_two}}</text>
+        <text class="t2">满{{item.price_one}}使用</text>
+        <text class="t3">{{item.type_name}}</text>
+      </view>
+      
+    </view>
+    <view class="newGiftConCouponBtnAdd">
+      <image src="/images/bg3.png" mode="widthFix" bindtap="lingQu" class="bg3"></image>
+    </view>
+  </view>
+  <!-- 商品 -->
+  <view class="new_t1">
+    <image class="new_images" src="/images/bg1.png"></image>
+  </view>
+  <view>
+    <view class="shop_1">
+      <view>
+        <image class="shop_picter" src="{{image_icon}}kele.png"></image>
+      </view>
+      <view class="shop_t1">
+        <view class="shop_t2">可口可乐汽水【碳酸饮料】</view>
+        <view class="shop_money">
+          <view>￥25.00</view>
+          <view class="shop_t3">￥30.00</view>
+        </view>
+        <view class="shop_news">
+          <view class="shop_t4">一刻达</view>
+          <view class="shop_t4">新人专享</view>
+        </view>
+      </view>
+      <view class="shop_gou">购</view>
+    </view>
+  </view>
+</view>
+ <!-- 活动规则 -->
+    <view class="active_imgs">
+      <image class="active_img" src="{{image_icon}}kele.png"></image>
+    </view>
+    <view class="active_footer">
+      <view class="active_rules" wx:for="{{active_rules}}" wx:key='key'>
+        <view>dshdffhisrhoew富哦热帖瑞如今偶尔偶然荷藕我ueorheoi伛广东省法规特人体退热贴也太热</view>
+      </view>
+   </view>

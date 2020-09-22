@@ -3,11 +3,11 @@
 <view class="spell_ul">
   <view class="li" >
    <view class="bt">
-      <image class="icon" src="/images/lele.png"></image>
+      <image class="icon" src="{{image_icon}}kele.png"></image>
       <view class="time">2020-02-31</view>
     </view>
     <view class="nr">
-      <image wx:for="{{3}}" wx:key="key" src="/images/lele.png" class="img"></image>
+      <image wx:for="{{3}}" wx:key="key" src="{{image_icon}}kele.png" class="img"></image>
       <text class="all_num">共1件商品</text>
     </view>
   </view>

@@ -1,0 +1,3 @@
+<!--pages/ceshi/index.wxml-->
+<navigationBar text='测试' back='{{back}}'></navigationBar>
+<button bindtap="getHfpay">微信支付</button>

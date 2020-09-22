@@ -1,0 +1,205 @@
+/* pages/index/newGift.wxss */
+page{
+  /* background: #b4d78e; */
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.bg1{
+  width: 100%;
+  height: 180rpx;
+}
+.newGiftBanner{
+  width: 100%;
+  float: left;
+}
+.newGiftCon{
+  width: 94%;
+  float: left;
+  margin-left: 3%;
+  position: relative;
+
+}
+.newGiftConImgTop{
+  width: 100%;
+  height: 556rpx;
+}
+.newGiftConCoupon{
+  position: absolute;
+  top: 180rpx;
+  left: 30rpx;
+
+}
+.newGiftConCouponList{
+  width: 96%;
+  float: left;
+  margin-top: 20rpx;
+}
+.newGiftConCouponListLi{
+  width: 192rpx;
+  height: 110rpx;
+  float: left;
+  /* margin-left: 2%; */
+  margin:0 10rpx;
+  margin-top: 20rpx;
+  position: relative;
+  color: #ff864b;
+}
+.imageee{
+  width: 192rpx;
+  height: 110rpx;
+  background-size: 100%;
+  
+}
+.newGiftConCouponListLi .t1{
+  font-size: 55rpx;
+  position: absolute;
+  top: -5rpx;
+  left: 18rpx;
+}
+.newGiftConCouponListLi .t2{
+  width: 100rpx;
+  text-align: center;
+  font-size: 18rpx;
+  position: absolute;
+  top: 13rpx;
+  right: 14rpx;
+}
+.newGiftConCouponListLi .t3{
+  text-align: center;
+  width: 90rpx;
+  font-size: 18rpx;
+  position: absolute;
+  bottom: 48rpx;
+  right: 18rpx;
+}
+/* .newGiftConCouponListLi:nth-child(3n){
+  margin-right: 0;
+} */
+.newGiftConCouponListLiText1{
+  width: 40%;
+  float: left;
+  margin-left: 3%;
+}
+.newGiftConCouponListLiText1_1{
+  font-size: 80rpx;
+  font-weight: bold;
+  color: #598e3a;
+  float: left;
+  text-align: right;
+  width: calc(100% - 30rpx);
+  margin-top: 30rpx;
+}
+.newGiftConCouponListLiText1_2{
+  font-size:26rpx;
+  float: left;
+  margin-top: 48rpx;
+  color: #598e3a;
+}
+.newGiftConCouponListLiText2{
+  width: 53%;
+  float: left;
+  text-align: center;
+}
+.newGiftConCouponListLiText2_1{
+  width: 100%;
+  float: left;
+  text-align: center;
+  color: #598e3a;
+  font-size: 26rpx;
+  margin-top: 40rpx;
+  margin-bottom: 6rpx;
+}
+.newGiftConCouponListLiText2_2{
+  padding: 4rpx 10rpx;
+  background: #598e3a;
+  font-size: 26rpx;
+  color: #fff;
+  text-align: center;
+  display: initial;
+}
+.newGiftConCouponBtnAdd{
+  float: left;
+}
+.bg3{
+  height: 100rpx;
+  width: 553rpx;
+  margin-top: 30rpx;
+  margin-left: 50rpx;
+}
+/* 商品 */
+.new_t1{
+  text-align: center;
+  font-size: 40rpx;
+  color: #FF874B; 
+  font-family: 'STHupo';
+  font-weight: bold;
+  height: 109rpx;
+  line-height: 109rpx;
+}
+.new_images{
+  height: 38rpx;
+  width: 198rpx;
+}
+.shop_1{
+  height: 190rpx;
+  width: 710rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  display: flex;
+  position: relative;
+}
+.shop_picter{
+  height: 150rpx;
+  width: 150rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+}
+.shop_money{
+  display: flex;
+  font-size: 30rpx;
+  color: #fe0000;
+  padding-right: 20rpx;
+}
+.shop_news{
+  display: flex;
+}
+.shop_t1{
+  height: 150rpx;
+  line-height: 50rpx;
+  margin-left: 20rpx;
+}
+.shop_t2{
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+.shop_t3{
+  font-size: 24rpx;
+  color: #999;
+  text-decoration: line-through;
+}
+.shop_t4{
+  font-size: 22rpx;
+  color: #FF874B;
+  border: 1rpx solid #ff864b;
+  margin-right: 20rpx;
+  padding: 0 12rpx;
+}
+.shop_gou{
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  color: #fff;
+  background-color: #ff864b;
+  height: 80rpx;
+  width: 80rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  font-family: 经典叠圆体简;
+  border-radius: 50%;
+  line-height: 80rpx;
+  text-align: center;
+}

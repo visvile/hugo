@@ -46,6 +46,7 @@ Page({
     name:0,
     clickId:0,
     select_all: false,
+    flag:0
     
   },
   // 点击获取每个id
@@ -127,10 +128,19 @@ Page({
       select_all: (!that.data.select_all)
     })
   },
-  //跳转凑单页面
-  gotogoodlist(){
-    wx.navigateTo({
-      url: './goodlist'
+  getClickManage(e){
+    console.log(e)
+    var that = this
+    var index = e.currentTarget.dataset.index
+    that.setData({
+      flag:1
+    })
+  },
+  getClickManages(e){
+    var that = this
+    var index = e.currentTarget.dataset.index
+    that.setData({
+      flag:0
     })
   },
 })

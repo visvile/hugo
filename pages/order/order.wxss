@@ -1,3 +1,4 @@
+
 .cou_top{
   font-size: 28rpx;
   color: #333;
@@ -7,25 +8,38 @@
   margin-bottom: 17rpx;
 }
 .cou_top .top{
-  width: 19%;
+  /* width: 19%; */
   text-align: center;
   position: relative;
   float: left;
   height: 90rpx;
   text-align: center;
+  width: 145rpx;
 }
 .cou_top .top .t1{
   height: 40rpx;
   line-height: 40rpx;
   display: inline-block;
   margin-top: 25rpx;
+  display: flex;
+  justify-content: space-around;
 }
 .cou_top .top.active .t1{
   background-color: #FE0000;
-  padding: 0 10rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
   box-sizing: border-box;
   border-radius:14rpx;
   color: #fff;
+  height: 40rpx;
+  line-height: 40rpx;
+  box-sizing: border-box;
+}
+.gowowallet{
+  margin-left: 60rpx;
+}
+.gotonews{
+  margin-right: 60rpx;
 }
 .no_group{
   width: 600rpx;

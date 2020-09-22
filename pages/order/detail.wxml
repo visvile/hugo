@@ -38,18 +38,11 @@
         <view>联系商家</view>
         <image class="group_phone" src="/images/icon_phones.png"></image>
       </view>
-      <view class="group_tk">
+      <view class="group_tk" bindtap="gotoRefund">
         <view>申请退款</view>
         <view class="group_ts">
           <view>退回收到的商品</view>
-          <image class="group_back" src="/images/right.png"></image>
-        </view>
-      </view>
-      <view class="group_tk">
-        <view>申请换货</view>
-        <view class="group_ts">
-          <view>更换收到的商品</view>
-          <image class="group_back" src="/images/right.png"></image>
+          <image class="group_back" src="{{image_icon}}right.png"></image>
         </view>
       </view>
     </view>
@@ -81,6 +74,10 @@
           <view class="shop_xj">￥25.00</view>
           <view class="shop_yj">￥30.00</view>
           <view class="shop_sl">X1</view>
+        </view>
+        <view class="biaoqian">
+          <view class="biaoq_text">一刻达</view>
+          <view class="biaoq_text">满30减5</view>
         </view>
       </view>
     </view>

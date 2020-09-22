@@ -13,38 +13,38 @@
 				<view class="t1">￥0.00</view>
 				<view class="t2">账户余额</view>
 			</view>
-			<view class="group" bindtap="gotocoupon">
+			<view class="group gotocoupon"  bindtap="gotocoupon">
 				<view class="t1">3</view>
 				<view class="t2">优惠券</view>
 			</view>
-			<view class="group" bindtap="gotoweikaifang">
-				<view class="t1">0</view>
-				<view class="t2">我的推广</view>
+			<view class="group" bindtap="gotonews">
+				<view class="t1">378</view>
+				<view class="t2">消息</view>
 			</view>
 		</view>
 	</view>
 </view>
 <view class="my_order order_after">
-	<view class="bt">我的订单</view>
+	<view class="bt_all">
+			<view class="bt">我的订单</view>
+	</view>
+
 	<view class="order_group" bindtap="gotoother">
 		<view class="group">
-			<view class="t1">1</view>
-			<view class="t2">全部</view>
-		</view>
-		<view class="group">
-			<view class="t1">1</view>
+			<view class="t1"><image class="icon_order" src="/images/fukuan.png"></image></view>
 			<view class="t2">待付款</view>
+			<view class="right_red" >2</view>
 		</view>
 		<view class="group">
-			<view class="t1">1</view>
+			<view class="t1"><image class="icon_order" src="/images/fahuo.png"></image></view>
 			<view class="t2">待发货</view>
 		</view>
 		<view class="group">
-			<view class="t1">1</view>
+			<view class="t1"><image class="icon_order" src="/images/shouhuo.png"></image></view>
 			<view class="t2">待收货</view>
 		</view>
 		<view class="group">
-			<view class="t1">1</view>
+			<view class="t1"><image class="icon_order" src="/images/tuikuan.png"></image></view>
 			<view class="t2">退款/售后</view>
 		</view>
 	</view>
@@ -61,9 +61,9 @@
 <view class="my_order comm">
 	<view class="bt">常用应用</view>
 	<view class="comm_group">
-    <view class="group" bindtap="gotonews">
-      <image class="icon" src="{{image_icon}}my_icon1.png"></image>
-      <view class="icon_t">消息</view>
+    <view class="group" bindtap="gotoset">
+      <image class="icon" src="{{image_icon}}my_icon8.png"></image>
+      <view class="icon_t">设置</view>
     </view>
     <view class="group" bindtap="gotospellgroup">
       <image class="icon" src="{{image_icon}}my_icon2.png"></image>
@@ -76,27 +76,6 @@
     <view class="group" bindtap="gotopurchase">
       <image class="icon" src="{{image_icon}}my_icon4.png"></image>
       <view class="icon_t">常购商品</view>
-    </view>
-  </view>
-</view>
-<view class="my_order comm">
-	<view class="bt">服务中心</view>
-	<view class="comm_group">
-    <view class="group" bindtap="gotosercinew">
-      <image class="icon" src="{{image_icon}}my_icon5.png"></image>
-      <view class="icon_t">新品需求</view>
-    </view>
-    <view class="group">
-      <image class="icon" src="{{image_icon}}my_icon6.png"></image>
-      <view class="icon_t"><button class="icon_ts" open-type="contact">在线客服</button></view>
-    </view>
-    <view class="group" bindtap="gotoinvoice">
-      <image class="icon" src="{{image_icon}}my_icon7.png"></image>
-      <view class="icon_t">申请发票</view>
-    </view>
-    <view class="group" bindtap="gotoset">
-      <image class="icon" src="{{image_icon}}my_icon8.png"></image>
-      <view class="icon_t">设置</view>
     </view>
   </view>
 </view>

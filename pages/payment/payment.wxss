@@ -107,7 +107,7 @@ page{
   position: relative;
 }
 .shop_texts{
-  margin-top: 50rpx;
+  margin-top: 20rpx;
 }
 .number_a{
   font-size: 28rpx;
@@ -331,5 +331,17 @@ page{
   height: 38rpx;
   width: 38rpx;
   align-items: center;
+  margin-right: 20rpx;
+}
+.money_biaoq{
+  display: flex;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.money_biaoqian{
+  color: #FF874B;
+  font-size: 22rpx;
+  border: 1rpx solid #FF874B;
+  padding: 7rpx;
   margin-right: 20rpx;
 }

@@ -1,7 +1,6 @@
 const app = getApp()
 
 Component({
-
   properties: {
     text: {
       type: String,
@@ -30,7 +29,7 @@ Component({
     },
     back: function () {
       wx.navigateBack({
-        delta: 1
+        delta: 2
       })
     }
   }

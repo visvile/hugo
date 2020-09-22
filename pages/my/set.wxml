@@ -3,18 +3,26 @@
 <view class="set">
   <view class="jingying">
     <view>经营证照</view>
-    <view><image class="set_icon" src="/images/right.png"></image></view>
+    <view><image class="set_icon" src="{{image_icon}}right.png"></image></view>
   </view>
  <view class="jingying">
     <view>用户协议</view>
-    <view><image class="set_icon" src="/images/right.png"></image></view>
+    <view><image class="set_icon" src="{{image_icon}}right.png"></image></view>
   </view>
   <view class="jingying">
     <view>隐私政策</view>
-    <view><image class="set_icon" src="/images/right.png"></image></view>
+    <view><image class="set_icon" src="{{image_icon}}right.png"></image></view>
   </view>
   <view class="jingying">
     <view>资质规则</view>
+    <view><image class="set_icon" src="{{image_icon}}right.png"></image></view>
+  </view>
+  <view class="jingying" bindtap="gotonews_list">
+    <view>新品需求</view>
+    <view><image class="set_icon" src="{{image_icon}}right.png"></image></view>
+  </view>
+  <view class="jingying" bindtap="gotoinvoice">
+    <view>我的发票</view>
     <view><image class="set_icon" src="/images/right.png"></image></view>
   </view>
 </view>

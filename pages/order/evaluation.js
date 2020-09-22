@@ -22,22 +22,6 @@ Page({
       name:'biubiu',
       id:3,
     }],
-    statr_icon:[{
-      id:0,
-      img:'/images/statrs.png'
-    },{
-      id:1,
-      img:'/images/statrs.png'
-    },{
-      id:2,
-      img:'/images/statrs.png'
-    },{
-      id:3,
-      img:'/images/statrs.png'
-    },{
-      id:4,
-      img:'/images/statr.png'
-    },]
   },
   onChange() {
 

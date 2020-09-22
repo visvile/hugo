@@ -13,7 +13,7 @@
 <!-- 商品 -->
 <view>
   <view class="shop_one" wx:for='{{5}}'>
-    <view><image class="one_icon" src="/images/lele.png"></image></view>
+    <view><image class="one_icon" src="{{image_icon}}kele.png"></image></view>
     <view class="text2">
       <view class="text_title">[可口可乐] 汽水</view>
       <view class="text3">
@@ -30,7 +30,7 @@
 </view>
 <!-- 会员 -->
 <view class="vip">
-  <view><image class="vip_icon" src="/images/icon_vip.png"></image></view>
+  <view><image class="vip_icon" src="{{image_icon}}icon_vip.png"></image></view>
   <!-- <view class="vip_text">会员满减券 优惠多多</view> -->
 </view>
 <!-- 优惠券 -->
@@ -58,7 +58,7 @@
   <view>
     <view class="baokuan" >
       <view class="baokuan_one" wx:for="{{6}}" wx:key='key'>
-        <view class="bao_icon1"><image class="bao_icon" src="/images/lele.png"></image></view>
+        <view class="bao_icon1"><image class="bao_icon" src="{{image_icon}}kele.png"></image></view>
         <view class="baokuan_shengyu">剩余30天</view>
         <view class="baokuan_title">生菜 约500g..</view>
         <view class="baokuan_money">
@@ -67,13 +67,12 @@
         </view>
         <view class="baokuan_ku">库存：150</view>
       </view>
-
     </view>
   </view>
   <!-- 更多精彩 -->
-  <!-- <view class="more">
+  <view class="more">
     <image class="more_icon" src="/images/icon_wjcc.png"></image>
-  </view> -->
+  </view>
   <!-- 其他频道 -->
   <view>
     <view class="other_one">

@@ -1,6 +1,6 @@
 <navigationBar text='充值'></navigationBar>
 <view class="rech_top">
-  <image src="/images/money_bg.png" class="image"></image>
+  <image src="{{image_icon}}my_big" class="image"></image>
   <view class="content">
     <view class="t1">666,666.66</view>
     <view class="t2">余额（元）</view>

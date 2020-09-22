@@ -108,5 +108,4 @@ App({
       ip_address: 'http://192.168.1.27:80', //接口
       image_icon:'http://192.168.1.27:80/static/pc/icon1/'
   },
-  
 })

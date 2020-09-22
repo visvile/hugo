@@ -43,6 +43,10 @@
           <view class="shop_yj">￥30.00</view>
           <view class="shop_sl">X1</view>
         </view>
+        <view class="shop_biaoq">
+          <view class="biaoq_text">一刻达</view>
+          <view class="biaoq_text">今日特价</view>
+        </view>
       </view>
     </view>
   </view>

@@ -126,4 +126,15 @@ Page({
       index1:index1
     })
   },
+  getClickToast(){
+    wx.showToast({
+      title: '催货成功,小哥火速为您配送',
+      icon:'none'
+    })
+  },
+  gotoDetail(){
+    wx.navigateTo({
+      url: './detail',
+    })
+  },
 })

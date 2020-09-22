@@ -2,8 +2,9 @@
 <view>
   <navigationBar text='购物车' back='{{back}}'></navigationBar>
   <view class="text">
-     <view>单笔订单金额满300元可使用平台10-50优惠券</view>
-     <view class="text1" bindtap="gotogoodlist">去凑单 ></view>
+    <view></view>
+     <view class="text1" bindtap="getClickManage" data-index="{{index}}" wx:if='{{flag == 0}}'>管理</view>
+     <view class="text1" bindtap="getClickManages" data-index="{{index}}" wx:else='{{flag == 1}}'>完成</view>
   </view>
  <!-- 购物车商品 -->
  <view class="shop">
@@ -11,12 +12,16 @@
     <checkbox-group bindchange="checkboxChange">
       <checkbox class="checkbox" checked="{{item.checked}}"> 
           <view class="shop_text">
-            <view><image class="shop_img" src="/images/lele.png"></image></view>
+            <view><image class="shop_img" src="{{image_icon}}kele.png"></image></view>
               <view class="text3">
                 <view>可口可乐【汽水】</view>
                 <view class="tetx4">
                   <view>￥25.00</view>
                   <view class="text5">30.00</view>
+                </view>
+                <view class="biaoqian">
+                  <view class="biaoq_text">一刻达</view>
+                  <view class="biaoq_text">今日特价</view>
                 </view>
               </view>
               <!-- 数量 -->
@@ -29,7 +34,7 @@
                     <input disabled='disabled' type="number" value="{{num}}"></input>
                   </view>
                     <view catchtap="clicksign"  wx:if="{{status == 1}}">
-                      <image class="commodity_sign" src="{{image_icon}}more.png"></image>
+                      <image class="commodity_sign" src="{{image_icon}}sign.png"></image>
                     </view>
                   </view>
                 </view>
@@ -67,13 +72,24 @@
             </label>
         </checkbox-group>
       </view>
-      <view class="footer_dibu">
-        <view>合计：</view>
-        <view class="footer_money">￥0元</view>
-      </view>
+      <!-- 底部 -->
+      <view>
+      <view wx:if='{{flag == 0}}'>
+        <view class="footer_dibu"  >
+          <view>合计：</view>
+          <view class="footer_money">￥0元</view>
+        </view>
         <view class="jiesuan">结算</view>
       </view>
+      <view wx:else='{{flag == 1}}'>
+        <view class="footer_dibu"  >
+          <!-- <view>合计：</view>
+          <view class="footer_money">￥0元</view> -->
+        </view>
+        <view class="jiesuan">删除</view>
+      </view>
+      <!-- end -->
+      </view>
+      </view>
      </view>
-
-
 </view>
